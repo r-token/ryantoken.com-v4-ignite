@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ryan Token" />
+    <meta name="generator" content="Ignite v0.6.0" />
+    <title>Home - Ryan Token</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="/css/ignite-core.min.css" rel="stylesheet" />
+    <link href="https://www.ryantoken.com/" rel="canonical" />
+    <script>(function() {
+    function getThemePreference() {
+        return localStorage.getItem('custom-theme') || 'auto';
+    }
+
+    function applyTheme(themeID) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const lightThemeID = document.documentElement.getAttribute('data-light-theme') || 'light';
+        const darkThemeID = document.documentElement.getAttribute('data-dark-theme') || 'dark';
+        const actualThemeID = themeID === 'auto' ? (prefersDark ? darkThemeID : lightThemeID) : themeID;
+
+        document.documentElement.setAttribute('data-bs-theme', actualThemeID);
+        document.documentElement.setAttribute('data-theme-state', themeID);
+    }
+
+    function applySyntaxTheme() {
+        const syntaxTheme = getComputedStyle(document.documentElement)
+            .getPropertyValue('--syntax-highlight-theme').trim().replace(/"/g, '');
+
+        if (!syntaxTheme) return;
+
+        document.querySelectorAll('link[data-highlight-theme]').forEach(link => {
+            link.setAttribute('disabled', 'disabled');
+        });
+
+        const themeLink = document.querySelector(`link[data-highlight-theme="${syntaxTheme}"]`);
+        if (themeLink) {
+            themeLink.removeAttribute('disabled');
+        }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const currentTheme = getThemePreference();
+        if (currentTheme === 'auto') {
+            applyTheme('auto');
+            applySyntaxTheme();
+        }
+    });
+
+    const savedTheme = getThemePreference();
+    applyTheme(savedTheme);
+    applySyntaxTheme();
+})();
+</script>
+    <meta property="og:site_name" content="Ryan Token" />
+    <meta property="og:title" content="Home" />
+    <meta name="twitter:title" content="Home" />
+    <meta property="og:url" content="https://www.ryantoken.com/" />
+    <meta name="twitter:domain" content="ryantoken.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:dnt" content="on" />
+  </head>
+  <body class="container">
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container flex-wrap flex-lg-nowrap">
+          <div class="me-2 me-md-auto">
+            <a href="/" class="d-inline-flex align-items-center navbar-brand">Ryan Token</a>
+          </div>
+          <button type="button" class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav mb-2 mb-md-0 col justify-content-end">
+              <li class="nav-item"><a href="/home" class="nav-link text-nowrap">Home</a></li>
+              <li class="nav-item"><a href="/about" class="nav-link text-nowrap">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="ig-main-content">
+      <h1 class="text-primary" style="font-weight: 700">Hi, I'm Ryan</h1>
+      <img src="/images/ignite.png" alt="The Ignite logo." class="img-fluid" style="max-width: 100px" />
+    </div>
+    <p class="text-center mt-5">Created in Swift with <a href="https://github.com/twostraws/Ignite">Ignite</a></p>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/ignite-core.js"></script>
+  </body>
+</html>

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Ryan Token" />
     <meta name="generator" content="Ignite v0.6.0" />
-    <title>Home - Ryan Token</title>
+    <title>Dynamic Lambda Storage - Ryan Token</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/bootstrap-icons.min.css" rel="stylesheet" />
     <link href="/css/ignite-core.min.css" rel="stylesheet" />
-    <link href="https://www.ryantoken.com/" rel="canonical" />
+    <link href="https://www.ryantoken.com/blog/dynamic-ephemeral-storage-lambda" rel="canonical" />
     <script>(function() {
     function getThemePreference() {
         return localStorage.getItem('custom-theme') || 'auto';
@@ -55,9 +55,11 @@
 })();
 </script>
     <meta property="og:site_name" content="Ryan Token" />
-    <meta property="og:title" content="Home" />
-    <meta name="twitter:title" content="Home" />
-    <meta property="og:url" content="https://www.ryantoken.com/" />
+    <meta property="og:image" content="/images/dynamic-ephemeral-storage/cover.png" />
+    <meta name="twitter:image" content="/images/dynamic-ephemeral-storage/cover.png" />
+    <meta property="og:title" content="Dynamic Lambda Storage" />
+    <meta name="twitter:title" content="Dynamic Lambda Storage" />
+    <meta property="og:url" content="https://www.ryantoken.com/blog/dynamic-ephemeral-storage-lambda" />
     <meta name="twitter:domain" content="ryantoken.com" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:dnt" content="on" />
@@ -90,27 +92,20 @@
     <div class="hstack gap-3">
       <div class="ms-auto"></div>
       <div class="ig-main-content mb-0 align-self-center" style="width: 100%; max-width: 800px">
-        <p>I’m a <a href="https://github.com/r-token">software engineer</a>, <a href="https://thegoldenhurricast.com/podcast">podcaster</a>, <a href="/blog">writer</a>, <a href="https://thegoldenhurricast.com/">college sports fan</a>, and general techie.</p>
-        <p>I’m <a href="https://ryan-token-cv-prod.s3.us-east-2.amazonaws.com/Ryan+Token+CV.pdf">currently</a> a senior software engineer at <a href="https://www.daysheets.com/">Daysheets</a>, where I build across Apple platforms with <a href="https://www.swift.org/">Swift</a> and <a href="https://developer.apple.com/swiftui/">SwiftUI</a>.</p>
-        <p>In my free time, I do more of that (<a href="https://apps.apple.com/us/app/catchup-keep-in-touch/id1358023550">CatchUp</a>, <a href="https://apps.apple.com/us/app/outrank/id1588983785">Outrank</a>, <a href="https://apps.apple.com/us/app/hot-local-food/id1621818779">Hot Local Food</a>), write plenty of <a href="https://aws.amazon.com/serverless/">serverless</a> backend code, co-host <a href="https://thegoldenhurricast.com/">The Golden Hurricast</a>, play a lot of basketball, and hike with my wife and dog.</p>
-        <div style="padding-top: 20px">
-          <h3 class="text-body" style="font-weight: 600">Latest blog posts</h3>
+        <h1>Dynamic Lambda Storage</h1>
+        <img src="/images/dynamic-ephemeral-storage/cover.png" alt="" class="img-fluid" style="border-radius: 20px; max-height: 300px" />
+        <div>
+          <p>Tagged with: Web, Cloud, Serverless</p>
+          <p>185 words; 1 minutes to read.</p>
         </div>
-        <ul>
-          <a href="/blog/a-new-day-dawns">A New Day(sheets) Dawns</a>
-          <a href="/blog/serverless-swift">Serverless Swift</a>
-          <a href="/blog/catchup-v3">CatchUp v3</a>
-          <a href="/blog/hot-local-food">Hot Local Food for iOS</a>
-          <a href="/blog/nuxt-3-vs-sveltekit">Nuxt 3 vs SvelteKit</a>
-          <a href="/blog/dynamic-ephemeral-storage-lambda">Dynamic Lambda Storage</a>
-          <a href="/blog/one-year-at-storyboard">One Year at Storyboard</a>
-          <a href="/blog/introducing-outrank">Introducing Outrank</a>
-          <a href="/blog/joining-storyboard">I'm Joining Storyboard!</a>
-          <a href="/blog/learning-webrtc">Learning WebRTC</a>
-          <a href="/blog/rocking-with-the-jamstack">Rocking with the Jamstack</a>
-          <a href="/blog/catching-up">Catching Up</a>
-          <a href="/blog/rebuilding-my-website">Rebuilding My Website</a>
-        </ul>
+        <p></p>
+        <p><a href="https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d"><img src="/images/dynamic-ephemeral-storage/dynamic-ephemeral-storage.png" /></a></p>
+        <p>I published an article on <a href="https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d">Storyboard’s Dev Blog</a> about how to configure dynamic amounts of ephemeral storage for a Lambda function on a <em>per-invocation</em> basis.</p>
+        <p>AWS does not let you do this natively. You manually set the amount of storage on the function itself, and then you’re done. You <em>can</em> edit it after the fact, but you can’t change the amount of storage allocated with each invocation.</p>
+        <p>In the post, I detail (what I think is) a clever solution to this limitation which can save you a significant amount of money in the long run. Hint: it’s built with the <a href="https://www.serverless.com/framework">Serverless Framework</a>.</p>
+        <p>Check out the full post in the link below, and let me know what you think!</p>
+        <p>Link to the post: <a href="https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d">https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d</a></p>
+        <p></p>
       </div>
       <div class="ms-auto"></div>
     </div>

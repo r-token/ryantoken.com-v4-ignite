@@ -35,8 +35,12 @@ struct RyanTokenSite: Site {
     var darkTheme: (any Theme)? = DarkTheme()
 
     var staticPages: [any StaticPage] {
-        Home()
         About()
+        Apps()
+        Blog()
+        Home()
+        Meta()
+        OtherProjects()
     }
 
     var articlePages: [any ArticlePage] {

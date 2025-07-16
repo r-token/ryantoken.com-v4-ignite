@@ -6,7 +6,9 @@ struct MainLayout: Layout {
         Body {
             NavBar()
             content
-            IgniteFooter()
+            Spacer()
         }
+        .padding(.all, .em(1))
+        .padding(.horizontal, .em(4))
     }
 }

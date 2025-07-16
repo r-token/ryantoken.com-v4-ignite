@@ -9,10 +9,22 @@ import Ignite
 
 public struct NavBar: HTML {
     public var body: some HTML {
-        NavigationBar(logo: "Ryan Token") {
-            Link("Home", target: Home())
-            Link("About", target: About())
+        VStack(spacing: 8) {
+            HeaderLink(text: "Hi, I'm Ryan", path: "/")
+                .horizontalAlignment(.center)
+
+            HStack {
+                NavLink("Apps", target: Apps())
+                NavLink("Blog", target: Blog())
+                NavLink("Other Projects", target: OtherProjects())
+                NavLink("About", target: About())
+                NavLink("Meta", target: Meta())
+            }
+            .horizontalAlignment(.center)
+
+            .padding(.bottom, 48)
+            // .background(.secondaryBackground)
         }
-        .navigationItemAlignment(.trailing)
+        .lineSpacing(0)
     }
 }

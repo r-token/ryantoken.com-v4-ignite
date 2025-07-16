@@ -5,7 +5,7 @@ description: Going all-in on Swift, startups, and the touring industry.
 date: 2025-06-09
 tags: Swift, SwiftUI, Career
 published: true
-image: /images/daysheets-logo.png
+image: /images/daysheets/daysheets-logo.png
 ---
 
 **day sheet** \ ˈdā-ˌshēt \ *noun* : a concise snapshot of the day ahead that is shared with the touring party.

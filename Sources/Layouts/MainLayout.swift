@@ -5,10 +5,13 @@ struct MainLayout: Layout {
     var body: some Document {
         Body {
             NavBar()
-            content
-            Spacer()
+            HStack {
+                Spacer()
+                content
+                    .frame(maxWidth: 800)
+                Spacer()
+            }
         }
         .padding(.all, .em(1))
-        .padding(.horizontal, .em(4))
     }
 }

@@ -40,7 +40,7 @@ struct RyanTokenSite: Site {
         Blog()
         Home()
         Meta()
-        OtherProjects()
+        Projects()
     }
 
     var articlePages: [any ArticlePage] {

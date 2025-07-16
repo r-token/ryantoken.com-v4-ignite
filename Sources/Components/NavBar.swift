@@ -15,8 +15,8 @@ public struct NavBar: HTML {
 
             HStack {
                 NavLink("Apps", target: Apps())
+                NavLink("Projects", target: Projects())
                 NavLink("Blog", target: Blog())
-                NavLink("Other Projects", target: OtherProjects())
                 NavLink("About", target: About())
                 NavLink("Meta", target: Meta())
             }

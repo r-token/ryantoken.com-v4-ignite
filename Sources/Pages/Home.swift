@@ -28,7 +28,7 @@ struct Home: StaticPage {
             """
         )
 
-        SubheaderText(text: "Latest blog posts", styled: false)
+        SubheaderText("Latest blog posts", styled: false)
             .padding(.top)
 
         List {

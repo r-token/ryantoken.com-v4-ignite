@@ -11,6 +11,6 @@ struct Blog: StaticPage {
     var title = "Blog"
 
     var body: some HTML {
-        SubheaderText(text: "Blog")
+        HeaderText("Blog")
     }
 }

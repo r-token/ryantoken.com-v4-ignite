@@ -11,6 +11,6 @@ struct Apps: StaticPage {
     var title = "Apps"
 
     var body: some HTML {
-        SubheaderText(text: "My Apps")
+        HeaderText("My Apps")
     }
 }

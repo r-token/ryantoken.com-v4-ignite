@@ -1,11 +1,12 @@
 ---
 author: Ryan Token
 title: Rocking with the Jamstack
-description: Diving into the Jamstack, and loving every minute of it.
+subtitle: Diving into the Jamstack, and loving every minute of it.
 date: 2021-02-21
 tags: Web, Jamstack, Serverless
 published: true
 image: /images/rocking-with-the-jamstack/cover.png
+alt: The Jamstack logo
 ---
 
 ## What Is the Jamstack?

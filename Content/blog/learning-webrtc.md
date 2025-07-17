@@ -1,11 +1,12 @@
 ---
 author: Ryan Token
 title: Learning WebRTC
-description: Explaining WebRTC to myself and others.
+subtitle: Explaining WebRTC to myself and others.
 date: 2021-03-07
 tags: Web, WebRTC
 published: true
 image: /images/learning-webrtc/cover.png
+alt: The WebRTC logo
 ---
 
 WebRTC can be tricky to wrap your mind around – there's a lot involved and it's easy to get overwhelmed. Once you understand the basics though, it's much easier to reason about the rest.

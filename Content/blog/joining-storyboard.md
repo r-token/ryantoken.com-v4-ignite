@@ -1,11 +1,12 @@
 ---
 author: Ryan Token
 title: I'm Joining Storyboard!
-description: Starting a new, remote, cloud-heavy journey.
+subtitle: Starting a new, remote, cloud-heavy journey.
 date: 2021-04-25
 tags: Career, AWS, Serverless
 published: true
 image: /images/storyboard/cover.png
+alt: Storyboard's original logo
 ---
 
 ## A New Chapter

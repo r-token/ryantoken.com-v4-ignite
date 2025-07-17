@@ -1,11 +1,12 @@
 ---
 author: Ryan Token
 title: Introducing Outrank
-description: Discussing the new app and my experience building it.
+subtitle: Discussing the new app and my experience building it.
 date: 2021-10-26
 tags: iOS, Swift, SwiftUI
 published: true
 image: /images/outrank/outrank-icon.png
+alt: Outrank's app icon
 ---
 
 Today I'm excited to debut my first new iOS app in three years:
@@ -16,13 +17,13 @@ Today I'm excited to debut my first new iOS app in three years:
 
 If you're a fan of American college football, this app is for you. Available for iOS, iPadOS, and macOS (on M1 Macs), Outrank is the easiest way to check how your favorite teams stack up against the rest. It shows you where your team ranks in forty-seven different tracked statistics compared to the other 129 FBS teams.
 
-[<img src="/images/outrank/outrank-rankings.png">](https://apps.apple.com/us/app/outrank/id1588983785)
+[<img src="/images/outrank/outrank-rankings.png" class="img-fluid">](https://apps.apple.com/us/app/outrank/id1588983785)
     
-[<img src="/images/outrank/outrank-detail.png">](https://apps.apple.com/us/app/outrank/id1588983785)
+[<img src="/images/outrank/outrank-detail.png" class="img-fluid">](https://apps.apple.com/us/app/outrank/id1588983785)
 
-[<img src="/images/outrank/outrank-compare.png">](https://apps.apple.com/us/app/outrank/id1588983785)
+[<img src="/images/outrank/outrank-compare.png" class="img-fluid">](https://apps.apple.com/us/app/outrank/id1588983785)
 
-[<img src="/images/outrank/outrank-settings.png">](https://apps.apple.com/us/app/outrank/id1588983785)
+[<img src="/images/outrank/outrank-settings.png" class="img-fluid">](https://apps.apple.com/us/app/outrank/id1588983785)
 
 *screenshots courtesy of Federico Viticci and his wonderful [Apple Frames](https://www.macstories.net/ios/apple-frames-2-0-faster-lighter-and-featuring-support-for-iphone-13-ipad-mini-ipad-10-2-imac-24-macbook-air-and-multiple-languages/) shortcut*
 

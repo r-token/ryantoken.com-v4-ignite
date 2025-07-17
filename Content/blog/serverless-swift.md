@@ -1,16 +1,15 @@
 ---
 author: Ryan Token
 title: Serverless Swift
-description: Controlling Philips Hue bulbs by running Swift on AWS Lambda.
+subtitle: Controlling Philips Hue bulbs by running Swift on AWS Lambda.
 date: 2025-02-24
 tags: Serverless, Swift, AWS
 published: true
 image: /images/serverless-swift/serverless-swift.png
+alt: Serverless Swift
 ---
 
 It's [Swift on Server](https://www.swift.org/documentation/server/), minus the server. Deployed on AWS via [Swift Cloud](https://github.com/swift-cloud/swift-cloud).
-
-![Serverless Swift icon](/images/serverless-swift/serverless-swift.png)
 
 I've long been interested in running Swift on the back end, but it wasn't until a combination of a fun project idea and a spark from Swift Cloud that I was inspired to dig in and try it out. But why do it this way? How does it work? And how well does it run in terms of cost and performance? We'll break all of that down.
 
@@ -428,8 +427,4 @@ I love talking about this stuff. If you want to chat, feel free to reach out ove
 
 And if you particularly enjoyed this post, you can [buy me a coffee](https://www.buymeacoffee.com/ryantoken)!
 
-<div class="flex items-stretch mb-8">
-  <a href="https://www.buymeacoffee.com/ryantoken" class="w-2/3 xl:w-1/3 lg:w-1/3 max-w-xs" target="_blank" rel="noreferrer">
-	<img src={bmcLogo} alt="Buy Me a Coffee button" loading="lazy" decoding="async" class="rounded-3xl" />
-  </a>
-</div>
+[<img src="/images/bmc-button.png" class="img-fluid">](https://www.buymeacoffee.com/ryantoken)

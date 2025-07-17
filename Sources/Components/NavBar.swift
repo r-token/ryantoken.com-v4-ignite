@@ -9,7 +9,7 @@ import Ignite
 
 public struct NavBar: HTML {
     public var body: some HTML {
-        VStack(spacing: 8) {
+        VStack {
             HeaderLink(text: "Hi, I'm Ryan", path: "/")
                 .horizontalAlignment(.center)
 

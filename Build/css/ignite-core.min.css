@@ -338,9 +338,40 @@ div.alert p:last-child {
     --bs-link-hover-color-rgb: 10, 88, 202;
     --bs-border-color: rgb(222 226 230 / 100%);
     --bs-border-color-rgb: 222, 226, 230;
+    --bs-body-font-size: 18px;
     --bs-body-line-height: 1.5em;
-    --bs-headings-line-height: 1.0em;
+    --bs-headings-line-height: 2.0em;
     --syntax-highlight-theme: "xcode-light";
+}
+
+@media (min-width: 576px) {
+    :root {
+    --bs-body-font-size: 18px;
+}
+}
+
+@media (min-width: 768px) {
+    :root {
+    --bs-body-font-size: 18px;
+}
+}
+
+@media (min-width: 992px) {
+    :root {
+    --bs-body-font-size: 18px;
+}
+}
+
+@media (min-width: 1200px) {
+    :root {
+    --bs-body-font-size: 18px;
+}
+}
+
+@media (min-width: 1400px) {
+    :root {
+    --bs-body-font-size: 18px;
+}
 }
 
 @media (min-width: 540px) {
@@ -837,8 +868,9 @@ code, pre {
     --bs-link-hover-color-rgb: 10, 88, 202;
     --bs-border-color: rgb(222 226 230 / 100%);
     --bs-border-color-rgb: 222, 226, 230;
+    --bs-body-font-size: 18px;
     --bs-body-line-height: 1.5em;
-    --bs-headings-line-height: 1.0em;
+    --bs-headings-line-height: 2.0em;
     --syntax-highlight-theme: "xcode-light";
 }
 
@@ -903,8 +935,9 @@ code, pre {
     --bs-link-hover-color-rgb: 158, 197, 254;
     --bs-border-color: rgb(73 80 87 / 100%);
     --bs-border-color-rgb: 73, 80, 87;
+    --bs-body-font-size: 18px;
     --bs-body-line-height: 1.5em;
-    --bs-headings-line-height: 1.0em;
+    --bs-headings-line-height: 2.0em;
     --syntax-highlight-theme: "xcode-dark";
 }
 

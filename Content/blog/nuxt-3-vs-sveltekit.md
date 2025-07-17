@@ -1,11 +1,12 @@
 ---
 author: Ryan Token
 title: Nuxt 3 vs SvelteKit
-description: Choosing between Nuxt 3 and SvelteKit for ryantoken.com v3.
+subtitle: Choosing between Nuxt 3 and SvelteKit for ryantoken.com v3.
 date: 2022-10-24
 tags: Web, Jamstack, Rewrite
 published: true
 image: /images/nuxt-3-vs-sveltekit/cover.png
+alt: Nuxt 3 logo vs the SvelteKit logo
 ---
 
 ## Rebuilding ryantoken.com
@@ -557,8 +558,4 @@ This was a wonderful exercise to go through, and I've never been happier with my
 
 And if you particularly enjoyed this post, you can [buy me a coffee](https://www.buymeacoffee.com/ryantoken)!
 
-<div class="flex items-stretch mb-8">
-  <a href="https://www.buymeacoffee.com/ryantoken" class="w-2/3 xl:w-1/3 lg:w-1/3 max-w-xs" target="_blank" rel="noreferrer">
-    <img src={bmcLogo} alt="Buy Me a Coffee button" loading="lazy" decoding="async" class="rounded-3xl" />
-  </a>
-</div>
+[<img src="/images/bmc-button.png" class="img-fluid">](https://www.buymeacoffee.com/ryantoken)

@@ -8,9 +8,17 @@
 import Ignite
 
 struct Blog: StaticPage {
+    @Environment(\.articles) var articles
+
     var title = "Blog"
 
     var body: some HTML {
         HeaderText("Blog")
+
+        List {
+            ForEach(articles.all.sorted(by: \.date).reversed()) { article in
+                Link(article)
+            }
+        }
     }
 }

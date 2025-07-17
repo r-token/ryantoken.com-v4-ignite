@@ -1,11 +1,12 @@
 ---
 author: Ryan Token
 title: CatchUp v3
-description: Revisiting my first iOS app with new features and a fresh UI.
+subtitle: Revisiting my first iOS app with new features and a fresh UI.
 date: 2024-04-03
 tags: SwiftUI, SwiftData, iOS
 published: true
 image: /images/catchup-v3-logo.png
+alt: CatchUp v3
 ---
 
 I first launched [CatchUp - Keep in Touch](https://apps.apple.com/us/app/catchup-keep-in-touch/id1358023550) for iOS in May 2018. It was the first app I'd ever released and it was, from a code perspective, objectively pretty bad.
@@ -49,11 +50,7 @@ CatchUp is, and always will be, completely free with no ads. The tiny bits of mo
 
 I hope that you use the app and find it valuable. If you do, please consider supporting development by leaving a tip in the app. I really do find that motivating. Alternatively, you can [buy me a coffee](https://www.buymeacoffee.com/ryantoken)!
 
-<div class="flex items-stretch mb-8">
-	<a href="https://www.buymeacoffee.com/ryantoken" class="w-2/3 xl:w-1/3 lg:w-1/3 max-w-xs" target="_blank" rel="noreferrer">
-		<img src="/images/bmc-button.png" alt="Buy Me a Coffee button" loading="lazy" decoding="async" class="rounded-3xl" />
-	</a>
-</div>
+[<img src="/images/bmc-button.png" class="img-fluid">](https://www.buymeacoffee.com/ryantoken)
 
 ## Download
 

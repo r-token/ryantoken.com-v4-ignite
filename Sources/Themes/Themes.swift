@@ -12,7 +12,8 @@ protocol BaseTheme: Theme {}
 // Default implementation for shared values
 extension BaseTheme {
     var lineSpacing: LengthUnit { .em(1.5) }
-    var headingLineSpacing: LengthUnit { .em(1) }
+    var headingLineSpacing: LengthUnit { .em(2) }
+    var bodyFontSize: ResponsiveValues { .init(LengthUnit.px(18)) }
 }
 
 // Values not set here default to stock light theme colors

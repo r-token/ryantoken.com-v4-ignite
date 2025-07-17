@@ -1,18 +1,19 @@
 ---
 author: Ryan Token
 title: Hot Local Food for iOS
-description: It's like Tinder, but for food, and it already likes you back.
+subtitle: It's like Tinder, but for food, and it already likes you back.
 date: 2023-01-26
 tags: iOS, Swift, SwiftUI
 published: true
 image: /images/hot-local-food/hlf-icon-square.png
+alt: Hot Local Food App Icon for iOS
 ---
 
 Think Tinder, but for food, and it already likes you back. Say hello to **Hot Local Food**. Free, hot, and available on iOS 15 and newer.
 
-![Hot Local Food's app icon](/images/hot-local-food/hlf-icon-rounded.png)
+## Blank for some reason
 
-***Find love, then eat it***
+## *Find love, then eat it*
 
 Want something to eat or drink but don't know where to go? Want to explore the local scene nearby or far away? Just want to look at some good pictures of good food? Hot Local Food is there for you.
 
@@ -56,6 +57,6 @@ But iOS came calling again, as it always does. This time in the form of one of m
 
 Three years, two app icons, one pandemic, and multiple starts and stops later - we have our app. It's all SwiftUI, it's clean and straightforward, it's not (currently) expensive to run, and it's ready for the world. I'm so excited about it.
 
-We'd love it if you tried it out. If you do, and you have feedback - positive or negative - we'd be honored to hear from you. Please [email me](mailto:hotlocalfood@gmail.com?subject=Blog Post Feedback - Hot Local Food).
+We'd love it if you tried it out. If you do, and you have feedback - positive or negative - we'd be honored to hear from you. Please [email me](<mailto:hotlocalfood@gmail.com?subject=Blog Post Feedback - Hot Local Food>).
 
 <a href="https://apps.apple.com/us/app/hot-local-food/id1621818779?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 125px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1674691200" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>

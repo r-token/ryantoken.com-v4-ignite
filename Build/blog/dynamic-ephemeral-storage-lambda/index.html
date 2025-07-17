@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="I published an article on Storyboard’s Dev Blog about how to configure dynamic amounts of ephemeral storage for a Lambda function on a per-invocation basis." />
     <meta name="author" content="Ryan Token" />
     <meta name="generator" content="Ignite v0.6.0" />
     <title>Dynamic Lambda Storage - Ryan Token</title>
@@ -59,6 +60,8 @@
     <meta name="twitter:image" content="/images/dynamic-ephemeral-storage/cover.png" />
     <meta property="og:title" content="Dynamic Lambda Storage" />
     <meta name="twitter:title" content="Dynamic Lambda Storage" />
+    <meta property="og:description" content="I published an article on Storyboard’s Dev Blog about how to configure dynamic amounts of ephemeral storage for a Lambda function on a per-invocation basis." />
+    <meta name="twitter:description" content="I published an article on Storyboard’s Dev Blog about how to configure dynamic amounts of ephemeral storage for a Lambda function on a per-invocation basis." />
     <meta property="og:url" content="https://www.ryantoken.com/blog/dynamic-ephemeral-storage-lambda" />
     <meta name="twitter:domain" content="ryantoken.com" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -66,7 +69,7 @@
   </head>
   <body class="container" style="padding: 1.0em">
     <div style="line-height: 0">
-      <div class="line-height-inherit vstack" style="gap: 8px">
+      <div class="line-height-inherit vstack">
         <div class="text-center mb-0 align-self-center">
           <h1 class="text-primary" style="font-weight: 700"><a href="/" class="link-plain">Hi, I'm Ryan</a></h1>
         </div>
@@ -92,20 +95,25 @@
     <div class="hstack gap-3">
       <div class="ms-auto"></div>
       <div class="ig-main-content mb-0 align-self-center" style="width: 100%; max-width: 800px">
-        <h1>Dynamic Lambda Storage</h1>
-        <img src="/images/dynamic-ephemeral-storage/cover.png" alt="" class="img-fluid" style="border-radius: 20px; max-height: 300px" />
-        <div>
-          <p>Tagged with: Web, Cloud, Serverless</p>
-          <p>185 words; 1 minutes to read.</p>
+        <div class="vstack" style="width: 100%; max-width: 600px; margin-left: auto; margin-right: auto">
+          <div class="mb-0 align-self-start vstack" style="padding-bottom: 36px; gap: 8px">
+            <div class="mb-0 align-self-start" style="line-height: 0">
+              <h1 class="text-primary" style="font-weight: 600">Dynamic Lambda Storage</h1>
+            </div>
+            <p class="text-body-secondary mb-0 align-self-start"><em>Serverless compute with dynamic ephemeral storage.</em></p>
+            <p class="text-body-secondary mb-0 align-self-start"><em>Published Jun 9, 2022</em></p>
+            <p class="text-body-secondary mb-0 align-self-start"><em>169 words; 1 minutes to read.</em></p>
+            <hr class="mb-0 align-self-start" />
+          </div>
+          <img src="/images/dynamic-ephemeral-storage/cover.png" alt="A custom diagram showcasing dynamic ephemeral storage with lambda" class="img-fluid mb-0 align-self-start" style="border-radius: 20px; max-height: 300px" />
+          <p class="mb-0 align-self-start" style="padding-top: 36px"></p>
+          <p>I published an article on <a href="https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d">Storyboard’s Dev Blog</a> about how to configure dynamic amounts of ephemeral storage for a Lambda function on a <em>per-invocation</em> basis.</p>
+          <p>AWS does not let you do this natively. You manually set the amount of storage on the function itself, and then you’re done. You <em>can</em> edit it after the fact, but you can’t change the amount of storage allocated with each invocation.</p>
+          <p>In the post, I detail (what I think is) a clever solution to this limitation which can save you a significant amount of money in the long run. Hint: it’s built with the <a href="https://www.serverless.com/framework">Serverless Framework</a>.</p>
+          <p>Check out the full post in the link below, and let me know what you think!</p>
+          <p>Link to the post: <a href="https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d">https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d</a></p>
+          <p></p>
         </div>
-        <p></p>
-        <p><a href="https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d"><img src="/images/dynamic-ephemeral-storage/dynamic-ephemeral-storage.png" /></a></p>
-        <p>I published an article on <a href="https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d">Storyboard’s Dev Blog</a> about how to configure dynamic amounts of ephemeral storage for a Lambda function on a <em>per-invocation</em> basis.</p>
-        <p>AWS does not let you do this natively. You manually set the amount of storage on the function itself, and then you’re done. You <em>can</em> edit it after the fact, but you can’t change the amount of storage allocated with each invocation.</p>
-        <p>In the post, I detail (what I think is) a clever solution to this limitation which can save you a significant amount of money in the long run. Hint: it’s built with the <a href="https://www.serverless.com/framework">Serverless Framework</a>.</p>
-        <p>Check out the full post in the link below, and let me know what you think!</p>
-        <p>Link to the post: <a href="https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d">https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d</a></p>
-        <p></p>
       </div>
       <div class="ms-auto"></div>
     </div>

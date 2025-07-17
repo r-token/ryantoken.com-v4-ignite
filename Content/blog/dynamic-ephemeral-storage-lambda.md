@@ -1,14 +1,13 @@
 ---
 author: Ryan Token
 title: Dynamic Lambda Storage
-description: Serverless compute with dynamic ephemeral storage.
+subtitle: Serverless compute with dynamic ephemeral storage.
 date: 2022-06-10
 tags: Web, Cloud, Serverless
 published: true
 image: /images/dynamic-ephemeral-storage/cover.png
+alt: A custom diagram showcasing dynamic ephemeral storage with lambda
 ---
-
-[<img src="/images/dynamic-ephemeral-storage/dynamic-ephemeral-storage.png">](https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d)
 
 I published an article on [Storyboard's Dev Blog](https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d) about how to configure dynamic amounts of ephemeral storage for a Lambda function on a *per-invocation* basis.
 

@@ -1,18 +1,19 @@
 ---
 author: Ryan Token
 title: Rebuilding My Website
-description: Why I decided to rebuild ryantoken.com with Swift.
+subtitle: Why I decided to rebuild ryantoken.com with Swift.
 date: 2020-03-22
 tags: Web, Swift, Rewrite
 published: true
 image: /images/rebuilding-my-website/cover.png
+alt: Publish's icon
 ---
 
 ## Website V1: Bootstrap All the Things
 
 The summer of 2015 was the summer between my sophomore and junior years at the University of Tulsa. I had taken a few programming classes by that point, and was drawn to web development. To prove to myself that I knew my way around the basics, I wanted to build a personal website – I didn't have a plan for it, but I knew that I wanted it.
 
-Most recently, I had learned about a tool called **[Bootstrap]**(https://getbootstrap.com). Everyone and their mother was raving about Bootstrap. In 2015, it sounded like the end-all be-all for responsive web design. Spoiler: it wasn't. But I, a young and impressionable college student, Bootstrapped the ever-loving heck out of version one of my website.
+Most recently, I had learned about a tool called **[Bootstrap](https://getbootstrap.com)**. Everyone and their mother was raving about Bootstrap. In 2015, it sounded like the end-all be-all for responsive web design. Spoiler: it wasn't. But I, a young and impressionable college student, Bootstrapped the ever-loving heck out of version one of my website.
 
 See for yourself: (most text blurred out for my own privacy)
 

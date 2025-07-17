@@ -32,7 +32,7 @@ struct Home: StaticPage {
             .padding(.top)
 
         List {
-            ForEach(articles.all) { article in
+            ForEach(articles.all.sorted(by: \.date).suffix(4).reversed()) { article in
                 Link(article)
             }
         }

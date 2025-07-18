@@ -13,7 +13,8 @@ struct Blog: StaticPage {
     var title = "Blog"
 
     var body: some HTML {
-        HeaderText("Blog")
+        HeaderText("Blog", size: .h2)
+        SubheaderText("All blog posts. Subscribe to my RSS feed.")
 
         List {
             ForEach(articles.all.sorted(by: \.date).reversed()) { article in

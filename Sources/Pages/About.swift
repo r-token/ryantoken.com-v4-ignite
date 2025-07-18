@@ -11,6 +11,7 @@ struct About: StaticPage {
     var title = "About"
 
     var body: some HTML {
-        HeaderText("About Me")
+        HeaderText("About Me", size: .h2)
+        SubheaderText("A bit about me.")
     }
 }

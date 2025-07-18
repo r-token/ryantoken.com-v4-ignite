@@ -68,27 +68,25 @@
     <meta name="twitter:dnt" content="on" />
   </head>
   <body class="container" style="padding: 1.0em">
-    <div style="line-height: 0">
-      <div class="line-height-inherit vstack">
-        <div class="text-center mb-0 align-self-center">
-          <h1 class="text-primary" style="font-weight: 700"><a href="/" class="link-plain">Hi, I'm Ryan</a></h1>
+    <div class="vstack">
+      <div class="text-center mb-0 align-self-center">
+        <h1 class="text-primary" style="font-weight: 700"><a href="/" class="link-plain">Hi, I'm Ryan</a></h1>
+      </div>
+      <div class="text-center mb-0 align-self-center hstack gap-3" style="padding-bottom: 48px">
+        <div class="mb-0 align-self-center">
+          <a href="/apps" class="text-body-secondary link-plain">Apps</a>
         </div>
-        <div class="text-center mb-0 align-self-center hstack gap-3" style="padding-bottom: 48px">
-          <div class="mb-0 align-self-center">
-            <a href="/apps" class="text-body-secondary link-plain">Apps</a>
-          </div>
-          <div class="mb-0 align-self-center">
-            <a href="/projects" class="text-body-secondary link-plain">Projects</a>
-          </div>
-          <div class="mb-0 align-self-center">
-            <a href="/blog" class="text-body-secondary link-plain">Blog</a>
-          </div>
-          <div class="mb-0 align-self-center">
-            <a href="/about" class="text-body-secondary link-plain">About</a>
-          </div>
-          <div class="mb-0 align-self-center">
-            <a href="/meta" class="text-body-secondary link-plain">Meta</a>
-          </div>
+        <div class="mb-0 align-self-center">
+          <a href="/projects" class="text-body-secondary link-plain">Projects</a>
+        </div>
+        <div class="mb-0 align-self-center">
+          <a href="/blog" class="text-body-secondary link-plain">Blog</a>
+        </div>
+        <div class="mb-0 align-self-center">
+          <a href="/about" class="text-body-secondary link-plain">About</a>
+        </div>
+        <div class="mb-0 align-self-center">
+          <a href="/meta" class="text-body-secondary link-plain">Meta</a>
         </div>
       </div>
     </div>
@@ -96,15 +94,13 @@
       <div class="ms-auto"></div>
       <div class="ig-main-content mb-0 align-self-center" style="width: 100%; max-width: 800px">
         <div class="vstack" style="width: 100%; max-width: 600px; margin-left: auto; margin-right: auto">
-          <div class="mb-0 align-self-start vstack" style="padding-bottom: 36px; gap: 8px">
-            <div class="mb-0 align-self-start" style="line-height: 0">
-              <h1 class="text-primary" style="font-weight: 600">Dynamic Lambda Storage</h1>
-            </div>
-            <p class="text-body-secondary mb-0 align-self-start"><em>Serverless compute with dynamic ephemeral storage.</em></p>
-            <p class="text-body-secondary mb-0 align-self-start"><em>Published Jun 9, 2022</em></p>
-            <p class="text-body-secondary mb-0 align-self-start"><em>169 words; 1 minutes to read.</em></p>
-            <hr class="mb-0 align-self-start" />
+          <div class="mb-0 align-self-start">
+            <h2 class="text-body" style="font-weight: 600">Dynamic Lambda Storage</h2>
           </div>
+          <p class="text-body-secondary mb-0 align-self-start"><em>Serverless compute with dynamic ephemeral storage.</em></p>
+          <p class="text-body-secondary mb-0 align-self-start" style="padding-top: 24px"><em>Published Jun 9, 2022</em></p>
+          <p class="text-body-secondary mb-0 align-self-start"><em>169 words; 1 minutes to read.</em></p>
+          <hr class="mb-0 align-self-start" style="padding-bottom: 36px" />
           <img src="/images/dynamic-ephemeral-storage/cover.png" alt="A custom diagram showcasing dynamic ephemeral storage with lambda" class="img-fluid mb-0 align-self-start" style="border-radius: 20px; max-height: 300px" />
           <p class="mb-0 align-self-start" style="padding-top: 36px"></p>
           <p>I published an article on <a href="https://medium.com/storyboard-podcasts/storyboard-dev-blog-serverless-compute-with-dynamic-ephemeral-storage-8fd38c0df93d">Storyboard’s Dev Blog</a> about how to configure dynamic amounts of ephemeral storage for a Lambda function on a <em>per-invocation</em> basis.</p>

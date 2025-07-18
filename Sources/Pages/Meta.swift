@@ -11,7 +11,8 @@ struct Meta: StaticPage {
     var title = "Meta"
 
     var body: some HTML {
-        HeaderText("Meta")
+        HeaderText("Meta", size: .h2)
+        SubheaderText("How this site was built.")
 
         IgniteAttribution()
     }

@@ -9,17 +9,16 @@ import Ignite
 
 public struct SubheaderText: HTML {
     let text: String
-    let styled: Bool
 
-    init(_ text: String, styled: Bool? = false) {
+    init(_ text: String) {
         self.text = text
-        self.styled = styled ?? false
     }
 
     public var body: some HTML {
-        Text(text)
-            .font(.title2)
-            .fontWeight(.semibold)
-            .foregroundStyle(styled ? .primary : .body)
+        Text(markdown: "*\(text)*")
+            .font(.title4)
+            .foregroundStyle(.secondary)
+            .fontWeight(.regular)
+            .lineSpacing(1.5)
     }
 }

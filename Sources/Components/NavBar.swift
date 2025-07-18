@@ -25,6 +25,5 @@ public struct NavBar: HTML {
             .padding(.bottom, 48)
             // .background(.secondaryBackground)
         }
-        .lineSpacing(0)
     }
 }

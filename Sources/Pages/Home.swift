@@ -35,5 +35,8 @@ struct Home: StaticPage {
             ArticlePreview(for: article)
                 .articlePreviewStyle(DynamicArticlePreviewStyle())
         }
+
+        Badge(name: "All Blog Posts", size: .title4, path: "/blog")
+            .padding(.top)
     }
 }

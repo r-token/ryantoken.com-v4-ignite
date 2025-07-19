@@ -98,15 +98,7 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                 Section {
                     Section {
                         ForEach(tags) { tag in
-                            Span(tag)
-                                .font(.xSmall)
-                                .fontWeight(.medium)
-                                .foregroundStyle(.primary)
-                                .background(.blue.opacity(0.1))
-                                .padding(.horizontal, .em(0.75))
-                                .padding(.vertical, .em(0.4))
-                                .cornerRadius(6)
-                                .margin(.bottom, .em(0.25)) // Add bottom margin for wrapped lines
+                            Badge(name: tag, size: .xSmall, path: "/blog/tags/\(tag)")
                         }
                     }
                     .class("d-flex flex-wrap gap-2") // Enable wrapping with gap

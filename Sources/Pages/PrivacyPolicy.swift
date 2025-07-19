@@ -8,7 +8,7 @@
 import Ignite
 
 struct PrivacyPolicy: StaticPage {
-    var title = "Privacy Policy"
+    let title = "Privacy Policy"
 
     var body: some HTML {
         HeaderText("Privacy Policy")

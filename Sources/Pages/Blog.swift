@@ -10,7 +10,7 @@ import Ignite
 struct Blog: StaticPage {
     @Environment(\.articles) var articles
 
-    var title = "Blog"
+    let title = "Blog"
 
     var body: some HTML {
         HeaderText("Blog", size: .h2)

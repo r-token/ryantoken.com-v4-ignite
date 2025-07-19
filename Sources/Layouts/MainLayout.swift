@@ -8,10 +8,11 @@ struct MainLayout: Layout {
             HStack {
                 Spacer()
                 content
-                    .frame(maxWidth: 800)
+                    .frame(maxWidth: 750)
                 Spacer()
             }
         }
-        .padding(.all, .em(1))
+        .padding(.vertical, .em(1))
+        .padding(.horizontal, .em(0.25))
     }
 }

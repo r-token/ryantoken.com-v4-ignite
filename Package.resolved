@@ -1,4 +1,5 @@
 {
+  "originHash" : "7fa745c06b8e41494295ff43732cb5c597c1b16eee147873ca44890282251653",
   "pins" : [
     {
       "identity" : "ignite",
@@ -55,5 +56,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

@@ -8,7 +8,7 @@
 import Ignite
 
 struct Apps: StaticPage {
-    var title = "Apps"
+    let title = "Apps"
 
     var body: some HTML {
         HeaderText("Apps", size: .h2)
@@ -139,7 +139,7 @@ struct Apps: StaticPage {
 
         Text(markdown: "For vegans, carnivores, and everyone in between, Hot Local Food is the best place to find what you love, so you can eat it.")
 
-        Text(markdown: "You can follow Hot Local Food on [X](https://x.com/hotlocalfood), check out its [marketing website](https://www.hotlocalfood.app), or read my [blog post](/blog/hot-local-food) about building it.")
+        Text(markdown: "You can follow Hot Local Food on [X](https://x.com/hotlocalfood), check out its [marketing website](\(Constants.hotLocalFoodMarketingUrl)), or read my [blog post](/blog/hot-local-food) about building it.")
 
         Include("download-hot-local-food.html")
     }

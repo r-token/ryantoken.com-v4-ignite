@@ -9,9 +9,11 @@ import Ignite
 
 struct NavBar: HTML {
     var body: some HTML {
-        VStack {
+        VStack(alignment: .center) {
             HeaderLink(text: "Hi, I'm Ryan", path: "/")
-                .horizontalAlignment(.center)
+
+            SocialsBar()
+                .padding(.bottom, 8)
 
             HStack {
                 NavLink("Apps", target: Apps())
@@ -19,11 +21,9 @@ struct NavBar: HTML {
                 NavLink("Blog", target: Blog())
                 NavLink("About", target: About())
                 NavLink("Meta", target: Meta())
+                NavLink("RSS", target: RSS())
             }
-            .horizontalAlignment(.center)
-
-            .padding(.bottom, 48)
-            // .background(.secondaryBackground)
         }
+        .padding(.bottom, 24)
     }
 }

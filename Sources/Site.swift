@@ -42,6 +42,7 @@ struct RyanTokenSite: Site {
         Meta()
         PrivacyPolicy()
         Projects()
+        RSS()
         TermsOfUse()
     }
 

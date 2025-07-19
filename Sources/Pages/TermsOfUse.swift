@@ -8,7 +8,7 @@
 import Ignite
 
 struct TermsOfUse: StaticPage {
-    var title = "Terms of Use"
+    let title = "Terms of Use"
 
     var body: some HTML {
         HeaderText("Terms of Use")

@@ -10,11 +10,11 @@ import Ignite
 struct Home: StaticPage {
     @Environment(\.articles) var articles
 
-    var title = "Home"
+    let title = "Home"
 
     var body: some HTML {
         Text(markdown: """
-            I'm a [software engineer](https://github.com/r-token), [podcaster](https://thegoldenhurricast.com/podcast), [writer](/blog), [college sports fan](https://thegoldenhurricast.com/), and general techie.
+            I'm a [software engineer](\(Constants.githubUrl)), [podcaster](\(Constants.hurricastWebUrl)), [writer](/blog), [college sports fan](\(Constants.hurricastWebUrl)), and general techie.
             """
         )
 

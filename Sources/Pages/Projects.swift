@@ -8,7 +8,7 @@
 import Ignite
 
 struct Projects: StaticPage {
-    var title = "Projects"
+    let title = "Projects"
 
     var body: some HTML {
         HeaderText("Projects", size: .h2)

@@ -21,7 +21,7 @@ struct ImageWithLink: HTML {
         Link(
             Image(imagePath, description: imageDescription)
                 .resizable()
-                .cornerRadius(.px(imageType == .generic ? 16 : 35))
+                .cornerRadius(.percent(Percentage(imageType == .generic ? 1 : 22)))
                 .margin(.top, 4)
                 .margin(.bottom, 16),
             target: url

@@ -7,7 +7,7 @@
 
 import Ignite
 
-public struct HeaderText: HTML {
+struct HeaderText: HTML {
     enum Size {
         case h1, h2, h3, h4, h5, h6
     }
@@ -54,7 +54,7 @@ public struct HeaderText: HTML {
         }
     }
 
-    public var body: some HTML {
+    var body: some HTML {
         Text(markdown: text)
             .font(titleSize)
             .fontWeight(.semibold)

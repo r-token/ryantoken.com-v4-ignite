@@ -8,7 +8,7 @@
 import Ignite
 
 struct IgniteAttribution: HTML {
-    public var body: some HTML {
+    var body: some HTML {
         HStack {
             Spacer()
 

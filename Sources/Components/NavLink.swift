@@ -16,7 +16,7 @@ struct NavLink: HTML {
         self.target = target
     }
 
-    public var body: some HTML {
+    var body: some HTML {
         Link(text, target: target)
             .role(.none) // removes underline
             .foregroundStyle(.secondary)

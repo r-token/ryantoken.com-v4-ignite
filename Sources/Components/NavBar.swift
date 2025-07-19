@@ -7,8 +7,8 @@
 
 import Ignite
 
-public struct NavBar: HTML {
-    public var body: some HTML {
+struct NavBar: HTML {
+    var body: some HTML {
         VStack {
             HeaderLink(text: "Hi, I'm Ryan", path: "/")
                 .horizontalAlignment(.center)

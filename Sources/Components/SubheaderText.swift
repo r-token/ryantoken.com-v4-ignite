@@ -7,14 +7,14 @@
 
 import Ignite
 
-public struct SubheaderText: HTML {
+struct SubheaderText: HTML {
     let text: String
 
     init(_ text: String) {
         self.text = text
     }
 
-    public var body: some HTML {
+    var body: some HTML {
         Text(markdown: "*\(text)*")
             .font(.title4)
             .foregroundStyle(.secondary)

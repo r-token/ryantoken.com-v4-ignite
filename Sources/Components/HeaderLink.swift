@@ -7,11 +7,11 @@
 
 import Ignite
 
-public struct HeaderLink: HTML {
+struct HeaderLink: HTML {
     var text: String
     var path: String
 
-    public var body: some HTML {
+    var body: some HTML {
         Text {
             Link(text, target: path)
                 .role(.none) // removes underline

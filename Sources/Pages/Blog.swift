@@ -16,10 +16,9 @@ struct Blog: StaticPage {
         HeaderText("Blog", size: .h2)
         SubheaderText("All blog posts. Subscribe to my RSS feed.")
 
-        List {
-            ForEach(articles.all.sorted(by: \.date).reversed()) { article in
-                Link(article)
-            }
+        ForEach(articles.all.sorted(by: \.date).reversed()) { article in
+            ArticlePreview(for: article)
+                .articlePreviewStyle(DynamicArticlePreviewStyle())
         }
     }
 }

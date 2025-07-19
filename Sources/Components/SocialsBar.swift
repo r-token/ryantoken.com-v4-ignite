@@ -13,40 +13,46 @@ struct SocialsBar: HTML {
             url: Constants.xUrl,
             icon: "twitter-x",
             iconDescription: "The X icon from Bootstrap",
-            color: .black
+            lightModeColor: "#000000",
+            darkModeColor: "#ffffff"
         ),
         SocialProfile(
             url: Constants.blueskyUrl,
             icon: "bluesky",
             iconDescription: "The Bluesky icon from Bootstrap",
-            color: .init(hex: "#1185FE")
+            lightModeColor: "#1185FE",
+            darkModeColor: "#4A9EFF"
         ),
         SocialProfile(
             url: Constants.mastodonUrl,
             icon: "mastodon",
             iconDescription: "The Mastodon icon from Bootstrap",
-            color: .init(hex: "#563ACC")
+            lightModeColor: "#563ACC",
+            darkModeColor: "#7B5EE6"
         ),
         SocialProfile(
             url: Constants.githubUrl,
             icon: "github",
             iconDescription: "The GitHub icon from Bootstrap",
-            color: .black
+            lightModeColor: "#000000",
+            darkModeColor: "#ffffff"
         ),
         SocialProfile(
             url: Constants.linkedInUrl,
             icon: "linkedin",
             iconDescription: "The LinkedIn icon from Bootstrap",
-            color: .init(hex: "#0A66C2")
+            lightModeColor: "#0A66C2",
+            darkModeColor: "#4A90E2"
         ),
         SocialProfile(
             url: Constants.mailToUrl,
             icon: "envelope",
             iconDescription: "The envelope icon from Bootstrap",
-            color: .gray
+            lightModeColor: "#6b7280",
+            darkModeColor: "#9CA3AF"
         ),
     ]
-    
+
     var body: some HTML {
         HStack {
             for profile in socials {
@@ -64,7 +70,7 @@ struct SocialsBar: HTML {
                     }
                 }
                 .margin(.trailing, 9)
-                .foregroundStyle(profile.color)
+                .style(.color, "light-dark(\(profile.lightModeColor), \(profile.darkModeColor))")
                 .font(.title5)
             }
         }

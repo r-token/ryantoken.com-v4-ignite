@@ -31,10 +31,9 @@ struct Home: StaticPage {
         HeaderText("Latest blog posts", size: .h2)
             .padding(.top)
 
-        List {
-            ForEach(articles.all.sorted(by: \.date).suffix(4).reversed()) { article in
-                Link(article)
-            }
+        ForEach(articles.all.sorted(by: \.date).suffix(4).reversed()) { article in
+            ArticlePreview(for: article)
+                .articlePreviewStyle(DynamicArticlePreviewStyle())
         }
     }
 }

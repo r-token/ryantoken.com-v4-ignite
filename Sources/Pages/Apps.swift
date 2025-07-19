@@ -127,15 +127,14 @@ struct Apps: StaticPage {
             url: Constants.hotLocalFoodAppUrl
         )
 
-        Text(markdown: """
-        Features:
-        * When you’re out, see restaurants nearby and swipe until you find your perfect match
-        * Traveling somewhere? Get to know what’s good by swiping in the area you plan to visit
-        * Filter by price, location, and categories
-        * Create custom lists to save places for later
-        * Access quick shortcuts to make reservations, order delivery or pickup, and find directions
-        """
-        )
+        Text("Features:")
+        List {
+            "When you’re out, see restaurants nearby and swipe until you find your perfect match"
+            "Traveling somewhere? Get to know what’s good by swiping in the area you plan to visit"
+            "Filter by price, location, and categories"
+            "Create custom lists to save places for later"
+            "Access quick shortcuts to make reservations, order delivery or pickup, and find directions"
+        }
 
         Text(markdown: "For vegans, carnivores, and everyone in between, Hot Local Food is the best place to find what you love, so you can eat it.")
 

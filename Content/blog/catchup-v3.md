@@ -5,7 +5,7 @@ subtitle: Revisiting my first iOS app with new features and a fresh UI.
 date: 2024-04-03
 tags: SwiftUI, SwiftData, iOS
 published: true
-image: /images/catchup-v3-logo.png
+image: /images/catchup-v3/catchup-v3-logo.png
 alt: CatchUp v3
 ---
 

@@ -8,6 +8,8 @@
 import Ignite
 
 struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
+    let cornerRadius = 16
+
     @MainActor func body(content: Article) -> any HTML {
         Section {
             // Mobile layout: vertical stack with image on top
@@ -19,7 +21,7 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                 .class("d-none d-md-flex")
         }
         .style(.backgroundColor, "var(--bs-secondary-bg, #f8fafc)")
-        .cornerRadius(12)
+        .cornerRadius(cornerRadius)
         .border(.gray.opacity(0.15), width: 1)
         .shadow(.black.opacity(0.1), radius: 6, x: 0, y: 4)
         .margin(.bottom, .em(1.5))
@@ -35,7 +37,7 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                     Link(
                         Image(image, description: article.imageDescription)
                             .resizable()
-                            .cornerRadius(12)
+                            .cornerRadius(cornerRadius)
                             .margin(.bottom, .em(0.5)),
                         target: article.path
                     )
@@ -55,7 +57,7 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                         Image(image, description: article.imageDescription)
                             .resizable()
                             .frame(maxHeight: 180)
-                            .cornerRadius(12),
+                            .cornerRadius(cornerRadius),
                         target: article.path
                     )
                 }

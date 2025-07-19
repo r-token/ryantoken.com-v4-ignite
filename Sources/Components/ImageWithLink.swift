@@ -26,6 +26,5 @@ struct ImageWithLink: HTML {
                 .margin(.bottom, 16),
             target: url
         )
-        .target(.blank)
     }
 }

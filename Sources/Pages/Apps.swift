@@ -40,12 +40,20 @@ struct Apps: StaticPage {
 
         Text(markdown: "CatchUp is free with no ads, but has an in-app tip jar if you want to buy me a coffee ☕")
 
-        ImageWithLink(
-            imagePath: "/images/catchup-v3/next-catchups.jpeg",
-            imageDescription: "A screenshot of CatchUp's home screen",
-            url: Constants.catchUpAppUrl
-        )
-        .frame(maxWidth: Constants.defaultImageMaxWidth)
+        Grid(alignment: .leading) {
+            ImageWithLink(
+                imagePath: "/images/catchup-v3/next-catchups.jpeg",
+                imageDescription: "A screenshot of CatchUp's home screen",
+                url: Constants.catchUpAppUrl
+            )
+            .frame(maxWidth: Constants.defaultImageMaxWidth)
+            ImageWithLink(
+                imagePath: "/images/catchup-v3/detail-screen.jpeg",
+                imageDescription: "A screenshot of CatchUp's detail screen",
+                url: Constants.catchUpAppUrl
+            )
+            .frame(maxWidth: Constants.defaultImageMaxWidth)
+        }
 
         Text(markdown: "Read my blog post about modernizing CatchUp with SwiftUI [here](/blog/catching-up) or my latest post about releasing version 3.0 with SwiftData and several new features [here](/blog/catchup-v3).")
 

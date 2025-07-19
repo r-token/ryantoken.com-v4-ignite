@@ -30,7 +30,7 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
     @MainActor
     private func mobileLayout(for article: Article) -> some HTML {
         Section {
-            VStack(alignment: .leading) {
+            VStack {
                 if let image = article.image {
                     Link(
                         Image(image, description: article.imageDescription)
@@ -44,7 +44,6 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                 articleContent(article, includesSpacer: false)
             }
         }
-        .margin(.horizontal, .custom("auto")) // Center the content
     }
 
     @MainActor
@@ -95,9 +94,9 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
             // Tags - wrapped in Section to apply Bootstrap classes
             if let tags = article.tags, !tags.isEmpty {
                 Section {
-                    HStack {
+                    Section {
                         ForEach(tags) { tag in
-                            Span(tag.uppercased())
+                            Span(tag)
                                 .font(.xSmall)
                                 .fontWeight(.medium)
                                 .foregroundStyle(.primary)
@@ -105,12 +104,13 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                                 .padding(.horizontal, .em(0.75))
                                 .padding(.vertical, .em(0.4))
                                 .cornerRadius(6)
-                                .margin(.trailing, .em(0.5))
+                                .margin(.bottom, .em(0.25)) // Add bottom margin for wrapped lines
                         }
                     }
+                    .class("d-flex flex-wrap gap-2") // Enable wrapping with gap
                     .padding(.top, 16)
                 }
-                .class(includesSpacer ? "mt-auto" : "") // Push to bottom on desktop
+                .class(includesSpacer ? "mt-auto" : "")
             }
         }
         .padding(8)

@@ -24,7 +24,7 @@ struct ArticleLayout: ArticlePage {
             Text(markdown: "*\(article.estimatedWordCount) words; \(article.estimatedReadingMinutes) minutes to read.*")
                 .foregroundStyle(.secondary)
 
-            DividerWithMargin()
+            Divider()
 
             if let image = article.image {
                 Image(image, description: article.imageDescription)

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tags" />
+    <meta name="author" content="Ryan Token" />
+    <meta name="generator" content="Ignite v0.6.0" />
+    <title>Tags - Ryan Token</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="/css/ignite-core.min.css" rel="stylesheet" />
+    <link href="https://www.ryantoken.com/tags/jamstack" rel="canonical" />
+    <script>(function() {
+    function getThemePreference() {
+        return localStorage.getItem('custom-theme') || 'auto';
+    }
+
+    function applyTheme(themeID) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const lightThemeID = document.documentElement.getAttribute('data-light-theme') || 'light';
+        const darkThemeID = document.documentElement.getAttribute('data-dark-theme') || 'dark';
+        const actualThemeID = themeID === 'auto' ? (prefersDark ? darkThemeID : lightThemeID) : themeID;
+
+        document.documentElement.setAttribute('data-bs-theme', actualThemeID);
+        document.documentElement.setAttribute('data-theme-state', themeID);
+    }
+
+    function applySyntaxTheme() {
+        const syntaxTheme = getComputedStyle(document.documentElement)
+            .getPropertyValue('--syntax-highlight-theme').trim().replace(/"/g, '');
+
+        if (!syntaxTheme) return;
+
+        document.querySelectorAll('link[data-highlight-theme]').forEach(link => {
+            link.setAttribute('disabled', 'disabled');
+        });
+
+        const themeLink = document.querySelector(`link[data-highlight-theme="${syntaxTheme}"]`);
+        if (themeLink) {
+            themeLink.removeAttribute('disabled');
+        }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const currentTheme = getThemePreference();
+        if (currentTheme === 'auto') {
+            applyTheme('auto');
+            applySyntaxTheme();
+        }
+    });
+
+    const savedTheme = getThemePreference();
+    applyTheme(savedTheme);
+    applySyntaxTheme();
+})();
+</script>
+    <meta property="og:site_name" content="Ryan Token" />
+    <meta property="og:title" content="Tags" />
+    <meta name="twitter:title" content="Tags" />
+    <meta property="og:description" content="Tags" />
+    <meta name="twitter:description" content="Tags" />
+    <meta property="og:url" content="https://www.ryantoken.com/tags/jamstack" />
+    <meta name="twitter:domain" content="ryantoken.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:dnt" content="on" />
+  </head>
+  <body class="container" style="padding-top: 1.0em; padding-bottom: 1.0em; padding-left: 0.25em; padding-right: 0.25em">
+    <div class="vstack" style="padding-bottom: 24px">
+      <div class="mb-0 align-self-center">
+        <h1 class="text-primary" style="font-weight: 700"><a href="/" class="link-plain">Hi, I'm Ryan</a></h1>
+      </div>
+      <div class="mb-0 align-self-center" style="padding-bottom: 8px">
+        <div class="hstack gap-3">
+          <a href="https://x.com/_ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#000000, #ffffff)"><i class="bi-twitter-x"></i></a>
+          <div class="fs-5 mb-0 align-self-center vstack" style="margin-right: 9px; color: light-dark(#1185FE, #4A9EFF)">
+            <a href="https://bsky.app/profile/ryantoken.com"> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1185FE" class="bi bi-bluesky" viewbox="0 0 16 18"> 
+                <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948" /> 
+              </svg> </a> 
+          </div>
+          <a href="https://indieweb.social/@ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#563ACC, #7B5EE6)"><i class="bi-mastodon"></i></a>
+          <a href="https://github.com/r-token" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#000000, #ffffff)"><i class="bi-github"></i></a>
+          <a href="https://linkedin.com/in/ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#0A66C2, #4A90E2)"><i class="bi-linkedin"></i></a>
+          <a href="mailto:ryantoken13@gmail.com" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#6b7280, #9CA3AF)"><i class="bi-envelope"></i></a>
+        </div>
+      </div>
+      <div class="mb-0 align-self-center hstack gap-3">
+        <div class="mb-0 align-self-center">
+          <a href="/apps" class="text-body-secondary link-plain">Apps</a>
+        </div>
+        <div class="mb-0 align-self-center">
+          <a href="/projects" class="text-body-secondary link-plain">Projects</a>
+        </div>
+        <div class="mb-0 align-self-center">
+          <a href="/blog" class="text-body-secondary link-plain">Blog</a>
+        </div>
+        <div class="mb-0 align-self-center">
+          <a href="/about" class="text-body-secondary link-plain">About</a>
+        </div>
+        <div class="mb-0 align-self-center">
+          <a href="/meta" class="text-body-secondary link-plain">Meta</a>
+        </div>
+        <div class="mb-0 align-self-center">
+          <a href="/r-s-s" class="text-body-secondary link-plain">RSS</a>
+        </div>
+      </div>
+    </div>
+    <div class="hstack gap-3">
+      <div class="ms-auto"></div>
+      <div class="ig-main-content mb-0 align-self-center" style="width: 100%; max-width: 750px">
+        <h2 style="padding-bottom: 20px; line-height: 1.5">Blog posts tagged <a href="#" class="link-plain"><span class="fs-3 text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Jamstack</span></a></h2>
+        <div style="background-color: var(--bs-secondary-bg, #f8fafc); border-radius: 16px; border: 1.0px solid rgb(128 128 128 / 15%); box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px ; margin-bottom: 1.5em">
+          <div class="d-block d-md-none">
+            <div class="vstack">
+              <a href="/blog/nuxt-3-vs-sveltekit" class="mb-0 align-self-center"><img src="/images/nuxt-3-vs-sveltekit/cover.png" alt="Nuxt 3 logo vs the SvelteKit logo" class="img-fluid" style="border-radius: 16px; margin-bottom: 0.5em" /></a>
+              <div class="mb-0 align-self-center vstack" style="padding: 8px; padding-top: 12px; padding-left: 24px; padding-right: 24px">
+                <h5 class="mb-0 align-self-start" style="padding-bottom: 8px; font-weight: 600"><a href="/blog/nuxt-3-vs-sveltekit" class="text-body link-plain">Nuxt 3 vs SvelteKit</a></h5>
+                <p class="ig-text-small text-body-secondary mb-0 align-self-start" style="margin-bottom: 0.25em; line-height: 1.2">Choosing between Nuxt 3 and SvelteKit for ryantoken.com v3.</p>
+                <p class="ig-text-small text-body-secondary mb-0 align-self-start"><em>Oct 23, 2022</em></p>
+                <div class="mb-0 align-self-start">
+                  <div class="d-flex flex-wrap gap-2" style="padding-top: 16px">
+                    <a href="/tags/web" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Web</span></a>
+                    <a href="/tags/jamstack" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Jamstack</span></a>
+                    <a href="/tags/rewrite" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Rewrite</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-md-flex">
+            <div class="align-items-stretch hstack gap-3">
+              <a href="/blog/nuxt-3-vs-sveltekit" class="mb-0 align-self-start"><img src="/images/nuxt-3-vs-sveltekit/cover.png" alt="Nuxt 3 logo vs the SvelteKit logo" class="img-fluid" style="max-height: 180px; border-radius: 16px" /></a>
+              <div class="d-flex flex-column h-100 mb-0 align-self-start vstack" style="padding: 8px; padding-top: 12px; padding-left: 24px; padding-right: 24px; min-width: 0px">
+                <h5 class="mb-0 align-self-start" style="padding-bottom: 8px; font-weight: 600"><a href="/blog/nuxt-3-vs-sveltekit" class="text-body link-plain">Nuxt 3 vs SvelteKit</a></h5>
+                <p class="ig-text-small text-body-secondary mb-0 align-self-start" style="margin-bottom: 0.25em; line-height: 1.2">Choosing between Nuxt 3 and SvelteKit for ryantoken.com v3.</p>
+                <p class="ig-text-small text-body-secondary mb-0 align-self-start"><em>Oct 23, 2022</em></p>
+                <div class="mt-auto mb-0 align-self-start">
+                  <div class="d-flex flex-wrap gap-2" style="padding-top: 16px">
+                    <a href="/tags/web" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Web</span></a>
+                    <a href="/tags/jamstack" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Jamstack</span></a>
+                    <a href="/tags/rewrite" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Rewrite</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-color: var(--bs-secondary-bg, #f8fafc); border-radius: 16px; border: 1.0px solid rgb(128 128 128 / 15%); box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px ; margin-bottom: 1.5em">
+          <div class="d-block d-md-none">
+            <div class="vstack">
+              <a href="/blog/rocking-with-the-jamstack" class="mb-0 align-self-center"><img src="/images/rocking-with-the-jamstack/cover.png" alt="The Jamstack logo" class="img-fluid" style="border-radius: 16px; margin-bottom: 0.5em" /></a>
+              <div class="mb-0 align-self-center vstack" style="padding: 8px; padding-top: 12px; padding-left: 24px; padding-right: 24px">
+                <h5 class="mb-0 align-self-start" style="padding-bottom: 8px; font-weight: 600"><a href="/blog/rocking-with-the-jamstack" class="text-body link-plain">Rocking with the Jamstack</a></h5>
+                <p class="ig-text-small text-body-secondary mb-0 align-self-start" style="margin-bottom: 0.25em; line-height: 1.2">Diving into the Jamstack, and loving every minute of it.</p>
+                <p class="ig-text-small text-body-secondary mb-0 align-self-start"><em>Feb 20, 2021</em></p>
+                <div class="mb-0 align-self-start">
+                  <div class="d-flex flex-wrap gap-2" style="padding-top: 16px">
+                    <a href="/tags/web" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Web</span></a>
+                    <a href="/tags/jamstack" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Jamstack</span></a>
+                    <a href="/tags/serverless" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Serverless</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-md-flex">
+            <div class="align-items-stretch hstack gap-3">
+              <a href="/blog/rocking-with-the-jamstack" class="mb-0 align-self-start"><img src="/images/rocking-with-the-jamstack/cover.png" alt="The Jamstack logo" class="img-fluid" style="max-height: 180px; border-radius: 16px" /></a>
+              <div class="d-flex flex-column h-100 mb-0 align-self-start vstack" style="padding: 8px; padding-top: 12px; padding-left: 24px; padding-right: 24px; min-width: 0px">
+                <h5 class="mb-0 align-self-start" style="padding-bottom: 8px; font-weight: 600"><a href="/blog/rocking-with-the-jamstack" class="text-body link-plain">Rocking with the Jamstack</a></h5>
+                <p class="ig-text-small text-body-secondary mb-0 align-self-start" style="margin-bottom: 0.25em; line-height: 1.2">Diving into the Jamstack, and loving every minute of it.</p>
+                <p class="ig-text-small text-body-secondary mb-0 align-self-start"><em>Feb 20, 2021</em></p>
+                <div class="mt-auto mb-0 align-self-start">
+                  <div class="d-flex flex-wrap gap-2" style="padding-top: 16px">
+                    <a href="/tags/web" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Web</span></a>
+                    <a href="/tags/jamstack" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Jamstack</span></a>
+                    <a href="/tags/serverless" class="link-plain"><span class="ig-text-xSmall text-primary" style="font-weight: 500; background-color: rgb(0 0 255 / 10%); padding-left: 0.75em; padding-right: 0.75em; padding-top: 0.4em; padding-bottom: 0.4em; border-radius: 6px; margin-bottom: 0.25em">Serverless</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ms-auto"></div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/ignite-core.js"></script>
+  </body>
+</html>

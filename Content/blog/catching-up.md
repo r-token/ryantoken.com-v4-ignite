@@ -3,7 +3,7 @@ author: Ryan Token
 title: Catching Up
 subtitle: Modernizing CatchUp with SwiftUI and cleaner code.
 date: 2020-05-08
-tags: iOS, Swift, SwiftUI, Rewrite
+tags: ios, swift, swiftui, rewrite
 published: true
 image: /images/catching-up/catchup-icon.png
 alt: CatchUp's app icon

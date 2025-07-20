@@ -30,6 +30,8 @@ struct RyanTokenSite: Site {
     var author = "Ryan Token"
 
     var homePage = Home()
+    var tagPage = Tags()
+
     var layout = MainLayout()
     var lightTheme: (any Theme)? = LightTheme()
     var darkTheme: (any Theme)? = DarkTheme()

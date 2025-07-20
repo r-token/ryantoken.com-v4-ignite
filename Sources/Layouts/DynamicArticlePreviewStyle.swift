@@ -98,7 +98,7 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                 Section {
                     Section {
                         ForEach(tags) { tag in
-                            Badge(name: tag, size: .xSmall, path: "/blog/tags/\(tag)")
+                            Badge(name: TagFormatter.format(tag), size: .xSmall, path: "/tags/\(tag)")
                         }
                     }
                     .class("d-flex flex-wrap gap-2") // Enable wrapping with gap

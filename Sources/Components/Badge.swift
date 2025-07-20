@@ -7,12 +7,12 @@
 
 import Ignite
 
-struct Badge: HTML {
+struct Badge: InlineElement {
     let name: String
     let size: Font.Style
     let path: String
 
-    var body: some HTML {
+    var body: some InlineElement {
         Link(
             Span(name)
                 .font(size)
@@ -22,7 +22,7 @@ struct Badge: HTML {
                 .padding(.horizontal, .em(0.75))
                 .padding(.vertical, .em(0.4))
                 .cornerRadius(6)
-                .margin(.bottom, .em(0.25)), // Add bottom margin for wrapped lines
+                .margin(.bottom, .em(0.25)),
             target: path
         )
         .role(.none)

@@ -3,7 +3,7 @@ author: Ryan Token
 title: Learning WebRTC
 subtitle: Explaining WebRTC to myself and others.
 date: 2021-03-07
-tags: Web, WebRTC
+tags: web, webrtc
 published: true
 image: /images/learning-webrtc/cover.png
 alt: The WebRTC logo

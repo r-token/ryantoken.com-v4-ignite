@@ -8,7 +8,7 @@
 import Ignite
 
 struct Projects: StaticPage {
-    var title = "Projects"
+    var title = "Ryan Token - Projects"
     var description = "The non-app projects Ryan has worked on, including Serverless Swift, The Golden Hurricast, Eagle Crest STL, and Dashing Through the 'Ville"
 
     var body: some HTML {

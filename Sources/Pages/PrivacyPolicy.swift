@@ -8,7 +8,7 @@
 import Ignite
 
 struct PrivacyPolicy: StaticPage {
-    var title = "Privacy Policy"
+    var title = "Ryan Token - Privacy Policy"
     var description = "Privacy Policy for Ryan Token's apps"
 
     var body: some HTML {

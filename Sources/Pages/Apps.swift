@@ -8,7 +8,7 @@
 import Ignite
 
 struct Apps: StaticPage {
-    var title = "Apps"
+    var title = "Ryan Token - Apps"
     var description = "The apps Ryan makes, including Daysheets, CatchUp, Outrank, Hot Local Food, and Chat by Storyboard."
 
     var body: some HTML {

@@ -8,7 +8,7 @@
 import Ignite
 
 struct About: StaticPage {
-    var title = "About"
+    var title = "Ryan Token - About"
     var description = "About Ryan"
 
     var body: some HTML {

@@ -23,7 +23,6 @@ struct IgniteWebsite {
 
 struct RyanTokenSite: Site {
     var name = "Ryan Token"
-    var titleSuffix = " - Ryan Token"
     var url = URL(static: "https://www.ryantoken.com")
     var builtInIconsEnabled = true
 

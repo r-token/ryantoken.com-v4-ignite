@@ -8,7 +8,8 @@
 import Ignite
 
 struct Apps: StaticPage {
-    let title = "Apps"
+    var title = "Apps"
+    var description = "The apps Ryan makes, including Daysheets, CatchUp, Outrank, Hot Local Food, and Chat by Storyboard."
 
     var body: some HTML {
         HeaderText("Apps", size: .h2)

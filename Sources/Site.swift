@@ -39,6 +39,8 @@ struct RyanTokenSite: Site {
     var feedConfiguration = FeedConfiguration(mode: .full, contentCount: 1000, path: "/feed.rss")
     var syntaxHighlighterConfiguration: SyntaxHighlighterConfiguration = .init(languages: [.swift])
 
+    var favicon: URL? { URL(static: "/favicon/favicon.ico") }
+
     var staticPages: [any StaticPage] {
         About()
         Apps()

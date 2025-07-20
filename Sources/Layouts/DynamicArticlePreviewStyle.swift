@@ -78,19 +78,21 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                     .foregroundStyle(.body)
             }
             .padding(.bottom, 8)
-            .font(.title5)
+            .font(.title4)
             .fontWeight(.semibold)
 
             if let subtitle = article.subtitle {
                 Text(subtitle)
-                    .font(.small)
+                    .font(.title6)
+                    .fontWeight(.regular)
                     .foregroundStyle(.secondary)
-                    .margin(.bottom, .em(0.25))
+                    .padding(.bottom, 8)
                     .lineSpacing(1.25)
             }
 
             Text(markdown: "*\(article.date.formatted(date: .abbreviated, time: .omitted))*")
-                .font(.small)
+                .font(.title6)
+                .fontWeight(.regular)
                 .foregroundStyle(.secondary)
 
             // Tags - wrapped in Section to apply Bootstrap classes

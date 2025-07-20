@@ -13,7 +13,7 @@ struct Home: StaticPage {
     let title = "Home"
 
     var body: some HTML {
-        HeaderText("Hi, I'm Ryan", size: .h1)
+        HeaderText("Hi, I'm Ryan", size: .h2)
             .padding(.bottom, 4)
 
         Text {

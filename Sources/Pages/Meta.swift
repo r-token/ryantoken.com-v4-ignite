@@ -5,12 +5,10 @@
 //  Created by Ryan Token on 7/15/25.
 //
 
-import Foundation
 import Ignite
 
 struct Meta: StaticPage {
     let title = "Meta"
-    let year = Calendar.current.component(.year, from: Date())
 
     var body: some HTML {
         HeaderText("Meta", size: .h2)
@@ -31,9 +29,6 @@ struct Meta: StaticPage {
         Text(markdown: "Previous versions of the site were built with [Svelte](https://svelte.dev/), [Tailwind](https://tailwindcss.com), [Publish](https://github.com/johnsundell/publish), [Netlify](https://www.netlify.com), and others.")
 
         Text(markdown: "*Subscribe to my RSS feed*")
-            .foregroundStyle(.secondary)
-
-        Text(markdown: "*© 2025 Ryan Token*")
             .foregroundStyle(.secondary)
     }
 }

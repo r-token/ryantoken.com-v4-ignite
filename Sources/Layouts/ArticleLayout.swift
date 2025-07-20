@@ -25,7 +25,7 @@ struct ArticleLayout: ArticlePage {
                 .foregroundStyle(.secondary)
 
             Divider()
-                .padding(.bottom, 36)
+                .padding(.bottom, 8)
 
             if let image = article.image {
                 Image(image, description: article.imageDescription)

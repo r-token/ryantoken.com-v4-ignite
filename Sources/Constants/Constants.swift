@@ -9,7 +9,7 @@ import Foundation
 
 struct Constants {
     // MARK: DIMENSIONS
-    static let appIconMaxWidth = 200
+    static let appIconMaxWidth = 150
     static let defaultImageMaxWidth = 250
     
     // MARK: SOCIAL URLS
@@ -25,7 +25,9 @@ struct Constants {
     static let outrankAppUrl = "https://apps.apple.com/us/app/outrank/id1588983785"
     static let hotLocalFoodAppUrl = "https://apps.apple.com/us/app/hot-local-food/id1621818779"
     static let hotLocalFoodMarketingUrl = "https://www.hotlocalfood.app"
+    static let storyboardAppUrl = "https://apps.apple.com/us/app/chat-by-storyboard/id1662743814"
 
     // MARK: PROJECT URLS
     static let hurricastWebUrl = "https://www.thegoldenhurricast.com"
+    static let daysheetsWebUrl = "https://www.daysheets.com"
 }

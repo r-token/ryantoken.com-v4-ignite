@@ -19,6 +19,8 @@ My decision to switch gears has less to do with leaving Storyboard and much more
 
 First, what is Daysheets? The short version is software to solve tour and production management for artists and their tour managers.
 
+![Daysheets marketing image featuring the iOS and macOS apps](/images/daysheets/daysheets.webp)
+
 As mentioned at the top, a day sheet is a music industry term for a physical sheet of paper that tour managers slide under the doors of the artists and touring party every day of a tour detailing that day's itinerary. The core Daysheets product is exactly that, but enhanced by software and AI, and accessible across your devices. It's sleek, modern, mobile-friendly, and growing fast.
 
 But it doesn't stop there. Daysheets is expanding into [travel](https://www.daysheets.travel) - think flight coordination, hotel bookings, and bus routes. Planning all of that for every leg of a tour is a nightmare for tour managers and travel agents. There is so much opportunity to streamline this for the industry.

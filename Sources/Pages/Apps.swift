@@ -14,17 +14,71 @@ struct Apps: StaticPage {
         HeaderText("Apps", size: .h2)
         SubheaderText("The apps I make. You can support my work on [Patreon](https://patreon.com/thegoldenhurricast) or [Buy Me a Coffee](https://www.buymeacoffee.com/ryantoken).")
 
-        ImageWithLink(
-            imagePath: "/images/bmc-button.png",
-            imageDescription: "A button that links to the Buy Me a Coffee website.",
-            url: "https://www.buymeacoffee.com/ryantoken"
-        )
-        .frame(maxWidth: Constants.defaultImageMaxWidth)
-        .margin(.bottom, -16)
+        Grid(alignment: .leading) {
+            ImageWithLink(
+                imagePath: "/images/daysheets/daysheets-logo.png",
+                imageDescription: "Daysheets' app icon",
+                imageType: .appIcon,
+                url: Constants.daysheetsWebUrl
+            )
+            ImageWithLink(
+                imagePath: "/images/catching-up/catchup-icon.png",
+                imageDescription: "CatchUp's app icon",
+                imageType: .appIcon,
+                url: Constants.catchUpAppUrl
+            )
+            ImageWithLink(
+                imagePath: "/images/outrank/outrank-icon.png",
+                imageDescription: "Outrank's app icon",
+                imageType: .appIcon,
+                url: Constants.outrankAppUrl
+            )
+            ImageWithLink(
+                imagePath: "/images/hot-local-food/hlf-icon-square.png",
+                imageDescription: "Hot Local Food's app icon",
+                imageType: .appIcon,
+                url: Constants.hotLocalFoodAppUrl
+            )
+            ImageWithLink(
+                imagePath: "/images/storyboard/chat-app-icon.png",
+                imageDescription: "Chat by Storyboard's app icon",
+                imageType: .appIcon,
+                url: Constants.storyboardAppUrl
+            )
+        }
+        .margin(.vertical, -16)
 
         DividerWithMargin()
 
-        HeaderText("CatchUp", size: .h3)
+        HStack {
+            HeaderText("Daysheets", size: .h3)
+            SubheaderText("(2025 - Present)")
+        }
+
+        ImageWithLink(
+            imagePath: "/images/daysheets/daysheets-logo.png",
+            imageDescription: "The app icon for Daysheets",
+            imageType: .appIcon,
+            url: Constants.daysheetsWebUrl
+        )
+        .frame(maxWidth: Constants.appIconMaxWidth)
+
+        Text(markdown: "[Daysheets](\(Constants.daysheetsWebUrl)) works across Apple platforms to help tour managers and coordinators plan, operate, and collaborate on medium and large-scale music tours.")
+
+        ImageWithLink(
+            imagePath: "/images/daysheets/daysheets.webp",
+            imageDescription: "Daysheets marketing image that shows the iOS and macOS apps.",
+            url: Constants.daysheetsWebUrl
+        )
+
+        Text(markdown: "The iOS and macOS apps were developed for Daysheets, Inc. using Swift, SwiftUI, Core Data, and a Swift Package that encompasses shared functionality between platforms.")
+
+        DividerWithMargin()
+
+        HStack {
+            HeaderText("CatchUp", size: .h3)
+            SubheaderText("(2018 - Present)")
+        }
 
         ImageWithLink(
             imagePath: "/images/catching-up/catchup-icon.png",
@@ -62,7 +116,10 @@ struct Apps: StaticPage {
 
         DividerWithMargin()
 
-        HeaderText("Outrank", size: .h3)
+        HStack {
+            HeaderText("Outrank", size: .h3)
+            SubheaderText("(2021 - Present)")
+        }
 
         ImageWithLink(
             imagePath: "/images/outrank/outrank-icon.png",
@@ -106,7 +163,10 @@ struct Apps: StaticPage {
 
         DividerWithMargin()
 
-        HeaderText("Hot Local Food", size: .h3)
+        HStack {
+            HeaderText("Hot Local Food", size: .h3)
+            SubheaderText("(2023 - Present)")
+        }
 
         ImageWithLink(
             imagePath: "/images/hot-local-food/hlf-icon-square.png",
@@ -142,5 +202,26 @@ struct Apps: StaticPage {
         Text(markdown: "You can follow Hot Local Food on [X](https://x.com/hotlocalfood), check out its [marketing website](\(Constants.hotLocalFoodMarketingUrl)), or read my [blog post](/blog/hot-local-food) about building it.")
 
         Include("download-hot-local-food.html")
+
+        DividerWithMargin()
+
+        HStack {
+            HeaderText("Chat by Storyboard", size: .h3)
+            SubheaderText("(2023 - 2025)")
+        }
+
+        ImageWithLink(
+            imagePath: "/images/storyboard/chat-app-icon.png",
+            imageDescription: "The app icon for Chat by Storyboard",
+            imageType: .appIcon,
+            url: Constants.storyboardAppUrl
+        )
+        .frame(maxWidth: Constants.appIconMaxWidth)
+
+        Text(markdown: "[Chat by Storyboard](\(Constants.storyboardAppUrl)) is an AI-powered, hands-free voice messaging app for truckers. It’s a game-changer for the trucking industry, and I’m proud to have been a core part of its development.")
+
+        Text(markdown: "I built the native iOS app myself with Swift, SwiftUI, Swift Concurrency, Core Audio, App Intents, SQLite & more")
+
+        Include("download-chat-by-storyboard.html")
     }
 }

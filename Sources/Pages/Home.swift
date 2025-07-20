@@ -22,7 +22,7 @@ struct Home: StaticPage {
             " developer who loves building for Apple platforms and beyond. By "
             Link("day", target: "https://ryan-token-cv-prod.s3.us-east-2.amazonaws.com/Ryan+Token+CV.pdf")
             ", I'm a senior software engineer at "
-            Link("Daysheets", target: "https://www.daysheets.com/")
+            Link("Daysheets", target: Constants.daysheetsWebUrl)
             ". By night, I make apps ("
 
             Link(target: Constants.catchUpAppUrl) {

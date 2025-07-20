@@ -24,8 +24,7 @@ struct ArticleLayout: ArticlePage {
             Text(markdown: "*\(article.estimatedWordCount) words; \(article.estimatedReadingMinutes) minutes to read.*")
                 .foregroundStyle(.secondary)
 
-            Divider()
-                .padding(.bottom, 8)
+            DividerWithMargin()
 
             if let image = article.image {
                 Image(image, description: article.imageDescription)
@@ -38,6 +37,5 @@ struct ArticleLayout: ArticlePage {
                 .padding(.top, 36)
                 .class("article-content")
         }
-        .frame(maxWidth: 600)
     }
 }

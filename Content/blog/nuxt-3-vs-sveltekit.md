@@ -58,7 +58,7 @@ Despite those hurdles, I've sincerely enjoyed the developer experience of buildi
 Things like this from Nuxt 2:
 
 ```html
-<script>
+&lt;script&gt;
 export default {
   data() {
     return {
@@ -71,16 +71,16 @@ export default {
     }
   }
 }
-</script>
+&lt;/script&gt;
 ```
 
 Turn into this with Nuxt 3:
 
 ```html
-<script setup>
+&lt;script setup&gt;
   const count = ref(0)
-  const increment = () => count.value++
-</script>
+  const increment = () =&gt; count.value++
+&lt;/script&gt;
 ```
 
 So much nicer. Additionally, one of the primary reasons I wanted to use Nuxt 3 was to take advantage of the [Nuxt Content](https://content.nuxtjs.org/) rewrite - which is their content engine and what I use to generate the blog.
@@ -117,7 +117,7 @@ This component in particular styled the URL a certain way though, so it would al
 **Edit**: [@manutopik](https://twitter.com/manutopik/status/1584906534408130562?s=20&t=NG2MIaY9tREYnsNubMl7nw) informed me on Twitter that "standard" component syntax works as well! So this is also appropriate MDC syntax:
 
 ```js
-<ResizableBlogImage src="/path/to-image.png" altText="Some alt text"></ResizableBlogImage>
+&lt;ResizableBlogImage src="/path/to-image.png" altText="Some alt text"&gt;&lt;/ResizableBlogImage&gt;
 ```
 
 Additionally, Sébastien Chopin, the author of Nuxt, [let me know on Twitter](https://twitter.com/Atinux/status/1584928666748096513?s=20&t=NG2MIaY9tREYnsNubMl7nw) that the inline component issue with punctuation should be fixed very soon.
@@ -142,7 +142,7 @@ For example, React and Vue both use what's called the "[virtual DOM](https://rea
 
 Svelte rejects the entire idea of the virtual DOM and extra state management libraries.
 
-> Unlike traditional UI frameworks, Svelte is a compiler that knows at build time how things could change in your app, rather than waiting to do the work at run time.
+&gt; Unlike traditional UI frameworks, Svelte is a compiler that knows at build time how things could change in your app, rather than waiting to do the work at run time.
 
 *– [svelte.dev](https://svelte.dev/blog/virtual-dom-is-pure-overhead)*
 
@@ -173,7 +173,7 @@ Additionally, mdsvex is **not** an officially sanctioned, first-party "component
 Here's how you use components in markdown with mdsvex:
 
 ```html
-<ResizableImage src="/path/to-image.png" altText="Some alt text" />
+&lt;ResizableImage src="/path/to-image.png" altText="Some alt text" /&gt;
 ```
 
 Look at that! So straightforward. You use it just like every other Svelte component in any other Svelte file.
@@ -210,54 +210,54 @@ Here's a simplified implementation of the Topbar component in Vue 3:
 
 *Topbar.vue*
 
-```js
-<script setup>
+```html
+&lt;script setup&gt;
   import IconShowSidebar from '~icons/zondicons/show-sidebar'
   
   const emit = defineEmits(["toggleSidebar", "updateSelectedPageFromTopbar"])
-  const toggleSidebar = () => emit("toggleSidebar", true)
-  const updateSelectedPage = () => emit("updateSelectedPageFromTopbar", "index")
-</script>
+  const toggleSidebar = () =&gt; emit("toggleSidebar", true)
+  const updateSelectedPage = () =&gt; emit("updateSelectedPageFromTopbar", "index")
+&lt;/script&gt;
 
-<Template>
-  <div>
-    <button 
+&lt;Template&gt;
+  &lt;div&gt;
+    &lt;button 
       @click='toggleSidebar'
       type="button" 
       value="Open sidebar"
-    >
-      <icon-show-sidebar />
-    </button>
+    &gt;
+      &lt;icon-show-sidebar /&gt;
+    &lt;/button&gt;
 
-    <NuxtLink to="/" @click="updateSelectedPage">Ryan Token</NuxtLink>
-  </div>
-</template>
+    &lt;NuxtLink to="/" @click="updateSelectedPage"&gt;Ryan Token&lt;/NuxtLink&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 ```
 
 And here it is in Svelte:
 
 *Topbar.svelte*
 ```html
-<script>
+&lt;script&gt;
   import { SidebarIcon } from 'svelte-feather-icons'
   export let open
   export let currentPage
   
-  const toggleSidebar = () => open = true
-  const updateSelectedPage = () => currentPage = 'index'
-</script>
+  const toggleSidebar = () =&gt; open = true
+  const updateSelectedPage = () =&gt; currentPage = 'index'
+&lt;/script&gt;
 
-<div>
-  <button 
+&lt;div&gt;
+  &lt;button 
     on:click={toggleSidebar}
     type="button"
     value="Open sidebar"
-  >
-    <SidebarIcon />
-  </button>
+  &gt;
+    &lt;SidebarIcon /&gt;
+  &lt;/button&gt;
 
-  <a href="/" on:click={updateSelectedPage}>Ryan Token</a>
-</div>
+  &lt;a href="/" on:click={updateSelectedPage}&gt;Ryan Token&lt;/a&gt;
+&lt;/div&gt;
 ```
 
 The Topbar component and the Sidebar component are rendered at the same level in the component hierarchy - one is not a child of the other. However, the Sidebar needs to react to changes in the Topbar's state. As mentioned, when a user taps the "toggle sidebar" icon in the Topbar, it should open/close the Sidebar.
@@ -265,24 +265,24 @@ The Topbar component and the Sidebar component are rendered at the same level in
 For reference, here's a simplified version of the parent component that renders both the Sidebar and the Topbar:
 
 ```html
-<script>
+&lt;script&gt;
   import Sidebar from '$lib/components/Sidebar.svelte'
   import Topbar from '$lib/components/Topbar.svelte'
   export let data
 
   let sidebarOpened = false
   let currentPage = $page.url.pathname
-</script>
+&lt;/script&gt;
 
-<div>
-  <Sidebar openedStatus={sidebarOpened} currentPage={currentPage} />
-  <div>
-    <Topbar sidebarOpen={sidebarOpened} currentPage={currentPage} />
-    <main>
-      <slot />
-    </main>
-  </div>
-</div>
+&lt;div&gt;
+  &lt;Sidebar openedStatus={sidebarOpened} currentPage={currentPage} /&gt;
+  &lt;div&gt;
+    &lt;Topbar sidebarOpen={sidebarOpened} currentPage={currentPage} /&gt;
+    &lt;main&gt;
+      &lt;slot /&gt;
+    &lt;/main&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 ```
 
 A change in the Topbar's `sidebarOpen` state needs to be bubbled up to its parent component, then forwarded on to the Sidebar component so the Sidebar knows whether it should open itself, close itself, or do nothing.
@@ -291,7 +291,7 @@ Props are typically sent *from* a parent component *to* a child component. Sendi
 
 Vue uses the concept of [emits](https://vuejs.org/guide/components/events.html#emitting-and-listening-to-events) to send messages from a child to its parent.
 
-Svelte uses [two-way data bindings](https://svelte.dev/repl/e6f91174592d45c78f4701b2d311b62e?version=3.29.4) instead. In the parent component, I can pass the value of the Topbar's `open` prop to the Sidebar with the `bind` keyword like so: `<Sidebar bind:open={sidebarOpened} />`
+Svelte uses [two-way data bindings](https://svelte.dev/repl/e6f91174592d45c78f4701b2d311b62e?version=3.29.4) instead. In the parent component, I can pass the value of the Topbar's `open` prop to the Sidebar with the `bind` keyword like so: `&lt;Sidebar bind:open={sidebarOpened} /&gt;`
 
 Personally, I found Svelte's approach to be more straightforward than needing to `emit` an event and then set up an event listener that reacts to that. Neither approach was overly complex, but Svelte's felt more natural to me.
 
@@ -306,7 +306,7 @@ The BlogPreview component is the responsive card that shows each blog post's pri
 Here's a simplified implementation of it in Vue 3:
 
 ```html
-<script setup>
+&lt;script setup&gt;
   const props = defineProps({
     slug: String,
     title: String,
@@ -323,79 +323,79 @@ Here's a simplified implementation of it in Vue 3:
     })
   }
 
-  const formattedDate = computed(() => {
+  const formattedDate = computed(() =&gt; {
     const isoDate = props.date
     const dateString = new Date(isoDate.replace(/-/g, '\/').replace(/T.+/, ''))
     const conciseDate = dateString.toLocaleDateString()
     return conciseDate
   })
-</script>
+&lt;/script&gt;
 
-<template>
-  <div>
-    <div @click="navigate(slug)">
-      <div>
-        <div>
-          <img :src="image" :alt="imageAlt" />
-        </div>
+&lt;template&gt;
+  &lt;div&gt;
+    &lt;div @click="navigate(slug)"&gt;
+      &lt;div&gt;
+        &lt;div&gt;
+          &lt;img :src="image" :alt="imageAlt" /&gt;
+        &lt;/div&gt;
 
-        <div>
-          <p>{{ title }}</p>
-          <p>{{ description }}</p>
-          <p>{{ formattedDate }}</p>
-          <div>
-            <div v-for="tag in tags" :key="tag">
-              <NuxtLink :to="'/tags/' + tag" @click.stop="navigate(`/tags/${tag}`)">
+        &lt;div&gt;
+          &lt;p&gt;{{ title }}&lt;/p&gt;
+          &lt;p&gt;{{ description }}&lt;/p&gt;
+          &lt;p&gt;{{ formattedDate }}&lt;/p&gt;
+          &lt;div&gt;
+            &lt;div v-for="tag in tags" :key="tag"&gt;
+              &lt;NuxtLink :to="'/tags/' + tag" @click.stop="navigate(`/tags/${tag}`)"&gt;
                 {{ tag }}
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
+              &lt;/NuxtLink&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 ```
 
 And here's how it looks in Svelte:
 
 ```html
-<script>
+&lt;script&gt;
   import { goto } from '$app/navigation'
   export let slug, title, description, date, image, imageAlt, tags
 
-  const formattedDate = () => {
+  const formattedDate = () =&gt; {
     const isoDate = date
     const dateString = new Date(isoDate.replace(/-/g, '\/').replace(/T.+/, ''))
     const conciseDate = dateString.toLocaleDateString()
     return conciseDate
   }
-</script>
+&lt;/script&gt;
 
-<div>
-  <div on:click={() => goto(slug)}>
-    <div>
-      <div>
-        <img src={image} alt={imageAlt} loading="lazy" decoding="async" />
-      </div>
+&lt;div&gt;
+  &lt;div on:click={() =&gt; goto(slug)}&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        &lt;img src={image} alt={imageAlt} loading="lazy" decoding="async" /&gt;
+      &lt;/div&gt;
 
-      <div>
-        <p>{ title }</p>
-        <p>{ description }</p>
-        <p>{ formattedDate() }</p>
-        <div>
+      &lt;div&gt;
+        &lt;p&gt;{ title }&lt;/p&gt;
+        &lt;p&gt;{ description }&lt;/p&gt;
+        &lt;p&gt;{ formattedDate() }&lt;/p&gt;
+        &lt;div&gt;
           {#each tags as tag (tag)}
-            <div>
-              <a href="/blog/tags/{tag}">
+            &lt;div&gt;
+              &lt;a href="/blog/tags/{tag}"&gt;
                 { tag }
-              </a>
-            </div>
+              &lt;/a&gt;
+            &lt;/div&gt;
           {/each}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 ```
 
 The main difference to outline here is how each framework handles a `for-each` loop within the HTML. For this component, we want to loop through an array of tags. For each tag in the array, we need to render out the name of the tag and a link to it.
@@ -420,7 +420,7 @@ Here's how you use a block component, like a resizable image, with Vue and MDC:
 And here's how you do the same thing with Svelte and mdsvex:
 
 ```html
-<ResizableImage src="/path/to-image.png" altText="Some alt text" />
+&lt;ResizableImage src="/path/to-image.png" altText="Some alt text" /&gt;
 ```
 
 Again, neither are *bad*, but one of them makes more sense and is more concise. And that, to me, is the Svelte solution.

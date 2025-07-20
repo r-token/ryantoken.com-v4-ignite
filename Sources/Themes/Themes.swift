@@ -15,6 +15,7 @@ extension BaseTheme {
 
     var font: Font { .avenirNext }
     var monospaceFont: Font { .menlo }
+    var codeBlockFontSize: LengthUnit { .px(16) }
     var inlineCodeFontSize: LengthUnit { .px(16) }
 
     var h1Size: ResponsiveValues { .init(LengthUnit.px(32)) }  // 1.78x

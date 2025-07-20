@@ -349,6 +349,7 @@ div.alert p:last-child {
     --bs-font-monospace: Menlo;
     --bs-body-font-family: Avenir Next;
     --bs-code-font-size: 16px;
+    --code-block-font-size: 16px;
     --bs-body-font-size: 18px;
     --bs-h1-font-size: 32px;
     --bs-h2-font-size: 28px;
@@ -904,6 +905,7 @@ code, pre {
     --bs-font-monospace: Menlo;
     --bs-body-font-family: Avenir Next;
     --bs-code-font-size: 16px;
+    --code-block-font-size: 16px;
     --bs-body-font-size: 18px;
     --bs-h1-font-size: 32px;
     --bs-h2-font-size: 28px;
@@ -984,6 +986,7 @@ code, pre {
     --bs-font-monospace: Menlo;
     --bs-body-font-family: Avenir Next;
     --bs-code-font-size: 16px;
+    --code-block-font-size: 16px;
     --bs-body-font-size: 18px;
     --bs-h1-font-size: 32px;
     --bs-h2-font-size: 28px;

@@ -36,6 +36,8 @@ struct RyanTokenSite: Site {
     var lightTheme: (any Theme)? = LightTheme()
     var darkTheme: (any Theme)? = DarkTheme()
 
+    var feedConfiguration = FeedConfiguration(mode: .full, contentCount: 1000, path: "/feed.rss")
+
     var staticPages: [any StaticPage] {
         About()
         Apps()
@@ -44,7 +46,6 @@ struct RyanTokenSite: Site {
         Meta()
         PrivacyPolicy()
         Projects()
-        RSS()
         TermsOfUse()
     }
 

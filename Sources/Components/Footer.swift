@@ -13,7 +13,7 @@ struct Footer: HTML {
     
     var body: some HTML {
         VStack(spacing: 8) {
-            Text(markdown: "*© 2025 Ryan Token*")
+            Text(markdown: "*© 2025 Ryan Token – [RSS](/feed.rss)*")
                 .foregroundStyle(.secondary)
             SocialsBar()
         }

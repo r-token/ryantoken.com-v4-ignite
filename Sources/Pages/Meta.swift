@@ -27,8 +27,5 @@ struct Meta: StaticPage {
         Text(markdown: "The source code and README for this site are on [GitHub](https://github.com/r-token/ryantoken.com-v4-ignite).")
 
         Text(markdown: "Previous versions of the site were built with [Svelte](https://svelte.dev/), [Tailwind](https://tailwindcss.com), [Publish](https://github.com/johnsundell/publish), [Netlify](https://www.netlify.com), and others.")
-
-        Text(markdown: "*Subscribe to my RSS feed*")
-            .foregroundStyle(.secondary)
     }
 }

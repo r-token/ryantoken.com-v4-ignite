@@ -15,7 +15,7 @@ struct NavBar: HTML {
             Link("Blog", target: Blog())
             Link("About", target: About())
             Link("Meta", target: Meta())
-            Link("RSS", target: RSS())
+            Link("RSS", target: "/feed.rss")
         } logo: {
             Span("Ryan Token")
                 .font(.title3)

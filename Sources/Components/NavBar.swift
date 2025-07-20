@@ -23,6 +23,6 @@ struct NavBar: HTML {
         }
         .navigationItemAlignment(.trailing)
         .position(.fixedTop)
-        .background(.ultraThinMaterial)
+        .background(.regularMaterial)
     }
 }

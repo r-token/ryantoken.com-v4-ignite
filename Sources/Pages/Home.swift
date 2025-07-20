@@ -61,5 +61,10 @@ struct Home: StaticPage {
 
         Badge(name: "All Blog Posts", size: .title5, path: "/blog")
             .padding(.top)
+
+        HeaderText("Latest podcast episodes", size: .h3)
+            .padding(.top, 64)
+
+        Include("hurricast-embed.html")
     }
 }

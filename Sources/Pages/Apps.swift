@@ -34,7 +34,7 @@ struct Apps: StaticPage {
         )
         .frame(maxWidth: Constants.appIconMaxWidth)
 
-        Text(markdown: "**Featured on Brett Terpstra's Systematic Podcast as one of his 'Top 3' picks (around 46:21)*")
+        Text(markdown: "**Featured on Brett Terpstra's [Systematic](https://systematicpod.com/ep/218) Podcast as one of his 'Top 3' picks (around 46:21)*")
             .foregroundStyle(.secondary)
 
         Text(markdown: "My first public-facing iOS app! CatchUp helps you stay in touch with the people who matter most. You can set reminders for the contacts you choose, and get notified when it's time to CatchUp with them again.")

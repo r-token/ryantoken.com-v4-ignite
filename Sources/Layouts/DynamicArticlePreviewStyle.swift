@@ -56,7 +56,7 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                     Link(
                         Image(image, description: article.imageDescription)
                             .resizable()
-                            .frame(maxHeight: 180)
+                            .frame(maxHeight: 160)
                             .cornerRadius(cornerRadius),
                         target: article.path
                     )
@@ -98,7 +98,7 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                 Section {
                     Section {
                         ForEach(tags) { tag in
-                            Badge(name: TagFormatter.format(tag), size: .xSmall, path: "/tags/\(tag)")
+                            Badge(name: TagFormatter.format(tag), size: .small, path: "/tags/\(tag)")
                         }
                     }
                     .class("d-flex flex-wrap gap-2") // Enable wrapping with gap

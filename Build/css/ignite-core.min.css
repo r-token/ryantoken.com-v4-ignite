@@ -278,6 +278,14 @@ div.alert p:last-child {
 }
 
 
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('/fonts/Avenir%20Next.ttc');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --bs-primary: rgb(99 102 241 / 100%);
     --bs-primary-rgb: 99, 102, 241;
@@ -334,12 +342,19 @@ div.alert p:last-child {
     --bs-tertiary-bg-rgb: 248, 249, 250;
     --bs-link-color: rgb(99 102 241 / 100%);
     --bs-link-color-rgb: 99, 102, 241;
-    --bs-link-hover-color: rgb(10 88 202 / 100%);
-    --bs-link-hover-color-rgb: 10, 88, 202;
+    --bs-link-hover-color: rgb(79 70 229 / 100%);
+    --bs-link-hover-color-rgb: 79, 70, 229;
     --bs-border-color: rgb(222 226 230 / 100%);
     --bs-border-color-rgb: 222, 226, 230;
+    --bs-font-monospace: Menlo;
+    --bs-body-font-family: Avenir Next;
     --bs-body-font-size: 18px;
-    --bs-h4-font-size: 18px;
+    --bs-h1-font-size: 32px;
+    --bs-h2-font-size: 28px;
+    --bs-h3-font-size: 22px;
+    --bs-h4-font-size: 20px;
+    --bs-h5-font-size: 18px;
+    --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
     --syntax-highlight-theme: "xcode-light";
 }
@@ -347,35 +362,60 @@ div.alert p:last-child {
 @media (min-width: 576px) {
     :root {
     --bs-body-font-size: 18px;
-    --bs-h4-font-size: 18px;
+    --bs-h1-font-size: 32px;
+    --bs-h2-font-size: 28px;
+    --bs-h3-font-size: 22px;
+    --bs-h4-font-size: 20px;
+    --bs-h5-font-size: 18px;
+    --bs-h6-font-size: 16px;
 }
 }
 
 @media (min-width: 768px) {
     :root {
     --bs-body-font-size: 18px;
-    --bs-h4-font-size: 18px;
+    --bs-h1-font-size: 32px;
+    --bs-h2-font-size: 28px;
+    --bs-h3-font-size: 22px;
+    --bs-h4-font-size: 20px;
+    --bs-h5-font-size: 18px;
+    --bs-h6-font-size: 16px;
 }
 }
 
 @media (min-width: 992px) {
     :root {
     --bs-body-font-size: 18px;
-    --bs-h4-font-size: 18px;
+    --bs-h1-font-size: 32px;
+    --bs-h2-font-size: 28px;
+    --bs-h3-font-size: 22px;
+    --bs-h4-font-size: 20px;
+    --bs-h5-font-size: 18px;
+    --bs-h6-font-size: 16px;
 }
 }
 
 @media (min-width: 1200px) {
     :root {
     --bs-body-font-size: 18px;
-    --bs-h4-font-size: 18px;
+    --bs-h1-font-size: 32px;
+    --bs-h2-font-size: 28px;
+    --bs-h3-font-size: 22px;
+    --bs-h4-font-size: 20px;
+    --bs-h5-font-size: 18px;
+    --bs-h6-font-size: 16px;
 }
 }
 
 @media (min-width: 1400px) {
     :root {
     --bs-body-font-size: 18px;
-    --bs-h4-font-size: 18px;
+    --bs-h1-font-size: 32px;
+    --bs-h2-font-size: 28px;
+    --bs-h3-font-size: 22px;
+    --bs-h4-font-size: 20px;
+    --bs-h5-font-size: 18px;
+    --bs-h6-font-size: 16px;
 }
 }
 
@@ -869,12 +909,19 @@ code, pre {
     --bs-tertiary-bg-rgb: 248, 249, 250;
     --bs-link-color: rgb(99 102 241 / 100%);
     --bs-link-color-rgb: 99, 102, 241;
-    --bs-link-hover-color: rgb(10 88 202 / 100%);
-    --bs-link-hover-color-rgb: 10, 88, 202;
+    --bs-link-hover-color: rgb(79 70 229 / 100%);
+    --bs-link-hover-color-rgb: 79, 70, 229;
     --bs-border-color: rgb(222 226 230 / 100%);
     --bs-border-color-rgb: 222, 226, 230;
+    --bs-font-monospace: Menlo;
+    --bs-body-font-family: Avenir Next;
     --bs-body-font-size: 18px;
-    --bs-h4-font-size: 18px;
+    --bs-h1-font-size: 32px;
+    --bs-h2-font-size: 28px;
+    --bs-h3-font-size: 22px;
+    --bs-h4-font-size: 20px;
+    --bs-h5-font-size: 18px;
+    --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
     --syntax-highlight-theme: "xcode-light";
 }
@@ -936,12 +983,19 @@ code, pre {
     --bs-tertiary-bg-rgb: 43, 48, 53;
     --bs-link-color: rgb(125 211 252 / 100%);
     --bs-link-color-rgb: 125, 211, 252;
-    --bs-link-hover-color: rgb(158 197 254 / 100%);
-    --bs-link-hover-color-rgb: 158, 197, 254;
+    --bs-link-hover-color: rgb(56 189 248 / 100%);
+    --bs-link-hover-color-rgb: 56, 189, 248;
     --bs-border-color: rgb(73 80 87 / 100%);
     --bs-border-color-rgb: 73, 80, 87;
+    --bs-font-monospace: Menlo;
+    --bs-body-font-family: Avenir Next;
     --bs-body-font-size: 18px;
-    --bs-h4-font-size: 18px;
+    --bs-h1-font-size: 32px;
+    --bs-h2-font-size: 28px;
+    --bs-h3-font-size: 22px;
+    --bs-h4-font-size: 20px;
+    --bs-h5-font-size: 18px;
+    --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
     --syntax-highlight-theme: "xcode-dark";
 }

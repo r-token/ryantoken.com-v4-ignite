@@ -16,7 +16,7 @@ struct SubheaderText: HTML {
 
     var body: some HTML {
         Text(markdown: "*\(text)*")
-            .font(.title4)
+            .font(.title5)
             .foregroundStyle(.secondary)
             .fontWeight(.regular)
             .lineSpacing(1.5)

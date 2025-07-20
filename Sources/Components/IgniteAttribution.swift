@@ -21,9 +21,6 @@ struct IgniteAttribution: HTML {
                 target: "https://github.com/twostraws/Ignite"
             )
             .target(.blank)
-            ". It's hosted on "
-            Link("Vercel", target: "https://vercel.com")
-            "."
         }
     }
 }

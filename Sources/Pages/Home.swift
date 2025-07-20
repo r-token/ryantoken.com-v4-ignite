@@ -28,8 +28,8 @@ struct Home: StaticPage {
             """
         )
 
-        HeaderText("Latest blog posts", size: .h2)
-            .padding(.top)
+        HeaderText("Latest blog posts", size: .h3)
+            .padding(.top, 8)
 
         ForEach(articles.all.sorted(by: \.date).suffix(4).reversed()) { article in
             ArticlePreview(for: article)

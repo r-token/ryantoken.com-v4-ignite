@@ -25,7 +25,6 @@ extension BaseTheme {
 
     var bodyFontSize: ResponsiveValues { .init(LengthUnit.px(18)) }
     var lineSpacing: LengthUnit { .em(1.5) }
-    var syntaxHighlighterTheme: HighlighterTheme { .solarizedLight }
 }
 
 // Values not set here default to stock light theme colors
@@ -38,6 +37,8 @@ struct LightTheme: BaseTheme {
     var secondaryBackground: Color { Color(hex: "#f8fafc") } // alabaster
     var link: Color { Color(hex: "#6366f1") } // blue ribbon
     var hoveredLink: Color { Color(hex: "#4f46e5") } // purple heart
+
+    var syntaxHighlighterTheme: HighlighterTheme { .xcodeLight }
 }
 
 // Values not set here default to stock dark theme colors
@@ -51,6 +52,8 @@ struct DarkTheme: BaseTheme {
     var secondaryBackground: Color { Color(hex: "#334155") } // pickled bluewood
     var link: Color { Color(hex: "#7dd3fc") } // malibu
     var hoveredLink: Color { Color(hex: "#38bdf8") } // picton blue
+
+    var syntaxHighlighterTheme: HighlighterTheme { .xcodeDark }
 }
 
 private extension Font {

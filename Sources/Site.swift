@@ -37,6 +37,7 @@ struct RyanTokenSite: Site {
     var darkTheme: (any Theme)? = DarkTheme()
 
     var feedConfiguration = FeedConfiguration(mode: .full, contentCount: 1000, path: "/feed.rss")
+    var syntaxHighlighterConfiguration: SyntaxHighlighterConfiguration = .init(languages: [.swift])
 
     var staticPages: [any StaticPage] {
         About()

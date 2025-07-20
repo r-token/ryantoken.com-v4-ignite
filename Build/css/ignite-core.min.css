@@ -360,7 +360,7 @@ div.alert p:last-child {
     --theme-container-lg: 750px;
     --theme-container-xl: 750px;
     --theme-container-xxl: 750px;
-    --syntax-highlight-theme: "solarized-light";
+    --syntax-highlight-theme: "xcode-light";
 }
 
 @media (min-width: 576px) {
@@ -913,7 +913,7 @@ code, pre {
     --theme-container-lg: 750px;
     --theme-container-xl: 750px;
     --theme-container-xxl: 750px;
-    --syntax-highlight-theme: "solarized-light";
+    --syntax-highlight-theme: "xcode-light";
 }
 
 [data-bs-theme="dark"] {
@@ -991,7 +991,7 @@ code, pre {
     --theme-container-lg: 750px;
     --theme-container-xl: 750px;
     --theme-container-xxl: 750px;
-    --syntax-highlight-theme: "solarized-light";
+    --syntax-highlight-theme: "xcode-dark";
 }
 
 

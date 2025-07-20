@@ -38,6 +38,5 @@ struct ArticleLayout: ArticlePage {
                 .padding(.top, 36)
         }
         .frame(maxWidth: 600)
-        .margin(.horizontal, .custom("auto"))
     }
 }

@@ -18,6 +18,5 @@ struct InlineAppIcon: InlineElement {
             .cornerRadius(5)
             .style(.display, "inline-block")
             .style(.verticalAlign, "middle")
-            .shadow(.black.opacity(0.15), radius: 2, x: 0, y: 1)
     }
 }

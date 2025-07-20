@@ -23,7 +23,8 @@ struct ImageWithLink: HTML {
                 .resizable()
                 .cornerRadius(.percent(Percentage(imageType == .generic ? 1 : 22)))
                 .margin(.top, 4)
-                .margin(.bottom, 16),
+                .margin(.bottom, 16)
+                .shadow(.black.opacity(imageType == .appIcon ? 0.15 : 0), radius: 6, x: 0, y: 4),
             target: url
         )
     }

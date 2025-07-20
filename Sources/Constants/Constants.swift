@@ -28,6 +28,7 @@ struct Constants {
     static let storyboardAppUrl = "https://apps.apple.com/us/app/chat-by-storyboard/id1662743814"
 
     // MARK: PROJECT URLS
+    static let hurricastPodUrl = "https://podcasts.apple.com/us/podcast/the-golden-hurricast/id1435008302"
     static let hurricastWebUrl = "https://www.thegoldenhurricast.com"
     static let daysheetsWebUrl = "https://www.daysheets.com"
 }

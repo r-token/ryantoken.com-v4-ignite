@@ -30,9 +30,10 @@ struct Projects: StaticPage {
         ImageWithLink(
             imagePath: "/images/serverless-swift/serverless-swift.png",
             imageDescription: "The blog cover icon for my Serverless Swift project",
+            imageType: .appIcon,
             url: "/blog/serverless-swift"
         )
-        .frame(maxWidth: Constants.defaultImageMaxWidth)
+        .frame(maxWidth: Constants.appIconMaxWidth)
 
         Text(markdown: "I built a serverless back-end system on AWS written entirely in Swift that remotely controls the Philips Hue bulbs in my house whenever my favorite sports teams score or win. It runs on AWS services including Lambda, DynamoDB, SQS, and EventBridge.")
 
@@ -41,6 +42,14 @@ struct Projects: StaticPage {
         DividerWithMargin()
 
         HeaderText("The Golden Hurricast", size: .h3)
+
+        ImageWithLink(
+            imagePath: "/images/hurricast/hurricast-icon.jpg",
+            imageDescription: "The Golden Hurricast logo",
+            imageType: .appIcon,
+            url: Constants.hurricastPodUrl
+        )
+        .frame(maxWidth: Constants.appIconMaxWidth)
 
         Text(markdown: "[The Golden Hurricast](https://www.thegoldenhurricast.com/) is the leading independent podcast and blog covering Golden Hurricane athletics at The University of Tulsa.")
 

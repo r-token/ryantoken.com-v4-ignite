@@ -41,7 +41,7 @@ struct LightTheme: BaseTheme {
     var link: Color { Color(hex: "#6366f1") } // blue ribbon
     var hoveredLink: Color { Color(hex: "#4f46e5") } // purple heart
 
-    var syntaxHighlighterTheme: HighlighterTheme { .xcodeLight }
+    var syntaxHighlighterTheme: HighlighterTheme { .solarizedLight }
 }
 
 // Values not set here default to stock dark theme colors
@@ -56,7 +56,7 @@ struct DarkTheme: BaseTheme {
     var link: Color { Color(hex: "#7dd3fc") } // malibu
     var hoveredLink: Color { Color(hex: "#38bdf8") } // picton blue
 
-    var syntaxHighlighterTheme: HighlighterTheme { .xcodeDark }
+    var syntaxHighlighterTheme: HighlighterTheme { .githubDark }
 }
 
 private extension Font {

@@ -14,8 +14,9 @@ struct Tags: TagPage {
             Badge(name: TagFormatter.format(tag.name), size: .title4, path: "#")
         }
         .font(.title2)
+        .fontWeight(.semibold)
         .padding(.bottom)
-        .lineSpacing(1.5)
+        .lineSpacing(1)
 
         ForEach(tag.articles.sorted(by: \.date).reversed()) { article in
             ArticlePreview(for: article)

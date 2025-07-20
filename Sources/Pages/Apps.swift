@@ -221,7 +221,7 @@ struct Apps: StaticPage {
 
         Text(markdown: "[Chat by Storyboard](\(Constants.storyboardAppUrl)) is an AI-powered, hands-free voice messaging app for truckers. It’s a game-changer for the trucking industry, and I’m proud to have been a core part of its development.")
 
-        Text(markdown: "I built the native iOS app myself with Swift, SwiftUI, Swift Concurrency, Core Audio, App Intents, SQLite & more")
+        Text(markdown: "I built the native iOS and iPadOS apps myself with Swift, SwiftUI, Swift Concurrency, Core Audio, App Intents, SQLite, and more")
 
         Include("download-chat-by-storyboard.html")
     }

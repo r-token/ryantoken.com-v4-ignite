@@ -10,6 +10,7 @@ import Ignite
 struct About: StaticPage {
     var title = "Ryan Token - About"
     var description = "About Ryan"
+    var image: URL? = URL(static: Constants.profileImage)
 
     var body: some HTML {
         HeaderText("About Me", size: .h2)

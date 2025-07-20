@@ -12,6 +12,7 @@ struct Home: StaticPage {
 
     var title = "Ryan Token"
     var description = "Ryan is a Swift developer who loves building for Apple platforms and beyond. By day, he's a senior software engineer at Daysheets. By night, he makes apps (CatchUp, Outrank, Hot Local Food) and co-hosts The Golden Hurricast. When he's not coding, you'll find him playing basketball, skiing, or hiking with his wife and dog."
+    var image: URL? = URL(static: Constants.profileImage)
 
     var body: some HTML {
         HeaderText("Hi, I'm Ryan", size: .h2)

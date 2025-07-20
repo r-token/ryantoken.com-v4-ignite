@@ -31,4 +31,7 @@ struct Constants {
     static let hurricastPodUrl = "https://podcasts.apple.com/us/podcast/the-golden-hurricast/id1435008302"
     static let hurricastWebUrl = "https://www.thegoldenhurricast.com"
     static let daysheetsWebUrl = "https://www.daysheets.com"
+
+    // MARK: IMAGE PATHS
+    static let profileImage: StaticString = "/images/me/profile-2025.jpeg"
 }

@@ -10,6 +10,7 @@ import Ignite
 struct Meta: StaticPage {
     var title = "Ryan Token - Meta"
     var description = "This site was built with Swift and Ignite. It's hosted on Vercel. The source code is available on GitHub."
+    var image: URL? = URL(static: "/images/ignite.png")
 
     var body: some HTML {
         HeaderText("Meta", size: .h2)

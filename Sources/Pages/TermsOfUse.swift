@@ -10,6 +10,7 @@ import Ignite
 struct TermsOfUse: StaticPage {
     var title = "Ryan Token - Terms of Use"
     var description = "Terms of Use for Ryan Token's apps"
+    var image: URL? = URL(static: Constants.profileImage)
 
     var body: some HTML {
         HeaderText("Terms of Use", size: .h2)

@@ -19,6 +19,7 @@ struct NavBar: HTML {
         } logo: {
             Span("Ryan Token")
                 .font(.title3)
+                .fontWeight(.semibold)
                 .foregroundStyle(.primary)
         }
         .navigationItemAlignment(.trailing)

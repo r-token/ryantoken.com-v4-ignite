@@ -407,7 +407,7 @@ Given that I haven't done any work at all to try and slim things down, I'm quite
 
 And that about covers it! The full repository, including everything discussed in this post and much more, is on [GitHub](https://github.com/r-token/sports-home-automation-swift).
 
-Here's the raw URL: https://github.com/r-token/sports-home-automation-swift
+Here's the raw URL: [https://github.com/r-token/sports-home-automation-swift](https://github.com/r-token/sports-home-automation-swift)
 
 If you've gotten something out of this post, please give the repo a star!
 

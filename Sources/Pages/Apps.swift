@@ -12,7 +12,7 @@ struct Apps: StaticPage {
 
     var body: some HTML {
         HeaderText("Apps", size: .h2)
-        SubheaderText("The apps I'm working on in my spare time. You can support my work on [Patreon](https://patreon.com/thegoldenhurricast) or [Buy Me a Coffee](https://www.buymeacoffee.com/ryantoken).")
+        SubheaderText("The apps I make. You can support my work on [Patreon](https://patreon.com/thegoldenhurricast) or [Buy Me a Coffee](https://www.buymeacoffee.com/ryantoken).")
 
         ImageWithLink(
             imagePath: "/images/bmc-button.png",
@@ -20,6 +20,7 @@ struct Apps: StaticPage {
             url: "https://www.buymeacoffee.com/ryantoken"
         )
         .frame(maxWidth: Constants.defaultImageMaxWidth)
+        .margin(.bottom, -16)
 
         DividerWithMargin()
 

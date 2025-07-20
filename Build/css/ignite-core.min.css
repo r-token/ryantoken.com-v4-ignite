@@ -348,6 +348,7 @@ div.alert p:last-child {
     --bs-border-color-rgb: 222, 226, 230;
     --bs-font-monospace: Menlo;
     --bs-body-font-family: Avenir Next;
+    --bs-code-font-size: 16px;
     --bs-body-font-size: 18px;
     --bs-h1-font-size: 32px;
     --bs-h2-font-size: 28px;
@@ -356,6 +357,7 @@ div.alert p:last-child {
     --bs-h5-font-size: 18px;
     --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
+    --bs-headings-line-height: 2.0em;
     --theme-container-md: 750px;
     --theme-container-lg: 750px;
     --theme-container-xl: 750px;
@@ -901,6 +903,7 @@ code, pre {
     --bs-border-color-rgb: 222, 226, 230;
     --bs-font-monospace: Menlo;
     --bs-body-font-family: Avenir Next;
+    --bs-code-font-size: 16px;
     --bs-body-font-size: 18px;
     --bs-h1-font-size: 32px;
     --bs-h2-font-size: 28px;
@@ -909,6 +912,7 @@ code, pre {
     --bs-h5-font-size: 18px;
     --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
+    --bs-headings-line-height: 2.0em;
     --theme-container-md: 750px;
     --theme-container-lg: 750px;
     --theme-container-xl: 750px;
@@ -979,6 +983,7 @@ code, pre {
     --bs-border-color-rgb: 73, 80, 87;
     --bs-font-monospace: Menlo;
     --bs-body-font-family: Avenir Next;
+    --bs-code-font-size: 16px;
     --bs-body-font-size: 18px;
     --bs-h1-font-size: 32px;
     --bs-h2-font-size: 28px;
@@ -987,6 +992,7 @@ code, pre {
     --bs-h5-font-size: 18px;
     --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
+    --bs-headings-line-height: 2.0em;
     --theme-container-md: 750px;
     --theme-container-lg: 750px;
     --theme-container-xl: 750px;

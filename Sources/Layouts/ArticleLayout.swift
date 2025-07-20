@@ -36,6 +36,7 @@ struct ArticleLayout: ArticlePage {
 
             Text(article.text)
                 .padding(.top, 36)
+                .class("article-content")
         }
         .frame(maxWidth: 600)
     }

@@ -6,7 +6,7 @@ struct MainLayout: Layout {
         Body {
             NavBar()
             content
-                .padding(.top, 50)
+                .padding(.top, 60)
                 .padding(.horizontal, 10)
             Footer()
         }

@@ -12,7 +12,7 @@ struct Projects: StaticPage {
 
     var body: some HTML {
         HeaderText("Projects", size: .h2)
-        SubheaderText("Other notable projects I've worked on. You can support my work on [Patreon](https://patreon.com/thegoldenhurricast) or [Buy Me a Coffee](https://www.buymeacoffee.com/ryantoken).")
+        SubheaderText("Other projects I've worked on. You can support my work on [Patreon](https://patreon.com/thegoldenhurricast) or [Buy Me a Coffee](https://www.buymeacoffee.com/ryantoken).")
 
         ImageWithLink(
             imagePath: "/images/bmc-button.png",
@@ -20,6 +20,7 @@ struct Projects: StaticPage {
             url: "https://www.buymeacoffee.com/ryantoken"
         )
         .frame(maxWidth: Constants.defaultImageMaxWidth)
+        .margin(.bottom, -16)
 
         DividerWithMargin()
 

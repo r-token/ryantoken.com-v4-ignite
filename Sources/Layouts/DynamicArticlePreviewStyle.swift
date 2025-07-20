@@ -12,11 +12,9 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
 
     @MainActor func body(content: Article) -> any HTML {
         Section {
-            // Mobile layout: vertical stack with image on top
             mobileLayout(for: content)
                 .class("d-block d-md-none")
 
-            // Desktop layout: horizontal stack with image on left
             desktopLayout(for: content)
                 .class("d-none d-md-flex")
         }
@@ -56,7 +54,7 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                     Link(
                         Image(image, description: article.imageDescription)
                             .resizable()
-                            .frame(maxHeight: 160)
+                            .frame(maxHeight: 180)
                             .cornerRadius(cornerRadius),
                         target: article.path
                     )
@@ -76,18 +74,21 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
                 Link(article.title, target: article)
                     .role(.none)
                     .foregroundStyle(.body)
+                    .padding(.bottom, 4)
+                    .font(.title5)
+                    .fontWeight(.semibold)
             }
-            .padding(.bottom, 8)
-            .font(.title4)
-            .fontWeight(.semibold)
 
             if let subtitle = article.subtitle {
-                Text(subtitle)
-                    .font(.title6)
-                    .fontWeight(.regular)
-                    .foregroundStyle(.secondary)
-                    .padding(.bottom, 8)
-                    .lineSpacing(1.25)
+                Text {
+                    Link(subtitle, target: article)
+                        .role(.none)
+                        .foregroundStyle(.secondary)
+                        .font(.title6)
+                        .fontWeight(.regular)
+                        .padding(.bottom, 4)
+                        .lineSpacing(1.25)
+                }
             }
 
             Text(markdown: "*\(article.date.formatted(date: .abbreviated, time: .omitted))*")
@@ -110,7 +111,6 @@ struct DynamicArticlePreviewStyle: @preconcurrency ArticlePreviewStyle {
             }
         }
         .padding(8)
-        .padding(.top, 12)
         .padding(.horizontal, 24)
         .class(includesSpacer ? "d-flex flex-column h-100" : "") // Apply flexbox for desktop
     }

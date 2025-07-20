@@ -15,6 +15,7 @@ extension BaseTheme {
 
     var font: Font { .avenirNext }
     var monospaceFont: Font { .menlo }
+    var inlineCodeFontSize: LengthUnit { .px(16) }
 
     var h1Size: ResponsiveValues { .init(LengthUnit.px(32)) }  // 1.78x
     var h2Size: ResponsiveValues { .init(LengthUnit.px(28)) }  // 1.56x
@@ -25,6 +26,7 @@ extension BaseTheme {
 
     var bodyFontSize: ResponsiveValues { .init(LengthUnit.px(18)) }
     var lineSpacing: LengthUnit { .em(1.5) }
+    var headingLineSpacing: LengthUnit { .em(2) }
 }
 
 // Values not set here default to stock light theme colors

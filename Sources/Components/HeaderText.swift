@@ -59,5 +59,6 @@ struct HeaderText: HTML {
             .font(titleSize)
             .fontWeight(.semibold)
             .foregroundStyle(style)
+            .lineSpacing(1)
     }
 }

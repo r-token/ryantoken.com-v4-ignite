@@ -11,6 +11,8 @@ protocol BaseTheme: Theme {}
 
 // Default implementation for shared values
 extension BaseTheme {
+    var siteWidth: ResponsiveValues { .init(medium: .px(750)) }
+
     var font: Font { .avenirNext }
     var monospaceFont: Font { .menlo }
 
@@ -23,6 +25,7 @@ extension BaseTheme {
 
     var bodyFontSize: ResponsiveValues { .init(LengthUnit.px(18)) }
     var lineSpacing: LengthUnit { .em(1.5) }
+    var syntaxHighlighterTheme: HighlighterTheme { .solarizedLight }
 }
 
 // Values not set here default to stock light theme colors
@@ -55,7 +58,7 @@ private extension Font {
         name: "Avenir Next",
         sources: FontSource(url: URL(static: "/fonts/Avenir Next.ttc"))
     )
-    
+
     static let menlo: Font = .init(
         name: "Menlo",
         sources: FontSource(url: URL(static: "/fonts/Menlo.ttf"))

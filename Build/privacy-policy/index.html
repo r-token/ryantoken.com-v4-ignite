@@ -63,70 +63,46 @@
     <meta name="twitter:dnt" content="on" />
   </head>
   <body class="container" style="padding-top: 1.0em; padding-bottom: 1.0em; padding-left: 0.25em; padding-right: 0.25em">
-    <div class="vstack" style="padding-bottom: 24px">
-      <div class="mb-0 align-self-center">
-        <h1 class="text-primary" style="font-weight: 700"><a href="/" class="link-plain">Hi, I'm Ryan</a></h1>
-      </div>
-      <div class="mb-0 align-self-center" style="padding-bottom: 8px">
-        <div class="hstack gap-3">
-          <a href="https://x.com/_ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#000000, #ffffff)"><i class="bi-twitter-x"></i></a>
-          <div class="fs-5 mb-0 align-self-center vstack" style="margin-right: 9px; color: light-dark(#1185FE, #4A9EFF)">
-            <a href="https://bsky.app/profile/ryantoken.com"> 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1185FE" class="bi bi-bluesky" viewbox="0 0 16 18"> 
-                <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948" /> 
-              </svg> </a> 
+    <header>
+      <nav class="fixed-top material-ultra-thin navbar navbar-expand-md">
+        <div class="container flex-wrap flex-lg-nowrap">
+          <div class="me-2 me-md-auto">
+            <a href="/" class="d-inline-flex align-items-center navbar-brand">Ryan Token</a>
           </div>
-          <a href="https://indieweb.social/@ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#563ACC, #7B5EE6)"><i class="bi-mastodon"></i></a>
-          <a href="https://github.com/r-token" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#000000, #ffffff)"><i class="bi-github"></i></a>
-          <a href="https://linkedin.com/in/ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#0A66C2, #4A90E2)"><i class="bi-linkedin"></i></a>
-          <a href="mailto:ryantoken13@gmail.com" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#6b7280, #9CA3AF)"><i class="bi-envelope"></i></a>
+          <button type="button" class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav mb-2 mb-md-0 col justify-content-end">
+              <li class="nav-item"><a href="/apps" class="nav-link text-nowrap">Apps</a></li>
+              <li class="nav-item"><a href="/projects" class="nav-link text-nowrap">Projects</a></li>
+              <li class="nav-item"><a href="/blog" class="nav-link text-nowrap">Blog</a></li>
+              <li class="nav-item"><a href="/about" class="nav-link text-nowrap">About</a></li>
+              <li class="nav-item"><a href="/meta" class="nav-link text-nowrap">Meta</a></li>
+              <li class="nav-item"><a href="/r-s-s" class="nav-link text-nowrap">RSS</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="mb-0 align-self-center hstack gap-3">
-        <div class="mb-0 align-self-center">
-          <a href="/apps" class="text-body-secondary link-plain">Apps</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/projects" class="text-body-secondary link-plain">Projects</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/blog" class="text-body-secondary link-plain">Blog</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/about" class="text-body-secondary link-plain">About</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/meta" class="text-body-secondary link-plain">Meta</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/r-s-s" class="text-body-secondary link-plain">RSS</a>
-        </div>
-      </div>
-    </div>
-    <div class="hstack gap-3">
-      <div class="ms-auto"></div>
-      <div class="ig-main-content mb-0 align-self-center" style="width: 100%; max-width: 750px">
-        <h1 class="text-primary" style="font-weight: 600">Privacy Policy</h1>
-        <h5 class="text-body-secondary" style="font-weight: 400; line-height: 1.5"><em>Long story short: I don’t collect any of your data.</em></h5>
-        <hr />
-        <h2 class="text-body" style="font-weight: 600">Basics</h2>
-        <p>Your privacy is critically important to me. Your data is your own. None of my apps collect any personal data – all of it lives locally on your device.</p>
-        <h2 class="text-body" style="font-weight: 600">Gathering of Personally-Identifying Information</h2>
-        <p>Neither <i>Hot Local Food</i>, nor <i>Outrank</i>, nor <i>CatchUp – Keep in Touch</i> transmits any of your contacts, location data, or any other data outside of the app.</p>
-        <h2 class="text-body" style="font-weight: 600">Protection of Certain Personally-Identifying Information</h2>
-        <p>No Personally-Identifying Information is transmitted to external locations when using <i>Hot Local Food</i>, <i>Outrank</i>, or <i>CatchUp – Keep in Touch</i>.</p>
-        <h2 class="text-body" style="font-weight: 600">Business Transfers</h2>
-        <p>If <i>Hot Local Food</i>, <i>Outrank</i>, or <i>CatchUp – Keep in Touch</i>, substantially all of either of their assets, were acquired, or in the unlikely event that <i>Hot Local Food</i>, <i>Outrank</i>, or <i>CatchUp – Keep in Touch</i> goes out of business or enters bankruptcy, no information would be acquired by the third party. You acknowledge that such transfers may occur, but understand that no personal information would be acquired.</p>
-        <h2 class="text-body" style="font-weight: 600">Privacy Policy Changes</h2>
-        <p>Although most changes are likely to be minor, we may change our Privacy Policy from time to time, and in our sole discretion. I encourage visitors to frequently check this page for any changes to the Privacy Policy. Your continued use of the <i>Hot Local Food</i>, <i>Outrank</i>, or <i>CatchUp – Keep in Touch</i> applications after any change in this Privacy Policy will constitute your acceptance of such change.</p>
-        <h2 class="text-body" style="font-weight: 600">Limited Warranties</h2>
-        <p>We do not warrant the completeness or accuracy of the information published on this website; nor do we commit to ensuring that the website remains available or that the material on the website is kept up to date.</p>
-        <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to this website and the use of this website (including, without limitation, any warranties implied by law in respect of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill).</p>
-        <h2 class="text-body" style="font-weight: 600">Indemnity</h2>
-        <p>You hereby indemnify me and undertake to keep me indemnified against any losses, damages, costs, liabilities and expenses (including, without limitation, legal expenses and any amounts paid by me to a third party in settlement of a claim or dispute on the advice of our legal advisers) incurred or suffered by me arising out of any breach by you of any provision of these terms of use, or arising out of any claim that you have breached any provision of these terms of use.</p>
-        <p><strong>Adapted from the <a href="https://automattic.com/privacy/">automattic.com privacy policy</a> under a <a href="https://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Sharealike license</a></strong></p>
-      </div>
-      <div class="ms-auto"></div>
+      </nav>
+    </header>
+    <div class="ig-main-content" style="padding-top: 50px; padding-left: 10px; padding-right: 10px">
+      <h1 class="text-primary" style="font-weight: 600">Privacy Policy</h1>
+      <h5 class="text-body-secondary" style="font-weight: 400; line-height: 1.5"><em>Long story short: I don’t collect any of your data.</em></h5>
+      <hr />
+      <h2 class="text-body" style="font-weight: 600">Basics</h2>
+      <p>Your privacy is critically important to me. Your data is your own. None of my apps collect any personal data – all of it lives locally on your device.</p>
+      <h2 class="text-body" style="font-weight: 600">Gathering of Personally-Identifying Information</h2>
+      <p>Neither <i>Hot Local Food</i>, nor <i>Outrank</i>, nor <i>CatchUp – Keep in Touch</i> transmits any of your contacts, location data, or any other data outside of the app.</p>
+      <h2 class="text-body" style="font-weight: 600">Protection of Certain Personally-Identifying Information</h2>
+      <p>No Personally-Identifying Information is transmitted to external locations when using <i>Hot Local Food</i>, <i>Outrank</i>, or <i>CatchUp – Keep in Touch</i>.</p>
+      <h2 class="text-body" style="font-weight: 600">Business Transfers</h2>
+      <p>If <i>Hot Local Food</i>, <i>Outrank</i>, or <i>CatchUp – Keep in Touch</i>, substantially all of either of their assets, were acquired, or in the unlikely event that <i>Hot Local Food</i>, <i>Outrank</i>, or <i>CatchUp – Keep in Touch</i> goes out of business or enters bankruptcy, no information would be acquired by the third party. You acknowledge that such transfers may occur, but understand that no personal information would be acquired.</p>
+      <h2 class="text-body" style="font-weight: 600">Privacy Policy Changes</h2>
+      <p>Although most changes are likely to be minor, we may change our Privacy Policy from time to time, and in our sole discretion. I encourage visitors to frequently check this page for any changes to the Privacy Policy. Your continued use of the <i>Hot Local Food</i>, <i>Outrank</i>, or <i>CatchUp – Keep in Touch</i> applications after any change in this Privacy Policy will constitute your acceptance of such change.</p>
+      <h2 class="text-body" style="font-weight: 600">Limited Warranties</h2>
+      <p>We do not warrant the completeness or accuracy of the information published on this website; nor do we commit to ensuring that the website remains available or that the material on the website is kept up to date.</p>
+      <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to this website and the use of this website (including, without limitation, any warranties implied by law in respect of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill).</p>
+      <h2 class="text-body" style="font-weight: 600">Indemnity</h2>
+      <p>You hereby indemnify me and undertake to keep me indemnified against any losses, damages, costs, liabilities and expenses (including, without limitation, legal expenses and any amounts paid by me to a third party in settlement of a claim or dispute on the advice of our legal advisers) incurred or suffered by me arising out of any breach by you of any provision of these terms of use, or arising out of any claim that you have breached any provision of these terms of use.</p>
+      <p><strong>Adapted from the <a href="https://automattic.com/privacy/">automattic.com privacy policy</a> under a <a href="https://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Sharealike license</a></strong></p>
     </div>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/ignite-core.js"></script>

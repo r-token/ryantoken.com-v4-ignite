@@ -356,7 +356,11 @@ div.alert p:last-child {
     --bs-h5-font-size: 18px;
     --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
-    --syntax-highlight-theme: "xcode-light";
+    --theme-container-md: 750px;
+    --theme-container-lg: 750px;
+    --theme-container-xl: 750px;
+    --theme-container-xxl: 750px;
+    --syntax-highlight-theme: "solarized-light";
 }
 
 @media (min-width: 576px) {
@@ -425,27 +429,9 @@ div.alert p:last-child {
 }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 750px) {
     .container {
-    max-width: 720px;
-}
-}
-
-@media (min-width: 960px) {
-    .container {
-    max-width: 960px;
-}
-}
-
-@media (min-width: 1140px) {
-    .container {
-    max-width: 1140px;
-}
-}
-
-@media (min-width: 1320px) {
-    .container {
-    max-width: 1320px;
+    max-width: 750px;
 }
 }
 
@@ -923,7 +909,11 @@ code, pre {
     --bs-h5-font-size: 18px;
     --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
-    --syntax-highlight-theme: "xcode-light";
+    --theme-container-md: 750px;
+    --theme-container-lg: 750px;
+    --theme-container-xl: 750px;
+    --theme-container-xxl: 750px;
+    --syntax-highlight-theme: "solarized-light";
 }
 
 [data-bs-theme="dark"] {
@@ -997,7 +987,11 @@ code, pre {
     --bs-h5-font-size: 18px;
     --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
-    --syntax-highlight-theme: "xcode-dark";
+    --theme-container-md: 750px;
+    --theme-container-lg: 750px;
+    --theme-container-xl: 750px;
+    --theme-container-xxl: 750px;
+    --syntax-highlight-theme: "solarized-light";
 }
 
 

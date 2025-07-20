@@ -27,3 +27,20 @@ struct NavBar: HTML {
         .padding(.bottom, 24)
     }
 }
+
+struct NavBar2: HTML {
+    var body: some HTML {
+        NavigationBar(logo: "Ryan Token") {
+            Link("Apps", target: Apps())
+            Link("Projects", target: Projects())
+            Link("Blog", target: Blog())
+            Link("About", target: About())
+            Link("Meta", target: Meta())
+            Link("RSS", target: RSS())
+        }
+        
+        .navigationItemAlignment(.trailing)
+        .position(.fixedTop)
+        .background(.ultraThinMaterial)
+    }
+}

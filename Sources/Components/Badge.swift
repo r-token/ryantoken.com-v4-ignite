@@ -18,7 +18,7 @@ struct Badge: InlineElement {
                 .font(size)
                 .fontWeight(.medium)
                 .foregroundStyle(.primary)
-                .background(.blue.opacity(0.1))
+                .background(.lightBlue.opacity(0.3))
                 .padding(.horizontal, .em(0.75))
                 .padding(.vertical, .em(0.4))
                 .cornerRadius(6)

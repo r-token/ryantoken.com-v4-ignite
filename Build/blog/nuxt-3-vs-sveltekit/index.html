@@ -68,88 +68,66 @@
     <meta name="twitter:dnt" content="on" />
   </head>
   <body class="container" style="padding-top: 1.0em; padding-bottom: 1.0em; padding-left: 0.25em; padding-right: 0.25em">
-    <div class="vstack" style="padding-bottom: 24px">
-      <div class="mb-0 align-self-center">
-        <h1 class="text-primary" style="font-weight: 700"><a href="/" class="link-plain">Hi, I'm Ryan</a></h1>
-      </div>
-      <div class="mb-0 align-self-center" style="padding-bottom: 8px">
-        <div class="hstack gap-3">
-          <a href="https://x.com/_ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#000000, #ffffff)"><i class="bi-twitter-x"></i></a>
-          <div class="fs-5 mb-0 align-self-center vstack" style="margin-right: 9px; color: light-dark(#1185FE, #4A9EFF)">
-            <a href="https://bsky.app/profile/ryantoken.com"> 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1185FE" class="bi bi-bluesky" viewbox="0 0 16 18"> 
-                <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948" /> 
-              </svg> </a> 
+    <header>
+      <nav class="fixed-top material-ultra-thin navbar navbar-expand-md">
+        <div class="container flex-wrap flex-lg-nowrap">
+          <div class="me-2 me-md-auto">
+            <a href="/" class="d-inline-flex align-items-center navbar-brand">Ryan Token</a>
           </div>
-          <a href="https://indieweb.social/@ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#563ACC, #7B5EE6)"><i class="bi-mastodon"></i></a>
-          <a href="https://github.com/r-token" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#000000, #ffffff)"><i class="bi-github"></i></a>
-          <a href="https://linkedin.com/in/ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#0A66C2, #4A90E2)"><i class="bi-linkedin"></i></a>
-          <a href="mailto:ryantoken13@gmail.com" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#6b7280, #9CA3AF)"><i class="bi-envelope"></i></a>
-        </div>
-      </div>
-      <div class="mb-0 align-self-center hstack gap-3">
-        <div class="mb-0 align-self-center">
-          <a href="/apps" class="text-body-secondary link-plain">Apps</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/projects" class="text-body-secondary link-plain">Projects</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/blog" class="text-body-secondary link-plain">Blog</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/about" class="text-body-secondary link-plain">About</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/meta" class="text-body-secondary link-plain">Meta</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/r-s-s" class="text-body-secondary link-plain">RSS</a>
-        </div>
-      </div>
-    </div>
-    <div class="hstack gap-3">
-      <div class="ms-auto"></div>
-      <div class="ig-main-content mb-0 align-self-center" style="width: 100%; max-width: 750px">
-        <div class="vstack" style="width: 100%; max-width: 600px; margin-left: auto; margin-right: auto">
-          <div class="mb-0 align-self-start">
-            <h2 class="text-body" style="font-weight: 600">Nuxt 3 vs SvelteKit</h2>
+          <button type="button" class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav mb-2 mb-md-0 col justify-content-end">
+              <li class="nav-item"><a href="/apps" class="nav-link text-nowrap">Apps</a></li>
+              <li class="nav-item"><a href="/projects" class="nav-link text-nowrap">Projects</a></li>
+              <li class="nav-item"><a href="/blog" class="nav-link text-nowrap">Blog</a></li>
+              <li class="nav-item"><a href="/about" class="nav-link text-nowrap">About</a></li>
+              <li class="nav-item"><a href="/meta" class="nav-link text-nowrap">Meta</a></li>
+              <li class="nav-item"><a href="/r-s-s" class="nav-link text-nowrap">RSS</a></li>
+            </ul>
           </div>
-          <p class="text-body-secondary mb-0 align-self-start"><em>Choosing between Nuxt 3 and SvelteKit for ryantoken.com v3.</em></p>
-          <p class="text-body-secondary mb-0 align-self-start" style="padding-top: 24px"><em>Published Oct 23, 2022</em></p>
-          <p class="text-body-secondary mb-0 align-self-start"><em>5423 words; 22 minutes to read.</em></p>
-          <hr class="mb-0 align-self-start" style="padding-bottom: 36px" />
-          <img src="/images/nuxt-3-vs-sveltekit/cover.png" alt="Nuxt 3 logo vs the SvelteKit logo" class="img-fluid mb-0 align-self-start" style="border-radius: 20px; max-height: 300px" />
-          <p class="mb-0 align-self-start" style="padding-top: 36px"></p>
-          <p>I’ve been thinking for several months about rebuilding my website (<a href="/blog/rebuilding-my-website">again</a>). There were several reasons. First, to dig back into front-end work and re-familiarize myself with that world. Next, to get up to speed with the latest JavaScript framework options and how they worked. And finally, my previous website was no longer cutting it for me in several different ways.</p>
-          <p>For reference, here’s what my website looked like before:</p>
-          <p><img src="/images/nuxt-3-vs-sveltekit/publish-website.png" alt="v2 of ryantoken.com - built with Swift and Publish" class="img-fluid" /></p>
-          <p>I built that version of the site with <a href="https://www.swift.org">Swift</a> and <a href="https://github.com/johnsundell/publish">Publish</a> - a static site generator for Swift. While a great tool, I needed something more flexible that better aligned with how I feel about web development today. Thus, the rewrite project began.</p>
-          <h2>The Debate</h2>
-          <p>The <a href="https://twitter.com/_ryantoken/status/1514393045319536650?s=20&amp;t=2XnKuxMtMirv-q0s8RJXbw">primary debate</a> was about which framework I was going to use. After some thought, I landed on two options. Option one was <a href="https://v3.nuxtjs.org/">Nuxt 3</a>: a Vue framework we use at <a href="https://trystoryboard.com">Storyboard</a>. Option two was <a href="https://kit.svelte.dev/">SvelteKit</a>: a new framework I originally heard about due to <a href="https://scotttolinski.com/">Scott Tolinski</a> frequently singing its praises on the <a href="https://syntax.fm/">Syntax</a> podcast. I come from a <a href="https://reactjs.org/">React</a> background, so regardless of my choice it was going to be quite new conceptually and syntactically.</p>
-          <p>Additionally, Nuxt 3 and SvelteKit are both <a href="https://prismic.io/blog/javascript-meta-frameworks-ecosystem#meta-framework">meta-frameworks</a>. Nuxt is a meta-framework for <a href="https://vuejs.org/">Vue</a>, and SvelteKit is a meta-framework for <a href="https://svelte.dev/">Svelte</a>. This means that they’re frameworks that provide abstractions on top of other frameworks - primarily to handle the boring/routine stuff for you. Think wiring up page routes, sharing common layouts between pages, handling smooth page transitions, etc. They also generally come with best practices built in like build optimizations, link prefetching, and more. I did have <em>some</em> experience with meta-frameworks like <a href="https://www.gatsbyjs.com/">Gatsby</a>, but not much. And while most of this post will compare the meta-frameworks of Nuxt 3 and SvelteKit, we’ll also get into some of the differences between the core Vue and Svelte frameworks.</p>
-          <p>Let me preface the rest of this post by emphasizing that I am not a front-end expert. My full-time job is primarily in <a href="https://serverless.com">serverless</a> back-end development with <a href="https://nodejs.org/en/">node.js</a>. On top of that, most of the front-end framework experience I do have is in React. I’ve played around with Vue before but was completely new to Nuxt, Svelte, and SvelteKit. Because of this, I’m certain I will get some front-end terminology or facts wrong. Please <a href="mailto:ryantoken13@gmail.com">email me</a> with corrections or clarifications if you have them.</p>
-          <p>Ok, on to the main event.</p>
-          <p>Both Nuxt 3 and SvelteKit offer some similar features out of the box, including:</p>
-          <ul>
-            <li>Filesystem-based routing</li>
-            <li>Route prerendering</li>
-            <li>Link prefetching</li>
-            <li>Fully static and server-side rendering options</li>
-            <li>Single-file components</li>
-            <li>Easy integration with <a href="https://tailwindcss.com/">Tailwind</a>, which I knew I wanted to try for this rewrite</li>
-          </ul>
-          <p>I first <a href="https://twitter.com/_ryantoken/status/1517504062563835904?s=20&amp;t=yyC5y-1gbqkHw8equ9g3Sw">decided</a> to do the rewrite with Nuxt 3. As mentioned, we use Vue and Nuxt at my place of work and I wanted to get my hands dirty with how it actually works. Again, I currently spend most of my time doing back-end development.</p>
-          <p>However, Nuxt 3 has now been in Release Candidate mode since April of 2022 (about 6 months at time of writing). It still isn’t done and is missing some key features for me to be fully satisfied with it. After waiting long enough for Nuxt 3 to be fully released, I decided I would <em>also</em> rewrite my website with Svelte and SvelteKit.</p>
-          <p>Both of these rewrites have been more-or-less completed and live at different URLs.</p>
-          <p>Before spoiling which one I chose, let’s get into my experience with each:</p>
-          <h2>Nuxt 3</h2>
-          <p>Nuxt 3 is a brand-new framework. It doesn’t have a 1.0 release yet and I’m still waiting on several key features to be released. Primarily <a href="https://github.com/nuxt/image/discussions/548">Nuxt Image support</a> for static sites or sites hosted on Netlify or Vercel, and <a href="https://github.com/nuxt/content/issues/1154">Nuxt Content support</a> for static sites.</p>
-          <p>Neither of those issues are complete dealbreakers though. I can 1) not use Nuxt Image, and 2) go with server-side rendering for now instead of a fully static site. That works around both of those issues for the time being.</p>
-          <h3>Developer Experience</h3>
-          <p>Despite those hurdles, I’ve sincerely enjoyed the developer experience of building with Nuxt 3 and Vue 3.</p>
-          <p>Things like this from Nuxt 2:</p>
-          <pre><code class="language-html"><script>
+        </div>
+      </nav>
+    </header>
+    <div class="ig-main-content" style="padding-top: 50px; padding-left: 10px; padding-right: 10px">
+      <div class="vstack" style="width: 100%; max-width: 600px; margin-left: auto; margin-right: auto">
+        <div class="mb-0 align-self-start">
+          <h2 class="text-body" style="font-weight: 600">Nuxt 3 vs SvelteKit</h2>
+        </div>
+        <p class="text-body-secondary mb-0 align-self-start"><em>Choosing between Nuxt 3 and SvelteKit for ryantoken.com v3.</em></p>
+        <p class="text-body-secondary mb-0 align-self-start" style="padding-top: 24px"><em>Published Oct 23, 2022</em></p>
+        <p class="text-body-secondary mb-0 align-self-start"><em>5423 words; 22 minutes to read.</em></p>
+        <hr class="mb-0 align-self-start" style="padding-bottom: 36px" />
+        <img src="/images/nuxt-3-vs-sveltekit/cover.png" alt="Nuxt 3 logo vs the SvelteKit logo" class="img-fluid mb-0 align-self-start" style="border-radius: 20px; max-height: 300px" />
+        <p class="mb-0 align-self-start" style="padding-top: 36px"></p>
+        <p>I’ve been thinking for several months about rebuilding my website (<a href="/blog/rebuilding-my-website">again</a>). There were several reasons. First, to dig back into front-end work and re-familiarize myself with that world. Next, to get up to speed with the latest JavaScript framework options and how they worked. And finally, my previous website was no longer cutting it for me in several different ways.</p>
+        <p>For reference, here’s what my website looked like before:</p>
+        <p><img src="/images/nuxt-3-vs-sveltekit/publish-website.png" alt="v2 of ryantoken.com - built with Swift and Publish" class="img-fluid" /></p>
+        <p>I built that version of the site with <a href="https://www.swift.org">Swift</a> and <a href="https://github.com/johnsundell/publish">Publish</a> - a static site generator for Swift. While a great tool, I needed something more flexible that better aligned with how I feel about web development today. Thus, the rewrite project began.</p>
+        <h2>The Debate</h2>
+        <p>The <a href="https://twitter.com/_ryantoken/status/1514393045319536650?s=20&amp;t=2XnKuxMtMirv-q0s8RJXbw">primary debate</a> was about which framework I was going to use. After some thought, I landed on two options. Option one was <a href="https://v3.nuxtjs.org/">Nuxt 3</a>: a Vue framework we use at <a href="https://trystoryboard.com">Storyboard</a>. Option two was <a href="https://kit.svelte.dev/">SvelteKit</a>: a new framework I originally heard about due to <a href="https://scotttolinski.com/">Scott Tolinski</a> frequently singing its praises on the <a href="https://syntax.fm/">Syntax</a> podcast. I come from a <a href="https://reactjs.org/">React</a> background, so regardless of my choice it was going to be quite new conceptually and syntactically.</p>
+        <p>Additionally, Nuxt 3 and SvelteKit are both <a href="https://prismic.io/blog/javascript-meta-frameworks-ecosystem#meta-framework">meta-frameworks</a>. Nuxt is a meta-framework for <a href="https://vuejs.org/">Vue</a>, and SvelteKit is a meta-framework for <a href="https://svelte.dev/">Svelte</a>. This means that they’re frameworks that provide abstractions on top of other frameworks - primarily to handle the boring/routine stuff for you. Think wiring up page routes, sharing common layouts between pages, handling smooth page transitions, etc. They also generally come with best practices built in like build optimizations, link prefetching, and more. I did have <em>some</em> experience with meta-frameworks like <a href="https://www.gatsbyjs.com/">Gatsby</a>, but not much. And while most of this post will compare the meta-frameworks of Nuxt 3 and SvelteKit, we’ll also get into some of the differences between the core Vue and Svelte frameworks.</p>
+        <p>Let me preface the rest of this post by emphasizing that I am not a front-end expert. My full-time job is primarily in <a href="https://serverless.com">serverless</a> back-end development with <a href="https://nodejs.org/en/">node.js</a>. On top of that, most of the front-end framework experience I do have is in React. I’ve played around with Vue before but was completely new to Nuxt, Svelte, and SvelteKit. Because of this, I’m certain I will get some front-end terminology or facts wrong. Please <a href="mailto:ryantoken13@gmail.com">email me</a> with corrections or clarifications if you have them.</p>
+        <p>Ok, on to the main event.</p>
+        <p>Both Nuxt 3 and SvelteKit offer some similar features out of the box, including:</p>
+        <ul>
+          <li>Filesystem-based routing</li>
+          <li>Route prerendering</li>
+          <li>Link prefetching</li>
+          <li>Fully static and server-side rendering options</li>
+          <li>Single-file components</li>
+          <li>Easy integration with <a href="https://tailwindcss.com/">Tailwind</a>, which I knew I wanted to try for this rewrite</li>
+        </ul>
+        <p>I first <a href="https://twitter.com/_ryantoken/status/1517504062563835904?s=20&amp;t=yyC5y-1gbqkHw8equ9g3Sw">decided</a> to do the rewrite with Nuxt 3. As mentioned, we use Vue and Nuxt at my place of work and I wanted to get my hands dirty with how it actually works. Again, I currently spend most of my time doing back-end development.</p>
+        <p>However, Nuxt 3 has now been in Release Candidate mode since April of 2022 (about 6 months at time of writing). It still isn’t done and is missing some key features for me to be fully satisfied with it. After waiting long enough for Nuxt 3 to be fully released, I decided I would <em>also</em> rewrite my website with Svelte and SvelteKit.</p>
+        <p>Both of these rewrites have been more-or-less completed and live at different URLs.</p>
+        <p>Before spoiling which one I chose, let’s get into my experience with each:</p>
+        <h2>Nuxt 3</h2>
+        <p>Nuxt 3 is a brand-new framework. It doesn’t have a 1.0 release yet and I’m still waiting on several key features to be released. Primarily <a href="https://github.com/nuxt/image/discussions/548">Nuxt Image support</a> for static sites or sites hosted on Netlify or Vercel, and <a href="https://github.com/nuxt/content/issues/1154">Nuxt Content support</a> for static sites.</p>
+        <p>Neither of those issues are complete dealbreakers though. I can 1) not use Nuxt Image, and 2) go with server-side rendering for now instead of a fully static site. That works around both of those issues for the time being.</p>
+        <h3>Developer Experience</h3>
+        <p>Despite those hurdles, I’ve sincerely enjoyed the developer experience of building with Nuxt 3 and Vue 3.</p>
+        <p>Things like this from Nuxt 2:</p>
+        <pre><code class="language-html"><script>
 export default {
   data() {
     return {
@@ -164,85 +142,85 @@ export default {
 }
 </script>
 </code></pre>
-          <p>Turn into this with Nuxt 3:</p>
-          <pre><code class="language-html"><script setup>
+        <p>Turn into this with Nuxt 3:</p>
+        <pre><code class="language-html"><script setup>
   const count = ref(0)
   const increment = () => count.value++
 </script>
 </code></pre>
-          <p>So much nicer. Additionally, one of the primary reasons I wanted to use Nuxt 3 was to take advantage of the <a href="https://content.nuxtjs.org/">Nuxt Content</a> rewrite - which is their content engine and what I use to generate the blog.</p>
-          <p>My website is not a complicated one. It’s primarily just a bunch of static pages that include text and images. The only relatively complex parts are the responsive sidebar and the blog. The sidebar could be solved once and considered “done” - it’s not something I should need to revisit often.</p>
-          <p>The blog, though, needs to be as simple as possible to maintain and update over time. If blog posts are hard to write, or, once written, hard to connect to the rest of the site, that puts up a large mental roadblock for me to continue writing.</p>
-          <h3>The Blog - Nuxt and Nuxt Content</h3>
-          <p>Nuxt 3 and Nuxt Content solve the blog problem. All you need to do is create a <code>/content</code> directory at the root of the project, a <code>/blog</code> directory within that, and a new folder for each blog post. You can then write blog posts in standard markdown and include Vue components within that markdown via <a href="https://content.nuxtjs.org/guide/writing/mdc">MDC</a> syntax. Nuxt will automatically configure the routing for you. For example, an <code>index.md</code> markdown file within <code>/content/blog/fancy-blog-post</code> will be accessible at https://your-website.com/blog/fancy-blog-post. Pretty sweet!</p>
-          <h3>MDC Syntax</h3>
-          <p>I did find the MDC syntax a bit annoying, though. Again, this is the syntax used to include Vue components in the markdown itself. For instance, I have a custom Vue component for showing a responsive/resizable image. To include that in a blog post with Nuxt Content and MDC, it looks like this:</p>
-          <pre><code class="language-js">::ResizableBlogImage{src="/path/to-image.png" altText="Some alt text"}
+        <p>So much nicer. Additionally, one of the primary reasons I wanted to use Nuxt 3 was to take advantage of the <a href="https://content.nuxtjs.org/">Nuxt Content</a> rewrite - which is their content engine and what I use to generate the blog.</p>
+        <p>My website is not a complicated one. It’s primarily just a bunch of static pages that include text and images. The only relatively complex parts are the responsive sidebar and the blog. The sidebar could be solved once and considered “done” - it’s not something I should need to revisit often.</p>
+        <p>The blog, though, needs to be as simple as possible to maintain and update over time. If blog posts are hard to write, or, once written, hard to connect to the rest of the site, that puts up a large mental roadblock for me to continue writing.</p>
+        <h3>The Blog - Nuxt and Nuxt Content</h3>
+        <p>Nuxt 3 and Nuxt Content solve the blog problem. All you need to do is create a <code>/content</code> directory at the root of the project, a <code>/blog</code> directory within that, and a new folder for each blog post. You can then write blog posts in standard markdown and include Vue components within that markdown via <a href="https://content.nuxtjs.org/guide/writing/mdc">MDC</a> syntax. Nuxt will automatically configure the routing for you. For example, an <code>index.md</code> markdown file within <code>/content/blog/fancy-blog-post</code> will be accessible at https://your-website.com/blog/fancy-blog-post. Pretty sweet!</p>
+        <h3>MDC Syntax</h3>
+        <p>I did find the MDC syntax a bit annoying, though. Again, this is the syntax used to include Vue components in the markdown itself. For instance, I have a custom Vue component for showing a responsive/resizable image. To include that in a blog post with Nuxt Content and MDC, it looks like this:</p>
+        <pre><code class="language-js">::ResizableBlogImage{src="/path/to-image.png" altText="Some alt text"}
 ::
 </code></pre>
-          <p>The double-colon syntax felt weird to me. Maybe that’s common in parts of Vue that I’m not familiar with, but it’s much different from how you use components in standard Vue files.</p>
-          <p>The previous example was for a “block” component, something that isn’t inlined with the rest of the markdown. You can also use Vue components inline via MDC, but I ran into another oddity there. If I wanted punctuation immediately after the inline component, it broke! The MDC syntax itself would render in the blog post instead of the actual component.</p>
-          <p>The only way I found to get around this was to include the punctuation within the component’s props, like so:</p>
-          <pre><code class="language-js">:ExternalBlogLink{url="https://url-to-go-to.com" text="The text to style with a period at the end."}
+        <p>The double-colon syntax felt weird to me. Maybe that’s common in parts of Vue that I’m not familiar with, but it’s much different from how you use components in standard Vue files.</p>
+        <p>The previous example was for a “block” component, something that isn’t inlined with the rest of the markdown. You can also use Vue components inline via MDC, but I ran into another oddity there. If I wanted punctuation immediately after the inline component, it broke! The MDC syntax itself would render in the blog post instead of the actual component.</p>
+        <p>The only way I found to get around this was to include the punctuation within the component’s props, like so:</p>
+        <pre><code class="language-js">:ExternalBlogLink{url="https://url-to-go-to.com" text="The text to style with a period at the end."}
 </code></pre>
-          <p>This component in particular styled the URL a certain way though, so it would also style the ending period that way. Not ideal. That’s how it works in the Nuxt version of the site today. If this issue has since been fixed, please let me know!</p>
-          <p><strong>Edit</strong>: <a href="https://twitter.com/manutopik/status/1584906534408130562?s=20&amp;t=NG2MIaY9tREYnsNubMl7nw">@manutopik</a> informed me on Twitter that “standard” component syntax works as well! So this is also appropriate MDC syntax:</p>
-          <pre><code class="language-js">
-              <resizableblogimage src="/path/to-image.png" alttext="Some alt text"></resizableblogimage>
+        <p>This component in particular styled the URL a certain way though, so it would also style the ending period that way. Not ideal. That’s how it works in the Nuxt version of the site today. If this issue has since been fixed, please let me know!</p>
+        <p><strong>Edit</strong>: <a href="https://twitter.com/manutopik/status/1584906534408130562?s=20&amp;t=NG2MIaY9tREYnsNubMl7nw">@manutopik</a> informed me on Twitter that “standard” component syntax works as well! So this is also appropriate MDC syntax:</p>
+        <pre><code class="language-js">
+            <resizableblogimage src="/path/to-image.png" alttext="Some alt text"></resizableblogimage>
 </code></pre>
-          <p>Additionally, Sébastien Chopin, the author of Nuxt, <a href="https://twitter.com/Atinux/status/1584928666748096513?s=20&amp;t=NG2MIaY9tREYnsNubMl7nw">let me know on Twitter</a> that the inline component issue with punctuation should be fixed very soon.</p>
-          <h3>Other - Nuxt</h3>
-          <p>That covers the key components of what differentiated Nuxt for me. The developer experience was largely wonderful, and Nuxt Content gave me an easy way to hook up blog posts to the rest of the site.</p>
-          <p>There were several other benefits of Nuxt that I found useful while doing the rewrite as well. I’ll list a few of them here:</p>
-          <ol>
-            <li>Vue 3 and the <a href="https://vuejs.org/guide/extras/composition-api-faq.html#why-composition-api">Composition API</a> were fantastic to work with. Composition utilities like <a href="https://vueuse.org/core/useFetch/">useFetch</a> saved me considerable time and removed plenty of unnecessary boilerplate.</li>
-            <li>The extremely fast development feedback loop powered by <a href="https://vitejs.dev/">Vite</a> and <a href="https://nitro.unjs.io/">Nitro</a>.</li>
-            <li>Just using Vue in general compared to my previous experiences with React. Vue felt easier to pick up and lighter weight than React, while giving me more than enough functionality for what my website needs.</li>
-          </ol>
-          <h2>Svelte and SvelteKit</h2>
-          <p>While Vue is conceptually similar to React in many ways, Svelte is largely not. Svelte does still have the concept of components, reactivity, lifecycle hooks, etc… like React &amp; Vue do, but Svelte is very different in <em>how</em> it accomplishes some of those things.</p>
-          <p>For example, React and Vue both use what’s called the “<a href="https://reactjs.org/docs/faq-internals.html">virtual DOM</a>” for updating the actual DOM whenever the application’s state changes. This is a bit of <a href="https://svelte.dev/blog/virtual-dom-is-pure-overhead">overhead</a> to simplify the development experience for the user.</p>
-          <p>Svelte rejects the entire idea of the virtual DOM and extra state management libraries.</p>
-          <blockquote>
-            <p>Unlike traditional UI frameworks, Svelte is a compiler that knows at build time how things could change in your app, rather than waiting to do the work at run time.</p>
-          </blockquote>
-          <p><em>– <a href="https://svelte.dev/blog/virtual-dom-is-pure-overhead">svelte.dev</a></em></p>
-          <p>In the end, this means that Svelte can achieve a similar declarative, state-driven UI development style without the overhead of the virtual DOM. That is the primary benefit here, and it results in some very fast (and concise) code.</p>
-          <p>Svelte itself is the compiler that handles the reactivity components at build time. You can learn the basics of Svelte through their excellent <a href="https://svelte.dev/tutorial/basics">code-along tutorial</a>.</p>
-          <p>SvelteKit is to Svelte as Nuxt is to Vue, or as Next.js is to React. A “meta-framework” as I mentioned earlier. It gives us filesystem-based routing, link prefetching, and plenty more.</p>
-          <p>Let’s look at some of the items we mentioned in the Nuxt 3 section and how they’re implemented in SvelteKit.</p>
-          <h3>The Blog - SvelteKit and mdsvex</h3>
-          <p>We can get automatic blog post routing with SvelteKit by just using their standard filesystem-based routing and a dynamic route. We can simply create a directory structure at <code>/src/routes/blog</code> and drop all of our markdown files inside the <code>/blog</code> folder.</p>
-          <p>This won’t work right away, though, because every route on a SvelteKit site needs a <code>+page.svelte</code> file. We want our markdown files to serve as this <code>+page.svelte</code> file though, and that’s where SvelteKit’s <a href="https://kit.svelte.dev/docs/routing">dynamic routes</a> come into play. We create a <code>[slug]</code> folder (brackets included) within the <code>/blog</code> folder and we put both a <code>+page.svelte</code> file and a <code>+page.js</code> file in there. This allows us to use Svelte’s built-in <code>load</code> function within <code>+page.js</code> and dynamically load the data that a given blog post will need. We can then display it in <code>+page.svelte</code>.</p>
-          <p>I know that’s a lot of Svelte-specific info. If you want to get deeper into the weeds on how this works and how to set up a SvelteKit blog yourself, check out <a href="https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog">Josh Collinsworth’s SvelteKit tutorial</a>. And <a href="https://ko-fi.com/collinsworth">tip him a few bucks</a> while you’re at it for the fantastic content. I sure did.</p>
-          <p>Regardless, that gives us a dead-simple way to add posts to our blog. All I have to do going forward is create a new <code>post-title.md</code> markdown file within the <code>/blog</code> folder and I automatically get a new blog post live on the site. Perfect.</p>
-          <h3>mdsvex</h3>
-          <p>Svelte’s counterpart to Nuxt’s MDC syntax is called <a href="https://mdsvex.com/">mdsvex</a>. An odd name for sure, but it’s supposed to be the svelte-y naming equivalent of the popular <a href="https://mdxjs.com/">MDX</a> syntax for React. <code>MD</code> and <code>X</code> to represent dynamic markdown, plus <code>SVE</code> in the middle for Svelte, equals mdsvex 🤷‍♂️</p>
-          <p>Additionally, mdsvex is <strong>not</strong> an officially sanctioned, first-party “components-in-markdown” preprocessor like MDC is for Nuxt. It’s an <a href="https://github.com/pngwn/mdsvex">open-source third-party library</a>. Despite it not being a first-party piece of technology, I found it simpler and easier to use than MDC in Nuxt. You can see some side-by-side comparisons in the <em>Comparing Nuxt 3 and SvelteKit</em> section below.</p>
-          <p>Here’s how you use components in markdown with mdsvex:</p>
-          <pre><code class="language-html">
-              <resizableimage src="/path/to-image.png" altText="Some alt text" />
+        <p>Additionally, Sébastien Chopin, the author of Nuxt, <a href="https://twitter.com/Atinux/status/1584928666748096513?s=20&amp;t=NG2MIaY9tREYnsNubMl7nw">let me know on Twitter</a> that the inline component issue with punctuation should be fixed very soon.</p>
+        <h3>Other - Nuxt</h3>
+        <p>That covers the key components of what differentiated Nuxt for me. The developer experience was largely wonderful, and Nuxt Content gave me an easy way to hook up blog posts to the rest of the site.</p>
+        <p>There were several other benefits of Nuxt that I found useful while doing the rewrite as well. I’ll list a few of them here:</p>
+        <ol>
+          <li>Vue 3 and the <a href="https://vuejs.org/guide/extras/composition-api-faq.html#why-composition-api">Composition API</a> were fantastic to work with. Composition utilities like <a href="https://vueuse.org/core/useFetch/">useFetch</a> saved me considerable time and removed plenty of unnecessary boilerplate.</li>
+          <li>The extremely fast development feedback loop powered by <a href="https://vitejs.dev/">Vite</a> and <a href="https://nitro.unjs.io/">Nitro</a>.</li>
+          <li>Just using Vue in general compared to my previous experiences with React. Vue felt easier to pick up and lighter weight than React, while giving me more than enough functionality for what my website needs.</li>
+        </ol>
+        <h2>Svelte and SvelteKit</h2>
+        <p>While Vue is conceptually similar to React in many ways, Svelte is largely not. Svelte does still have the concept of components, reactivity, lifecycle hooks, etc… like React &amp; Vue do, but Svelte is very different in <em>how</em> it accomplishes some of those things.</p>
+        <p>For example, React and Vue both use what’s called the “<a href="https://reactjs.org/docs/faq-internals.html">virtual DOM</a>” for updating the actual DOM whenever the application’s state changes. This is a bit of <a href="https://svelte.dev/blog/virtual-dom-is-pure-overhead">overhead</a> to simplify the development experience for the user.</p>
+        <p>Svelte rejects the entire idea of the virtual DOM and extra state management libraries.</p>
+        <blockquote>
+          <p>Unlike traditional UI frameworks, Svelte is a compiler that knows at build time how things could change in your app, rather than waiting to do the work at run time.</p>
+        </blockquote>
+        <p><em>– <a href="https://svelte.dev/blog/virtual-dom-is-pure-overhead">svelte.dev</a></em></p>
+        <p>In the end, this means that Svelte can achieve a similar declarative, state-driven UI development style without the overhead of the virtual DOM. That is the primary benefit here, and it results in some very fast (and concise) code.</p>
+        <p>Svelte itself is the compiler that handles the reactivity components at build time. You can learn the basics of Svelte through their excellent <a href="https://svelte.dev/tutorial/basics">code-along tutorial</a>.</p>
+        <p>SvelteKit is to Svelte as Nuxt is to Vue, or as Next.js is to React. A “meta-framework” as I mentioned earlier. It gives us filesystem-based routing, link prefetching, and plenty more.</p>
+        <p>Let’s look at some of the items we mentioned in the Nuxt 3 section and how they’re implemented in SvelteKit.</p>
+        <h3>The Blog - SvelteKit and mdsvex</h3>
+        <p>We can get automatic blog post routing with SvelteKit by just using their standard filesystem-based routing and a dynamic route. We can simply create a directory structure at <code>/src/routes/blog</code> and drop all of our markdown files inside the <code>/blog</code> folder.</p>
+        <p>This won’t work right away, though, because every route on a SvelteKit site needs a <code>+page.svelte</code> file. We want our markdown files to serve as this <code>+page.svelte</code> file though, and that’s where SvelteKit’s <a href="https://kit.svelte.dev/docs/routing">dynamic routes</a> come into play. We create a <code>[slug]</code> folder (brackets included) within the <code>/blog</code> folder and we put both a <code>+page.svelte</code> file and a <code>+page.js</code> file in there. This allows us to use Svelte’s built-in <code>load</code> function within <code>+page.js</code> and dynamically load the data that a given blog post will need. We can then display it in <code>+page.svelte</code>.</p>
+        <p>I know that’s a lot of Svelte-specific info. If you want to get deeper into the weeds on how this works and how to set up a SvelteKit blog yourself, check out <a href="https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog">Josh Collinsworth’s SvelteKit tutorial</a>. And <a href="https://ko-fi.com/collinsworth">tip him a few bucks</a> while you’re at it for the fantastic content. I sure did.</p>
+        <p>Regardless, that gives us a dead-simple way to add posts to our blog. All I have to do going forward is create a new <code>post-title.md</code> markdown file within the <code>/blog</code> folder and I automatically get a new blog post live on the site. Perfect.</p>
+        <h3>mdsvex</h3>
+        <p>Svelte’s counterpart to Nuxt’s MDC syntax is called <a href="https://mdsvex.com/">mdsvex</a>. An odd name for sure, but it’s supposed to be the svelte-y naming equivalent of the popular <a href="https://mdxjs.com/">MDX</a> syntax for React. <code>MD</code> and <code>X</code> to represent dynamic markdown, plus <code>SVE</code> in the middle for Svelte, equals mdsvex 🤷‍♂️</p>
+        <p>Additionally, mdsvex is <strong>not</strong> an officially sanctioned, first-party “components-in-markdown” preprocessor like MDC is for Nuxt. It’s an <a href="https://github.com/pngwn/mdsvex">open-source third-party library</a>. Despite it not being a first-party piece of technology, I found it simpler and easier to use than MDC in Nuxt. You can see some side-by-side comparisons in the <em>Comparing Nuxt 3 and SvelteKit</em> section below.</p>
+        <p>Here’s how you use components in markdown with mdsvex:</p>
+        <pre><code class="language-html">
+            <resizableimage src="/path/to-image.png" altText="Some alt text" />
 </code></pre>
-          <p>Look at that! So straightforward. You use it just like every other Svelte component in any other Svelte file.</p>
-          <p>And it’s the same for inline components. No weird asterisks around how to handle punctuation or special symbols immediately after you use the component. It just works.</p>
-          <h3>Other - SvelteKit</h3>
-          <p>I’ve already discussed most of the primary benefits I found when using Svelte and SvelteKit, as well as discussed how I implemented the blog in this version of the site. But several other SvelteKit niceties deserve a callout before moving on:</p>
-          <ol>
-            <li>Like Nuxt 3, the developer experience was great and the development feedback loop was extremely fast. SvelteKit also uses Vite but comes bundled with a <a href="https://github.com/sveltejs/vite-plugin-svelte">Svelte plugin for Vite</a> and <a href="https://github.com/sveltejs/vite-plugin-svelte/blob/main/docs/config.md#hot">Hot Module Replacement (HMR)</a> to reflect changes to your code in the browser immediately.</li>
-            <li>Svelte itself was surprisingly easy to learn. I mentioned the <a href="https://svelte.dev/tutorial/basics">tutorial</a> already, but it really is very simple to get a hang of while you work through that. It’s a clean and simple framework.</li>
-            <li>Due to its smaller size, no virtual DOM, optimizing at build-time rather than run-time, and no need for extra state management code, Svelte is arguably <a href="https://procoders.tech/blog/svelte-vs-vue-frameworks-comparison/">the fastest</a> JavaScript framework on the market today</li>
-          </ol>
-          <h2>Comparing Nuxt 3 and SvelteKit</h2>
-          <p>Ok, enough on my experience with each. Let’s get into some hands-on comparisons between how they performed when actually building this website. I’ll start with a couple of component comparisons before getting into total page sizes, load speeds, and total lines of code.</p>
-          <h3>Component Comparisons</h3>
-          <h4>Topbar Component</h4>
-          <p>A good first component to look at for comparison’s sake is the Topbar component. The Topbar only appears on small screens/mobile phones, but it interacts with the Sidebar in an interesting way.</p>
-          <p>When you tap the sidebar icon, it needs to send some kind of notification to the Sidebar component to let it know that it should open/close itself.</p>
-          <p>Here’s what the Topbar looks like:</p>
-          <p><img src="/images/nuxt-3-vs-sveltekit/topbarComponent.png" alt="The Topbar component" class="img-fluid" /></p>
-          <p>Here’s a simplified implementation of the Topbar component in Vue 3:</p>
-          <p><em>Topbar.vue</em></p>
-          <pre><code class="language-js"><script setup>
+        <p>Look at that! So straightforward. You use it just like every other Svelte component in any other Svelte file.</p>
+        <p>And it’s the same for inline components. No weird asterisks around how to handle punctuation or special symbols immediately after you use the component. It just works.</p>
+        <h3>Other - SvelteKit</h3>
+        <p>I’ve already discussed most of the primary benefits I found when using Svelte and SvelteKit, as well as discussed how I implemented the blog in this version of the site. But several other SvelteKit niceties deserve a callout before moving on:</p>
+        <ol>
+          <li>Like Nuxt 3, the developer experience was great and the development feedback loop was extremely fast. SvelteKit also uses Vite but comes bundled with a <a href="https://github.com/sveltejs/vite-plugin-svelte">Svelte plugin for Vite</a> and <a href="https://github.com/sveltejs/vite-plugin-svelte/blob/main/docs/config.md#hot">Hot Module Replacement (HMR)</a> to reflect changes to your code in the browser immediately.</li>
+          <li>Svelte itself was surprisingly easy to learn. I mentioned the <a href="https://svelte.dev/tutorial/basics">tutorial</a> already, but it really is very simple to get a hang of while you work through that. It’s a clean and simple framework.</li>
+          <li>Due to its smaller size, no virtual DOM, optimizing at build-time rather than run-time, and no need for extra state management code, Svelte is arguably <a href="https://procoders.tech/blog/svelte-vs-vue-frameworks-comparison/">the fastest</a> JavaScript framework on the market today</li>
+        </ol>
+        <h2>Comparing Nuxt 3 and SvelteKit</h2>
+        <p>Ok, enough on my experience with each. Let’s get into some hands-on comparisons between how they performed when actually building this website. I’ll start with a couple of component comparisons before getting into total page sizes, load speeds, and total lines of code.</p>
+        <h3>Component Comparisons</h3>
+        <h4>Topbar Component</h4>
+        <p>A good first component to look at for comparison’s sake is the Topbar component. The Topbar only appears on small screens/mobile phones, but it interacts with the Sidebar in an interesting way.</p>
+        <p>When you tap the sidebar icon, it needs to send some kind of notification to the Sidebar component to let it know that it should open/close itself.</p>
+        <p>Here’s what the Topbar looks like:</p>
+        <p><img src="/images/nuxt-3-vs-sveltekit/topbarComponent.png" alt="The Topbar component" class="img-fluid" /></p>
+        <p>Here’s a simplified implementation of the Topbar component in Vue 3:</p>
+        <p><em>Topbar.vue</em></p>
+        <pre><code class="language-js"><script setup>
   import IconShowSidebar from '~icons/zondicons/show-sidebar'
   
   const emit = defineEmits(["toggleSidebar", "updateSelectedPageFromTopbar"])
@@ -251,19 +229,19 @@ export default {
 </script>
 
 
-              <template> 
-                <div> 
-                  <button @click="toggleSidebar" type="button" value="Open sidebar"> 
-                    <icon-show-sidebar /> </button> 
-                  <nuxtlink to="/" @click="updateSelectedPage">
-                    Ryan Token
-                  </nuxtlink> 
-                </div> 
-              </template>
+            <template> 
+              <div> 
+                <button @click="toggleSidebar" type="button" value="Open sidebar"> 
+                  <icon-show-sidebar /> </button> 
+                <nuxtlink to="/" @click="updateSelectedPage">
+                  Ryan Token
+                </nuxtlink> 
+              </div> 
+            </template>
 </code></pre>
-          <p>And here it is in Svelte:</p>
-          <p><em>Topbar.svelte</em></p>
-          <pre><code class="language-html"><script>
+        <p>And here it is in Svelte:</p>
+        <p><em>Topbar.svelte</em></p>
+        <pre><code class="language-html"><script>
   import { SidebarIcon } from 'svelte-feather-icons'
   export let open
   export let currentPage
@@ -273,15 +251,15 @@ export default {
 </script>
 
 
-              <div> 
-                <button on:click="{toggleSidebar}" type="button" value="Open sidebar"> 
-                  <sidebaricon /> </button> 
-                <a href="/" on:click="{updateSelectedPage}">Ryan Token</a> 
-              </div>
+            <div> 
+              <button on:click="{toggleSidebar}" type="button" value="Open sidebar"> 
+                <sidebaricon /> </button> 
+              <a href="/" on:click="{updateSelectedPage}">Ryan Token</a> 
+            </div>
 </code></pre>
-          <p>The Topbar component and the Sidebar component are rendered at the same level in the component hierarchy - one is not a child of the other. However, the Sidebar needs to react to changes in the Topbar’s state. As mentioned, when a user taps the “toggle sidebar” icon in the Topbar, it should open/close the Sidebar.</p>
-          <p>For reference, here’s a simplified version of the parent component that renders both the Sidebar and the Topbar:</p>
-          <pre><code class="language-html"><script>
+        <p>The Topbar component and the Sidebar component are rendered at the same level in the component hierarchy - one is not a child of the other. However, the Sidebar needs to react to changes in the Topbar’s state. As mentioned, when a user taps the “toggle sidebar” icon in the Topbar, it should open/close the Sidebar.</p>
+        <p>For reference, here’s a simplified version of the parent component that renders both the Sidebar and the Topbar:</p>
+        <pre><code class="language-html"><script>
   import Sidebar from '$lib/components/Sidebar.svelte'
   import Topbar from '$lib/components/Topbar.svelte'
   export let data
@@ -291,28 +269,28 @@ export default {
 </script>
 
 
+            <div> 
+              <sidebar openedStatus="{sidebarOpened}" currentPage="{currentPage}" /> 
               <div> 
-                <sidebar openedStatus="{sidebarOpened}" currentPage="{currentPage}" /> 
-                <div> 
-                  <topbar sidebarOpen="{sidebarOpened}" currentPage="{currentPage}" /> 
-                  <main> 
-                    <slot /> 
-                  </main> 
-                </div> 
-              </div>
+                <topbar sidebarOpen="{sidebarOpened}" currentPage="{currentPage}" /> 
+                <main> 
+                  <slot /> 
+                </main> 
+              </div> 
+            </div>
 </code></pre>
-          <p>A change in the Topbar’s <code>sidebarOpen</code> state needs to be bubbled up to its parent component, then forwarded on to the Sidebar component so the Sidebar knows whether it should open itself, close itself, or do nothing.</p>
-          <p>Props are typically sent <em>from</em> a parent component <em>to</em> a child component. Sending prop data changes back up the hierarchy from a child to a parent is always more complicated. Vue and Svelte both have ways of handling this, but they do it very differently.</p>
-          <p>Vue uses the concept of <a href="https://vuejs.org/guide/components/events.html#emitting-and-listening-to-events">emits</a> to send messages from a child to its parent.</p>
-          <p>Svelte uses <a href="https://svelte.dev/repl/e6f91174592d45c78f4701b2d311b62e?version=3.29.4">two-way data bindings</a> instead. In the parent component, I can pass the value of the Topbar’s <code>open</code> prop to the Sidebar with the <code>bind</code> keyword like so: <code>
-              <sidebar bind:open="{sidebarOpened}" /></code></p>
-          <p>Personally, I found Svelte’s approach to be more straightforward than needing to <code>emit</code> an event and then set up an event listener that reacts to that. Neither approach was overly complex, but Svelte’s felt more natural to me.</p>
-          <h4>BlogPreview Component</h4>
-          <p>Let’s look at one more component comparison before moving on.</p>
-          <p>The BlogPreview component is the responsive card that shows each blog post’s primary image, title, description, publish date, and tags. Here’s how it looks:</p>
-          <p><img src="/images/nuxt-3-vs-sveltekit/blogPreviewComponent.png" alt="The BlogPreview component" class="img-fluid" /></p>
-          <p>Here’s a simplified implementation of it in Vue 3:</p>
-          <pre><code class="language-html"><script setup>
+        <p>A change in the Topbar’s <code>sidebarOpen</code> state needs to be bubbled up to its parent component, then forwarded on to the Sidebar component so the Sidebar knows whether it should open itself, close itself, or do nothing.</p>
+        <p>Props are typically sent <em>from</em> a parent component <em>to</em> a child component. Sending prop data changes back up the hierarchy from a child to a parent is always more complicated. Vue and Svelte both have ways of handling this, but they do it very differently.</p>
+        <p>Vue uses the concept of <a href="https://vuejs.org/guide/components/events.html#emitting-and-listening-to-events">emits</a> to send messages from a child to its parent.</p>
+        <p>Svelte uses <a href="https://svelte.dev/repl/e6f91174592d45c78f4701b2d311b62e?version=3.29.4">two-way data bindings</a> instead. In the parent component, I can pass the value of the Topbar’s <code>open</code> prop to the Sidebar with the <code>bind</code> keyword like so: <code>
+            <sidebar bind:open="{sidebarOpened}" /></code></p>
+        <p>Personally, I found Svelte’s approach to be more straightforward than needing to <code>emit</code> an event and then set up an event listener that reacts to that. Neither approach was overly complex, but Svelte’s felt more natural to me.</p>
+        <h4>BlogPreview Component</h4>
+        <p>Let’s look at one more component comparison before moving on.</p>
+        <p>The BlogPreview component is the responsive card that shows each blog post’s primary image, title, description, publish date, and tags. Here’s how it looks:</p>
+        <p><img src="/images/nuxt-3-vs-sveltekit/blogPreviewComponent.png" alt="The BlogPreview component" class="img-fluid" /></p>
+        <p>Here’s a simplified implementation of it in Vue 3:</p>
+        <pre><code class="language-html"><script setup>
   const props = defineProps({
     slug: String,
     title: String,
@@ -338,32 +316,32 @@ export default {
 </script>
 
 
-              <template> 
-                <div> 
-                  <div @click="navigate(slug)"> 
+            <template> 
+              <div> 
+                <div @click="navigate(slug)"> 
+                  <div> 
                     <div> 
+                      <img :src="image" :alt="imageAlt" /> 
+                    </div> 
+                    <div> 
+                      <p>{{ title }}</p> 
+                      <p>{{ description }}</p> 
+                      <p>{{ formattedDate }}</p> 
                       <div> 
-                        <img :src="image" :alt="imageAlt" /> 
-                      </div> 
-                      <div> 
-                        <p>{{ title }}</p> 
-                        <p>{{ description }}</p> 
-                        <p>{{ formattedDate }}</p> 
-                        <div> 
-                          <div v-for="tag in tags" :key="tag"> 
-                            <nuxtlink :to="'/tags/' + tag" @click.stop="navigate(`/tags/${tag}`)">
-                               {{ tag }} 
-                            </nuxtlink> 
-                          </div> 
+                        <div v-for="tag in tags" :key="tag"> 
+                          <nuxtlink :to="'/tags/' + tag" @click.stop="navigate(`/tags/${tag}`)">
+                             {{ tag }} 
+                          </nuxtlink> 
                         </div> 
                       </div> 
                     </div> 
                   </div> 
                 </div> 
-              </template>
+              </div> 
+            </template>
 </code></pre>
-          <p>And here’s how it looks in Svelte:</p>
-          <pre><code class="language-html"><script>
+        <p>And here’s how it looks in Svelte:</p>
+        <pre><code class="language-html"><script>
   import { goto } from '$app/navigation'
   export let slug, title, description, date, image, imageAlt, tags
 
@@ -376,84 +354,84 @@ export default {
 </script>
 
 
-              <div> 
-                <div on:click="{()" =>
-                   goto(slug)}&gt; 
+            <div> 
+              <div on:click="{()" =>
+                 goto(slug)}&gt; 
+                <div> 
                   <div> 
-                    <div> 
-                      <img src="{image}" alt="{imageAlt}" loading="lazy" decoding="async" /> 
-                    </div> 
-                    <div> 
-                      <p>{ title }</p> 
-                      <p>{ description }</p> 
-                      <p>{ formattedDate() }</p> 
-                      <div>
-                         {#each tags as tag (tag)} 
-                        <div> 
-                          <a href="/blog/tags/{tag}"> { tag } </a> 
-                        </div> {/each} 
-                      </div> 
+                    <img src="{image}" alt="{imageAlt}" loading="lazy" decoding="async" /> 
+                  </div> 
+                  <div> 
+                    <p>{ title }</p> 
+                    <p>{ description }</p> 
+                    <p>{ formattedDate() }</p> 
+                    <div>
+                       {#each tags as tag (tag)} 
+                      <div> 
+                        <a href="/blog/tags/{tag}"> { tag } </a> 
+                      </div> {/each} 
                     </div> 
                   </div> 
                 </div> 
-              </div>
+              </div> 
+            </div>
 </code></pre>
-          <p>The main difference to outline here is how each framework handles a <code>for-each</code> loop within the HTML. For this component, we want to loop through an array of tags. For each tag in the array, we need to render out the name of the tag and a link to it.</p>
-          <p>Vue 3 (what Nuxt uses) does this with the <a href="https://vuejs.org/guide/essentials/list.html">v-for</a> directive.</p>
-          <p>Svelte uses an <a href="https://svelte.dev/tutorial/each-blocks">#each</a> block around the <code>div</code> that should be repeated.</p>
-          <p>Both are relatively nice and concise. I don’t have a strong preference between the two here. However, the Svelte component is 13 lines shorter than its Vue counterpart.</p>
-          <h3>MDC vs mdsvex</h3>
-          <p>I mentioned my preference for Svelte’s mdsvex to Nuxt’s MDC syntax earlier, but I want to give a side-by-side comparison here so it’s easier to understand why. Again, these are the libraries that allow you to use Vue or Svelte components within Markdown.</p>
-          <p>Here’s how you use a block component, like a resizable image, with Vue and MDC:</p>
-          <pre><code class="language-js">::ResizableBlogImage{src="/path/to-image.png" altText="Some alt text"}
+        <p>The main difference to outline here is how each framework handles a <code>for-each</code> loop within the HTML. For this component, we want to loop through an array of tags. For each tag in the array, we need to render out the name of the tag and a link to it.</p>
+        <p>Vue 3 (what Nuxt uses) does this with the <a href="https://vuejs.org/guide/essentials/list.html">v-for</a> directive.</p>
+        <p>Svelte uses an <a href="https://svelte.dev/tutorial/each-blocks">#each</a> block around the <code>div</code> that should be repeated.</p>
+        <p>Both are relatively nice and concise. I don’t have a strong preference between the two here. However, the Svelte component is 13 lines shorter than its Vue counterpart.</p>
+        <h3>MDC vs mdsvex</h3>
+        <p>I mentioned my preference for Svelte’s mdsvex to Nuxt’s MDC syntax earlier, but I want to give a side-by-side comparison here so it’s easier to understand why. Again, these are the libraries that allow you to use Vue or Svelte components within Markdown.</p>
+        <p>Here’s how you use a block component, like a resizable image, with Vue and MDC:</p>
+        <pre><code class="language-js">::ResizableBlogImage{src="/path/to-image.png" altText="Some alt text"}
 ::
 </code></pre>
-          <p>And here’s how you do the same thing with Svelte and mdsvex:</p>
-          <pre><code class="language-html">
-              <resizableimage src="/path/to-image.png" altText="Some alt text" />
+        <p>And here’s how you do the same thing with Svelte and mdsvex:</p>
+        <pre><code class="language-html">
+            <resizableimage src="/path/to-image.png" altText="Some alt text" />
 </code></pre>
-          <p>Again, neither are <em>bad</em>, but one of them makes more sense and is more concise. And that, to me, is the Svelte solution.</p>
-          <h3>Page Size Comparisons</h3>
-          <p>So we’ve talked now for a while about conceptual differences, syntactic differences, and developer experience differences between the frameworks, but what about real-world speed and size comparisons?</p>
-          <p>Let’s start with size.</p>
-          <p>To gauge a page’s size, I’m using Chrome’s standard Developer Tools and the Network tab. Doing a hard refresh of the home page of my site, I see the following:</p>
-          <p><strong>Nuxt 3 site</strong>:</p>
-          <ul>
-            <li>45 requests</li>
-            <li>942 kB transferred</li>
-            <li>2.0 MB resources</li>
-          </ul>
-          <p><strong>SvelteKit site</strong>:</p>
-          <ul>
-            <li>37 requests</li>
-            <li>627 kB transferred</li>
-            <li>1.6 MB resources</li>
-          </ul>
-          <p>The SvelteKit site is smaller in every way despite being a nearly identical website. Plus one for SvelteKit.</p>
-          <p>Additionally, Svelte, as its name implies, is simply a small framework. This is primarily because there’s no virtual DOM or extra state management libraries that Svelte needs to deal with. This results in a framework that’s smaller in overall size and has less <a href="https://builtin.com/software-engineering-perspectives/fix-javascript-bloat">JavaScript bloat</a>.</p>
-          <p>The size difference between the two pages also lends itself to our next point of comparison: speed.</p>
-          <h3>Page Speed Comparisons</h3>
-          <p>Speed is harder to measure reliably. While the Network tab was consistent and reliable for calculating page size, it showed a significant variance in page load speed on every refresh for both versions of the site.</p>
-          <p>To try to put some more concrete numbers around this, we’ll defer to Google’s <a href="https://pagespeed.web.dev/">PageSpeed Insights</a>.</p>
-          <p>Note: I have not yet put serious time into optimizing either site for increased performance metrics aside from compressing images.</p>
-          <p><strong>Nuxt 3 site - mobile</strong></p>
-          <p><img src="/images/nuxt-3-vs-sveltekit/nuxt-pagespeed-mobile.png" alt="PageSpeed Insights scores for the Nuxt 3 site on mobile" class="img-fluid" /></p>
-          <p><strong>Nuxt 3 site - desktop</strong></p>
-          <p><img src="/images/nuxt-3-vs-sveltekit/nuxt-pagespeed-desktop.png" alt="PageSpeed Insights scores for the Nuxt 3 site on desktop" class="img-fluid" /></p>
-          <p><strong>SvelteKit site - mobile</strong></p>
-          <p><img src="/images/nuxt-3-vs-sveltekit/svelte-pagespeed-mobile.png" alt="PageSpeed Insights scores for the SvelteKit site on mobile" class="img-fluid" /></p>
-          <p><strong>SvelteKit site - desktop</strong></p>
-          <p><img src="/images/nuxt-3-vs-sveltekit/svelte-pagespeed-desktop.png" alt="PageSpeed Insights scores for the SvelteKit site on desktop" class="img-fluid" /></p>
-          <p>Some interesting takeaways there. First, they both scored perfect 100s on desktop. Again, I have put almost no time into deeper page optimizations. All I’ve actively done is compressed the image files throughout the site so they’re smaller and quicker to load. To get perfect 100s on desktop effectively out of the box with both of these frameworks is impressive.</p>
-          <p>There’s a bigger difference in how they scored for mobile. The Nuxt site performed moderately worse in every metric on mobile than the SvelteKit site. The primary performance drag for both sites was the Apple Podcasts embedded player I include on the home page. PageSpeed Insights complained about that player being slow to load every time. Given that it’s 1) lazily loaded, and 2) at the bottom of the page so you typically need to scroll to see it, I’m not too worried about it.</p>
-          <p>There were minor differences every time I ran the PageSpeed Insights process on each site. They were relatively consistent each time though, so I think it’s a fair comparison.</p>
-          <h3>Total Lines of Code</h3>
-          <p>Before we wrap up, I wanted to share a quick note on total lines of code for each project.</p>
-          <p>Total lines of code (counted with <a href="https://github.com/AlDanial/cloc">cloc</a>):</p>
-          <ul>
-            <li>Nuxt 3 site: 27,939 total lines of code</li>
-          </ul>
-          <pre><code>-------------------------------------------------------------------------------
+        <p>Again, neither are <em>bad</em>, but one of them makes more sense and is more concise. And that, to me, is the Svelte solution.</p>
+        <h3>Page Size Comparisons</h3>
+        <p>So we’ve talked now for a while about conceptual differences, syntactic differences, and developer experience differences between the frameworks, but what about real-world speed and size comparisons?</p>
+        <p>Let’s start with size.</p>
+        <p>To gauge a page’s size, I’m using Chrome’s standard Developer Tools and the Network tab. Doing a hard refresh of the home page of my site, I see the following:</p>
+        <p><strong>Nuxt 3 site</strong>:</p>
+        <ul>
+          <li>45 requests</li>
+          <li>942 kB transferred</li>
+          <li>2.0 MB resources</li>
+        </ul>
+        <p><strong>SvelteKit site</strong>:</p>
+        <ul>
+          <li>37 requests</li>
+          <li>627 kB transferred</li>
+          <li>1.6 MB resources</li>
+        </ul>
+        <p>The SvelteKit site is smaller in every way despite being a nearly identical website. Plus one for SvelteKit.</p>
+        <p>Additionally, Svelte, as its name implies, is simply a small framework. This is primarily because there’s no virtual DOM or extra state management libraries that Svelte needs to deal with. This results in a framework that’s smaller in overall size and has less <a href="https://builtin.com/software-engineering-perspectives/fix-javascript-bloat">JavaScript bloat</a>.</p>
+        <p>The size difference between the two pages also lends itself to our next point of comparison: speed.</p>
+        <h3>Page Speed Comparisons</h3>
+        <p>Speed is harder to measure reliably. While the Network tab was consistent and reliable for calculating page size, it showed a significant variance in page load speed on every refresh for both versions of the site.</p>
+        <p>To try to put some more concrete numbers around this, we’ll defer to Google’s <a href="https://pagespeed.web.dev/">PageSpeed Insights</a>.</p>
+        <p>Note: I have not yet put serious time into optimizing either site for increased performance metrics aside from compressing images.</p>
+        <p><strong>Nuxt 3 site - mobile</strong></p>
+        <p><img src="/images/nuxt-3-vs-sveltekit/nuxt-pagespeed-mobile.png" alt="PageSpeed Insights scores for the Nuxt 3 site on mobile" class="img-fluid" /></p>
+        <p><strong>Nuxt 3 site - desktop</strong></p>
+        <p><img src="/images/nuxt-3-vs-sveltekit/nuxt-pagespeed-desktop.png" alt="PageSpeed Insights scores for the Nuxt 3 site on desktop" class="img-fluid" /></p>
+        <p><strong>SvelteKit site - mobile</strong></p>
+        <p><img src="/images/nuxt-3-vs-sveltekit/svelte-pagespeed-mobile.png" alt="PageSpeed Insights scores for the SvelteKit site on mobile" class="img-fluid" /></p>
+        <p><strong>SvelteKit site - desktop</strong></p>
+        <p><img src="/images/nuxt-3-vs-sveltekit/svelte-pagespeed-desktop.png" alt="PageSpeed Insights scores for the SvelteKit site on desktop" class="img-fluid" /></p>
+        <p>Some interesting takeaways there. First, they both scored perfect 100s on desktop. Again, I have put almost no time into deeper page optimizations. All I’ve actively done is compressed the image files throughout the site so they’re smaller and quicker to load. To get perfect 100s on desktop effectively out of the box with both of these frameworks is impressive.</p>
+        <p>There’s a bigger difference in how they scored for mobile. The Nuxt site performed moderately worse in every metric on mobile than the SvelteKit site. The primary performance drag for both sites was the Apple Podcasts embedded player I include on the home page. PageSpeed Insights complained about that player being slow to load every time. Given that it’s 1) lazily loaded, and 2) at the bottom of the page so you typically need to scroll to see it, I’m not too worried about it.</p>
+        <p>There were minor differences every time I ran the PageSpeed Insights process on each site. They were relatively consistent each time though, so I think it’s a fair comparison.</p>
+        <h3>Total Lines of Code</h3>
+        <p>Before we wrap up, I wanted to share a quick note on total lines of code for each project.</p>
+        <p>Total lines of code (counted with <a href="https://github.com/AlDanial/cloc">cloc</a>):</p>
+        <ul>
+          <li>Nuxt 3 site: 27,939 total lines of code</li>
+        </ul>
+        <pre><code>-------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 JSON                             8              0              0          26092
@@ -469,10 +447,10 @@ Text                             1              0              0              2
 SUM:                            55            762             62          27939
 -------------------------------------------------------------------------------
 </code></pre>
-          <ul>
-            <li>SvelteKit site: 8,439 total lines of code</li>
-          </ul>
-          <pre><code>-------------------------------------------------------------------------------
+        <ul>
+          <li>SvelteKit site: 8,439 total lines of code</li>
+        </ul>
+        <pre><code>-------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 JSON                             4              0              0           6463
@@ -485,34 +463,32 @@ HTML                             1              0              0             12
 SUM:                            52            767             14           8439
 -------------------------------------------------------------------------------
 </code></pre>
-          <p>A monstrous difference. 27,939 lines of code for the Nuxt 3 project, and only 8,439 for the SvelteKit project.</p>
-          <p>The major difference here is the amount of JSON. I’m not writing much JSON myself for this website - nearly all of that is coming from the <code>package-lock.json</code> file that manages dependency versions. This means that the Nuxt 3 version has a <em>lot</em> more internal dependencies than the SvelteKit version.</p>
-          <p>Doing an <code>npm install</code> from the root of each project reveals that the Nuxt 3 site is using 961 individual packages, while the SvelteKit site is using just 302. That is significant.</p>
-          <p>The amount of actual code you write as a developer is relatively similar for each, but SvelteKit having 1/3 of the overhead when compared to Nuxt 3 is very attractive.</p>
-          <h2>The Winner (for now)</h2>
-          <p><img src="/images/nuxt-3-vs-sveltekit/sveltekit-full-res.png" alt="The SvelteKit logo" class="img-fluid" /></p>
-          <p>You’ve probably already guessed which framework I ended up choosing for the production version of the site.</p>
-          <p>I chose SvelteKit, and these were the primary reasons:</p>
-          <ol>
-            <li>It’s no-nonsense. The syntax is clean, concise, and consistent while using primarily traditional HTML, CSS, and JavaScript. There is some “magic” with SvelteKit, like the filesystem-based routing, but Svelte itself is very self-explanatory</li>
-            <li>No virtual DOM diffing or complex state management code</li>
-            <li>It’s reactive by default. Vue requires you to explicitly initialize reactive variables, Svelte does not</li>
-            <li>It’s extremely fast and performs well on both desktop and mobile out of the box</li>
-            <li>I prefer Svelte’s <code>mdsvex</code> to Nuxt’s <code>MDC</code> for components in Markdown. How the blog works is arguably the most important part of the site for me, so this matters a lot</li>
-            <li>I prefer Svelte’s two-way binding feature to Vue’s <code>emit</code> feature for bubbling props from child components up to their parents</li>
-          </ol>
-          <p>Let me be clear, though. Nuxt 3 is an excellent framework. It’s performant, provides a wonderful developer experience, and has a great team behind it and a bright future ahead of it.</p>
-          <p>I loved building the website with Nuxt. I was consistently impressed with how intuitive its features were to implement and how quickly I was able to get off the ground. I began this project with Nuxt for a reason.</p>
-          <p>The current plan is to maintain both the Nuxt 3 site and the SvelteKit site over time. I may even change which one ryantoken.com points to at various times. Doing this will keep me up-to-date with how each framework is progressing and keep my skillset up on both simultaneously.</p>
-          <p><strong>Nuxt 3 site</strong>: <a href="https://ryantoken-v3.vercel.app">https://ryantoken-v3.vercel.app</a></p>
-          <p><strong>SvelteKit site</strong>: <a href="/">https://ryantoken.com</a> (you’re on it)</p>
-          <p>This was a wonderful exercise to go through, and I’ve never been happier with my personal website. Thanks for reading, and feel free to <a href="mailto:ryantoken13@gmail.com">get in touch</a> if you have feedback on this blog post or the site in general. I’d love to hear from you!</p>
-          <p>And if you particularly enjoyed this post, you can <a href="https://www.buymeacoffee.com/ryantoken">buy me a coffee</a>!</p>
-          <p><a href="https://www.buymeacoffee.com/ryantoken"><img src="/images/bmc-button.png" class="img-fluid" /></a></p>
-          <p></p>
-        </div>
+        <p>A monstrous difference. 27,939 lines of code for the Nuxt 3 project, and only 8,439 for the SvelteKit project.</p>
+        <p>The major difference here is the amount of JSON. I’m not writing much JSON myself for this website - nearly all of that is coming from the <code>package-lock.json</code> file that manages dependency versions. This means that the Nuxt 3 version has a <em>lot</em> more internal dependencies than the SvelteKit version.</p>
+        <p>Doing an <code>npm install</code> from the root of each project reveals that the Nuxt 3 site is using 961 individual packages, while the SvelteKit site is using just 302. That is significant.</p>
+        <p>The amount of actual code you write as a developer is relatively similar for each, but SvelteKit having 1/3 of the overhead when compared to Nuxt 3 is very attractive.</p>
+        <h2>The Winner (for now)</h2>
+        <p><img src="/images/nuxt-3-vs-sveltekit/sveltekit-full-res.png" alt="The SvelteKit logo" class="img-fluid" /></p>
+        <p>You’ve probably already guessed which framework I ended up choosing for the production version of the site.</p>
+        <p>I chose SvelteKit, and these were the primary reasons:</p>
+        <ol>
+          <li>It’s no-nonsense. The syntax is clean, concise, and consistent while using primarily traditional HTML, CSS, and JavaScript. There is some “magic” with SvelteKit, like the filesystem-based routing, but Svelte itself is very self-explanatory</li>
+          <li>No virtual DOM diffing or complex state management code</li>
+          <li>It’s reactive by default. Vue requires you to explicitly initialize reactive variables, Svelte does not</li>
+          <li>It’s extremely fast and performs well on both desktop and mobile out of the box</li>
+          <li>I prefer Svelte’s <code>mdsvex</code> to Nuxt’s <code>MDC</code> for components in Markdown. How the blog works is arguably the most important part of the site for me, so this matters a lot</li>
+          <li>I prefer Svelte’s two-way binding feature to Vue’s <code>emit</code> feature for bubbling props from child components up to their parents</li>
+        </ol>
+        <p>Let me be clear, though. Nuxt 3 is an excellent framework. It’s performant, provides a wonderful developer experience, and has a great team behind it and a bright future ahead of it.</p>
+        <p>I loved building the website with Nuxt. I was consistently impressed with how intuitive its features were to implement and how quickly I was able to get off the ground. I began this project with Nuxt for a reason.</p>
+        <p>The current plan is to maintain both the Nuxt 3 site and the SvelteKit site over time. I may even change which one ryantoken.com points to at various times. Doing this will keep me up-to-date with how each framework is progressing and keep my skillset up on both simultaneously.</p>
+        <p><strong>Nuxt 3 site</strong>: <a href="https://ryantoken-v3.vercel.app">https://ryantoken-v3.vercel.app</a></p>
+        <p><strong>SvelteKit site</strong>: <a href="/">https://ryantoken.com</a> (you’re on it)</p>
+        <p>This was a wonderful exercise to go through, and I’ve never been happier with my personal website. Thanks for reading, and feel free to <a href="mailto:ryantoken13@gmail.com">get in touch</a> if you have feedback on this blog post or the site in general. I’d love to hear from you!</p>
+        <p>And if you particularly enjoyed this post, you can <a href="https://www.buymeacoffee.com/ryantoken">buy me a coffee</a>!</p>
+        <p><a href="https://www.buymeacoffee.com/ryantoken"><img src="/images/bmc-button.png" class="img-fluid" /></a></p>
+        <p></p>
       </div>
-      <div class="ms-auto"></div>
     </div>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/ignite-core.js"></script>

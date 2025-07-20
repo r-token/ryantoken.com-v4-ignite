@@ -62,6 +62,7 @@ struct SocialsBar: HTML {
                         VStack {
                             Include("bluesky-icon.html")
                         }
+                        .frame(maxWidth: 25)
                     } else {
                         Link(
                             Image(systemName: profile.icon, description: profile.iconDescription),

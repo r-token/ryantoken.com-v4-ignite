@@ -13,18 +13,41 @@ struct Home: StaticPage {
     let title = "Home"
 
     var body: some HTML {
-        Text(markdown: """
-            I'm a [software engineer](\(Constants.githubUrl)), [podcaster](\(Constants.hurricastWebUrl)), [writer](/blog), [college sports fan](\(Constants.hurricastWebUrl)), and general techie.
-            """
-        )
+        HeaderText("Hi, I'm Ryan", size: .h1)
+            .padding(.bottom, 4)
 
-        Text(markdown: """
-            I'm [currently](https://ryan-token-cv-prod.s3.us-east-2.amazonaws.com/Ryan+Token+CV.pdf) a senior software engineer at [Daysheets](https://www.daysheets.com/), where I build across Apple platforms with [Swift](https://www.swift.org/) and [SwiftUI](https://developer.apple.com/swiftui/).
-            """
-        )
+        Text {
+            "I'm a "
+            Link("Swift", target: "https://www.swift.org/")
+            " developer who loves building for Apple platforms and beyond. By "
+            Link("day", target: "https://ryan-token-cv-prod.s3.us-east-2.amazonaws.com/Ryan+Token+CV.pdf")
+            ", I'm a senior software engineer at "
+            Link("Daysheets", target: "https://www.daysheets.com/")
+            ". By night, I make apps ("
 
+            Link(target: Constants.catchUpAppUrl) {
+                InlineAppIcon(path: "/images/catching-up/catchup-icon.png", description: "CatchUp app icon")
+            }
+
+            ", "
+
+            Link(target: Constants.outrankAppUrl) {
+                InlineAppIcon(path: "/images/outrank/outrank-icon.png", description: "Outrank app icon")
+            }
+
+            ", "
+
+            Link(target: Constants.hotLocalFoodAppUrl) {
+                InlineAppIcon(path: "/images/hot-local-food/hlf-icon-square.png", description: "Hot Local Food app icon")
+            }
+
+            ") and co-host "
+            Link("The Golden Hurricast", target: Constants.hurricastWebUrl)
+            "."
+        }
+        
         Text(markdown: """
-            In my free time, I do more of that ([CatchUp](https://apps.apple.com/us/app/catchup-keep-in-touch/id1358023550), [Outrank](https://apps.apple.com/us/app/outrank/id1588983785), [Hot Local Food](https://apps.apple.com/us/app/hot-local-food/id1621818779)), write plenty of [serverless](https://aws.amazon.com/serverless/) backend code, co-host [The Golden Hurricast](https://thegoldenhurricast.com/), play a lot of basketball, and hike with my wife and dog.
+            When I'm not coding, you'll find me playing basketball, skiing, or hiking with my wife and dog.
             """
         )
 

@@ -13,6 +13,8 @@ struct About: StaticPage {
     var body: some HTML {
         HeaderText("About Me", size: .h2)
         SubheaderText("A bit about me.")
+        SocialsBar()
+            .padding(.bottom, 4)
 
         Image("/images/me/profile-2025.jpeg", description: "A picture of Ryan Token sitting in the back of a car.")
             .resizable()

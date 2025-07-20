@@ -68,96 +68,72 @@
     <meta name="twitter:dnt" content="on" />
   </head>
   <body class="container" style="padding-top: 1.0em; padding-bottom: 1.0em; padding-left: 0.25em; padding-right: 0.25em">
-    <div class="vstack" style="padding-bottom: 24px">
-      <div class="mb-0 align-self-center">
-        <h1 class="text-primary" style="font-weight: 700"><a href="/" class="link-plain">Hi, I'm Ryan</a></h1>
-      </div>
-      <div class="mb-0 align-self-center" style="padding-bottom: 8px">
-        <div class="hstack gap-3">
-          <a href="https://x.com/_ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#000000, #ffffff)"><i class="bi-twitter-x"></i></a>
-          <div class="fs-5 mb-0 align-self-center vstack" style="margin-right: 9px; color: light-dark(#1185FE, #4A9EFF)">
-            <a href="https://bsky.app/profile/ryantoken.com"> 
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1185FE" class="bi bi-bluesky" viewbox="0 0 16 18"> 
-                <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948" /> 
-              </svg> </a> 
+    <header>
+      <nav class="fixed-top material-ultra-thin navbar navbar-expand-md">
+        <div class="container flex-wrap flex-lg-nowrap">
+          <div class="me-2 me-md-auto">
+            <a href="/" class="d-inline-flex align-items-center navbar-brand">Ryan Token</a>
           </div>
-          <a href="https://indieweb.social/@ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#563ACC, #7B5EE6)"><i class="bi-mastodon"></i></a>
-          <a href="https://github.com/r-token" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#000000, #ffffff)"><i class="bi-github"></i></a>
-          <a href="https://linkedin.com/in/ryantoken" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#0A66C2, #4A90E2)"><i class="bi-linkedin"></i></a>
-          <a href="mailto:ryantoken13@gmail.com" class="fs-5 mb-0 align-self-center" style="margin-right: 9px; color: light-dark(#6b7280, #9CA3AF)"><i class="bi-envelope"></i></a>
-        </div>
-      </div>
-      <div class="mb-0 align-self-center hstack gap-3">
-        <div class="mb-0 align-self-center">
-          <a href="/apps" class="text-body-secondary link-plain">Apps</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/projects" class="text-body-secondary link-plain">Projects</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/blog" class="text-body-secondary link-plain">Blog</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/about" class="text-body-secondary link-plain">About</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/meta" class="text-body-secondary link-plain">Meta</a>
-        </div>
-        <div class="mb-0 align-self-center">
-          <a href="/r-s-s" class="text-body-secondary link-plain">RSS</a>
-        </div>
-      </div>
-    </div>
-    <div class="hstack gap-3">
-      <div class="ms-auto"></div>
-      <div class="ig-main-content mb-0 align-self-center" style="width: 100%; max-width: 750px">
-        <div class="vstack" style="width: 100%; max-width: 600px; margin-left: auto; margin-right: auto">
-          <div class="mb-0 align-self-start">
-            <h2 class="text-body" style="font-weight: 600">CatchUp v3</h2>
+          <button type="button" class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav mb-2 mb-md-0 col justify-content-end">
+              <li class="nav-item"><a href="/apps" class="nav-link text-nowrap">Apps</a></li>
+              <li class="nav-item"><a href="/projects" class="nav-link text-nowrap">Projects</a></li>
+              <li class="nav-item"><a href="/blog" class="nav-link text-nowrap">Blog</a></li>
+              <li class="nav-item"><a href="/about" class="nav-link text-nowrap">About</a></li>
+              <li class="nav-item"><a href="/meta" class="nav-link text-nowrap">Meta</a></li>
+              <li class="nav-item"><a href="/r-s-s" class="nav-link text-nowrap">RSS</a></li>
+            </ul>
           </div>
-          <p class="text-body-secondary mb-0 align-self-start"><em>Revisiting my first iOS app with new features and a fresh UI.</em></p>
-          <p class="text-body-secondary mb-0 align-self-start" style="padding-top: 24px"><em>Published Apr 2, 2024</em></p>
-          <p class="text-body-secondary mb-0 align-self-start"><em>801 words; 4 minutes to read.</em></p>
-          <hr class="mb-0 align-self-start" style="padding-bottom: 36px" />
-          <img src="/images/catchup-v3/catchup-v3-logo.png" alt="CatchUp v3" class="img-fluid mb-0 align-self-start" style="border-radius: 20px; max-height: 300px" />
-          <p class="mb-0 align-self-start" style="padding-top: 36px"></p>
-          <p>I first launched <a href="https://apps.apple.com/us/app/catchup-keep-in-touch/id1358023550">CatchUp - Keep in Touch</a> for iOS in May 2018. It was the first app I’d ever released and it was, from a code perspective, objectively pretty bad.</p>
-          <p>It’s now April of 2024 and somehow, despite years of neglect while building <a href="https://apps.apple.com/us/app/hot-local-food/id1621818779">three</a> <a href="https://apps.apple.com/us/app/outrank/id1588983785">other</a> <a href="https://apps.apple.com/us/app/chat-by-storyboard/id1662743814">apps</a>, CatchUp still does relatively well on the App Store.</p>
-          <p>CatchUp is like a first child for me. It marked the beginning of a journey that has shaped my life and career. I still love and use the app weekly. It still helps me stay in touch with those that matter most.</p>
-          <p>However, due to the aforementioned neglect, it has had obvious bugs and missing features for quite a while. That all changes with CatchUp v3, out today.</p>
-          <p>CatchUp v3 is a significant improvement across every corner of the app. The core functionality remains - you can still add your contacts and set recurring reminders to CatchUp with people - but everything around it has changed.</p>
-          <p>First, there’s a new auto-updating grid of your next CatchUps. I’ve found this helpful as I plan my week and get a feel for who I should remember to get in touch with. It looks like this:</p>
-          <p><img src="/images/catchup-v3/next-catchups.jpeg" alt="A screenshot of the Next CatchUps grid" class="img-fluid" /></p>
-          <p>I’ve also revamped the contact detail screen’s design and removed the “Notification Preference” pop-up sheet entirely. Setting your notification preference for a contact now lives fully within the contact detail screen. There’s no “Save” step anymore either. The app auto-saves your notification preference every time you change it.</p>
-          <p>That new contact detail screen looks like this:</p>
-          <p><img src="/images/catchup-v3/detail-screen.jpeg" alt="A screenshot of the contact detail screen" class="img-fluid" /></p>
-          <p>All controls for this contact now live inside this single screen. Additionally, there’s a nice new “Next CatchUp” row, which shows the next time you’ll get a notification to CatchUp with this person.</p>
-          <h2>Longstanding Feature Requests</h2>
-          <p>Those are the primary UI improvements, though there are several more UI tweaks here and there that you might notice.</p>
-          <p>The rest of v3’s changes address longstanding feature requests. For example:</p>
-          <ul>
-            <li>There are now orange unread indicators on the contact rows if it’s time to CatchUp with them</li>
-            <li>Pulling down on the home screen fetches the latest contact picture and information for all of your selected contacts
-              <ul>
-                <li>Previously you had to delete and re-add the contact to update their information</li>
-              </ul></li>
-            <li>There is now automatic cloud syncing, so your contacts and notification preferences stay up-to-date across iPhone, iPad, and Mac
-              <ul>
-                <li>This involved a fun migration to <a href="https://developer.apple.com/documentation/swiftdata">SwiftData</a>, which dramatically simplified my local storage code</li>
-              </ul></li>
-          </ul>
-          <h2>Still Free with No Ads</h2>
-          <p>CatchUp is, and always will be, completely free with no ads. The tiny bits of money I make from this app come from the in-app Tip Jar. This is a passion project that I genuinely find helpful in my day-to-day life. I do not, nor do I have any incentive to, store your data on my servers or use your data in any way.</p>
-          <p>I hope that you use the app and find it valuable. If you do, please consider supporting development by leaving a tip in the app. I really do find that motivating. Alternatively, you can <a href="https://www.buymeacoffee.com/ryantoken">buy me a coffee</a>!</p>
-          <p><a href="https://www.buymeacoffee.com/ryantoken"><img src="/images/bmc-button.png" class="img-fluid" /></a></p>
-          <h2>Download</h2>
-          <p>Thank you for reading, and thank you for your interest in CatchUp - Keep in Touch. Feel free to reach out via <a href="mailto:ryantoken13@gmail.com">email</a> with any questions or comments.</p>
-          <p>CatchUp v3 is available on iOS, iPadOS, and macOS. It requires iOS 17. You can download it on the App Store today:</p>
-          <p><a href="https://apps.apple.com/us/app/catchup-keep-in-touch/id1358023550" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 125px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1526515200" alt="Download CatchUp v3 on the App Store" style="border-radius: 13px; width: 250px; height: 83px;" /></a></p>
-          <p></p>
         </div>
+      </nav>
+    </header>
+    <div class="ig-main-content" style="padding-top: 50px; padding-left: 10px; padding-right: 10px">
+      <div class="vstack" style="width: 100%; max-width: 600px; margin-left: auto; margin-right: auto">
+        <div class="mb-0 align-self-start">
+          <h2 class="text-body" style="font-weight: 600">CatchUp v3</h2>
+        </div>
+        <p class="text-body-secondary mb-0 align-self-start"><em>Revisiting my first iOS app with new features and a fresh UI.</em></p>
+        <p class="text-body-secondary mb-0 align-self-start" style="padding-top: 24px"><em>Published Apr 2, 2024</em></p>
+        <p class="text-body-secondary mb-0 align-self-start"><em>801 words; 4 minutes to read.</em></p>
+        <hr class="mb-0 align-self-start" style="padding-bottom: 36px" />
+        <img src="/images/catchup-v3/catchup-v3-logo.png" alt="CatchUp v3" class="img-fluid mb-0 align-self-start" style="border-radius: 20px; max-height: 300px" />
+        <p class="mb-0 align-self-start" style="padding-top: 36px"></p>
+        <p>I first launched <a href="https://apps.apple.com/us/app/catchup-keep-in-touch/id1358023550">CatchUp - Keep in Touch</a> for iOS in May 2018. It was the first app I’d ever released and it was, from a code perspective, objectively pretty bad.</p>
+        <p>It’s now April of 2024 and somehow, despite years of neglect while building <a href="https://apps.apple.com/us/app/hot-local-food/id1621818779">three</a> <a href="https://apps.apple.com/us/app/outrank/id1588983785">other</a> <a href="https://apps.apple.com/us/app/chat-by-storyboard/id1662743814">apps</a>, CatchUp still does relatively well on the App Store.</p>
+        <p>CatchUp is like a first child for me. It marked the beginning of a journey that has shaped my life and career. I still love and use the app weekly. It still helps me stay in touch with those that matter most.</p>
+        <p>However, due to the aforementioned neglect, it has had obvious bugs and missing features for quite a while. That all changes with CatchUp v3, out today.</p>
+        <p>CatchUp v3 is a significant improvement across every corner of the app. The core functionality remains - you can still add your contacts and set recurring reminders to CatchUp with people - but everything around it has changed.</p>
+        <p>First, there’s a new auto-updating grid of your next CatchUps. I’ve found this helpful as I plan my week and get a feel for who I should remember to get in touch with. It looks like this:</p>
+        <p><img src="/images/catchup-v3/next-catchups.jpeg" alt="A screenshot of the Next CatchUps grid" class="img-fluid" /></p>
+        <p>I’ve also revamped the contact detail screen’s design and removed the “Notification Preference” pop-up sheet entirely. Setting your notification preference for a contact now lives fully within the contact detail screen. There’s no “Save” step anymore either. The app auto-saves your notification preference every time you change it.</p>
+        <p>That new contact detail screen looks like this:</p>
+        <p><img src="/images/catchup-v3/detail-screen.jpeg" alt="A screenshot of the contact detail screen" class="img-fluid" /></p>
+        <p>All controls for this contact now live inside this single screen. Additionally, there’s a nice new “Next CatchUp” row, which shows the next time you’ll get a notification to CatchUp with this person.</p>
+        <h2>Longstanding Feature Requests</h2>
+        <p>Those are the primary UI improvements, though there are several more UI tweaks here and there that you might notice.</p>
+        <p>The rest of v3’s changes address longstanding feature requests. For example:</p>
+        <ul>
+          <li>There are now orange unread indicators on the contact rows if it’s time to CatchUp with them</li>
+          <li>Pulling down on the home screen fetches the latest contact picture and information for all of your selected contacts
+            <ul>
+              <li>Previously you had to delete and re-add the contact to update their information</li>
+            </ul></li>
+          <li>There is now automatic cloud syncing, so your contacts and notification preferences stay up-to-date across iPhone, iPad, and Mac
+            <ul>
+              <li>This involved a fun migration to <a href="https://developer.apple.com/documentation/swiftdata">SwiftData</a>, which dramatically simplified my local storage code</li>
+            </ul></li>
+        </ul>
+        <h2>Still Free with No Ads</h2>
+        <p>CatchUp is, and always will be, completely free with no ads. The tiny bits of money I make from this app come from the in-app Tip Jar. This is a passion project that I genuinely find helpful in my day-to-day life. I do not, nor do I have any incentive to, store your data on my servers or use your data in any way.</p>
+        <p>I hope that you use the app and find it valuable. If you do, please consider supporting development by leaving a tip in the app. I really do find that motivating. Alternatively, you can <a href="https://www.buymeacoffee.com/ryantoken">buy me a coffee</a>!</p>
+        <p><a href="https://www.buymeacoffee.com/ryantoken"><img src="/images/bmc-button.png" class="img-fluid" /></a></p>
+        <h2>Download</h2>
+        <p>Thank you for reading, and thank you for your interest in CatchUp - Keep in Touch. Feel free to reach out via <a href="mailto:ryantoken13@gmail.com">email</a> with any questions or comments.</p>
+        <p>CatchUp v3 is available on iOS, iPadOS, and macOS. It requires iOS 17. You can download it on the App Store today:</p>
+        <p><a href="https://apps.apple.com/us/app/catchup-keep-in-touch/id1358023550" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 125px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1526515200" alt="Download CatchUp v3 on the App Store" style="border-radius: 13px; width: 250px; height: 83px;" /></a></p>
+        <p></p>
       </div>
-      <div class="ms-auto"></div>
     </div>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/ignite-core.js"></script>

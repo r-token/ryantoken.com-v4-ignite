@@ -99,7 +99,7 @@
         </div>
         <p class="text-body-secondary mb-0 align-self-start"><em>Choosing between Nuxt 3 and SvelteKit for ryantoken.com v3.</em></p>
         <p class="text-body-secondary mb-0 align-self-start" style="padding-top: 24px"><em>Published Oct 23, 2022</em></p>
-        <p class="text-body-secondary mb-0 align-self-start"><em>5614 words; 23 minutes to read.</em></p>
+        <p class="text-body-secondary mb-0 align-self-start"><em>5618 words; 23 minutes to read.</em></p>
         <div class="mb-0 align-self-start">
           <hr style="margin-top: 30px; margin-bottom: 30px" />
         </div>
@@ -133,7 +133,7 @@
         <h3>Developer Experience</h3>
         <p>Despite those hurdles, I’ve sincerely enjoyed the developer experience of building with Nuxt 3 and Vue 3.</p>
         <p>Things like this from Nuxt 2:</p>
-        <pre><code class="language-html">&lt;script&gt;
+        <pre><code class="language-js">&lt;script&gt;
 export default {
   data() {
     return {
@@ -149,7 +149,7 @@ export default {
 &lt;/script&gt;
 </code></pre>
         <p>Turn into this with Nuxt 3:</p>
-        <pre><code class="language-html">&lt;script setup&gt;
+        <pre><code class="language-js">&lt;script setup&gt;
   const count = ref(0)
   const increment = () =&gt; count.value++
 &lt;/script&gt;
@@ -201,7 +201,7 @@ export default {
         <p>Svelte’s counterpart to Nuxt’s MDC syntax is called <a href="https://mdsvex.com/">mdsvex</a>. An odd name for sure, but it’s supposed to be the svelte-y naming equivalent of the popular <a href="https://mdxjs.com/">MDX</a> syntax for React. <code>MD</code> and <code>X</code> to represent dynamic markdown, plus <code>SVE</code> in the middle for Svelte, equals mdsvex 🤷‍♂️</p>
         <p>Additionally, mdsvex is <strong>not</strong> an officially sanctioned, first-party “components-in-markdown” preprocessor like MDC is for Nuxt. It’s an <a href="https://github.com/pngwn/mdsvex">open-source third-party library</a>. Despite it not being a first-party piece of technology, I found it simpler and easier to use than MDC in Nuxt. You can see some side-by-side comparisons in the <em>Comparing Nuxt 3 and SvelteKit</em> section below.</p>
         <p>Here’s how you use components in markdown with mdsvex:</p>
-        <pre><code class="language-html">&lt;ResizableImage src="/path/to-image.png" altText="Some alt text" /&gt;
+        <pre><code class="language-js">&lt;ResizableImage src="/path/to-image.png" altText="Some alt text" /&gt;
 </code></pre>
         <p>Look at that! So straightforward. You use it just like every other Svelte component in any other Svelte file.</p>
         <p>And it’s the same for inline components. No weird asterisks around how to handle punctuation or special symbols immediately after you use the component. It just works.</p>
@@ -222,7 +222,7 @@ export default {
         <p><img src="/images/nuxt-3-vs-sveltekit/topbarComponent.png" alt="The Topbar component" class="img-fluid" /></p>
         <p>Here’s a simplified implementation of the Topbar component in Vue 3:</p>
         <p><em>Topbar.vue</em></p>
-        <pre><code class="language-html">&lt;script setup&gt;
+        <pre><code class="language-js">&lt;script setup&gt;
   import IconShowSidebar from '~icons/zondicons/show-sidebar'
   
   const emit = defineEmits(["toggleSidebar", "updateSelectedPageFromTopbar"])
@@ -246,7 +246,7 @@ export default {
 </code></pre>
         <p>And here it is in Svelte:</p>
         <p><em>Topbar.svelte</em></p>
-        <pre><code class="language-html">&lt;script&gt;
+        <pre><code class="language-js">&lt;script&gt;
   import { SidebarIcon } from 'svelte-feather-icons'
   export let open
   export let currentPage
@@ -269,7 +269,7 @@ export default {
 </code></pre>
         <p>The Topbar component and the Sidebar component are rendered at the same level in the component hierarchy - one is not a child of the other. However, the Sidebar needs to react to changes in the Topbar’s state. As mentioned, when a user taps the “toggle sidebar” icon in the Topbar, it should open/close the Sidebar.</p>
         <p>For reference, here’s a simplified version of the parent component that renders both the Sidebar and the Topbar:</p>
-        <pre><code class="language-html">&lt;script&gt;
+        <pre><code class="language-js">&lt;script&gt;
   import Sidebar from '$lib/components/Sidebar.svelte'
   import Topbar from '$lib/components/Topbar.svelte'
   export let data
@@ -298,7 +298,7 @@ export default {
         <p>The BlogPreview component is the responsive card that shows each blog post’s primary image, title, description, publish date, and tags. Here’s how it looks:</p>
         <p><img src="/images/nuxt-3-vs-sveltekit/blogPreviewComponent.png" alt="The BlogPreview component" class="img-fluid" /></p>
         <p>Here’s a simplified implementation of it in Vue 3:</p>
-        <pre><code class="language-html">&lt;script setup&gt;
+        <pre><code class="language-js">&lt;script setup&gt;
   const props = defineProps({
     slug: String,
     title: String,
@@ -349,7 +349,7 @@ export default {
 &lt;/template&gt;
 </code></pre>
         <p>And here’s how it looks in Svelte:</p>
-        <pre><code class="language-html">&lt;script&gt;
+        <pre><code class="language-js">&lt;script&gt;
   import { goto } from '$app/navigation'
   export let slug, title, description, date, image, imageAlt, tags
 
@@ -397,7 +397,7 @@ export default {
 ::
 </code></pre>
         <p>And here’s how you do the same thing with Svelte and mdsvex:</p>
-        <pre><code class="language-html">&lt;ResizableImage src="/path/to-image.png" altText="Some alt text" /&gt;
+        <pre><code class="language-js">&lt;ResizableImage src="/path/to-image.png" altText="Some alt text" /&gt;
 </code></pre>
         <p>Again, neither are <em>bad</em>, but one of them makes more sense and is more concise. And that, to me, is the Svelte solution.</p>
         <h3>Page Size Comparisons</h3>
@@ -440,7 +440,7 @@ export default {
         <ul>
           <li>Nuxt 3 site: 27,939 total lines of code</li>
         </ul>
-        <pre><code>-------------------------------------------------------------------------------
+        <pre><code class="language-markup">-------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 JSON                             8              0              0          26092
@@ -459,7 +459,7 @@ SUM:                            55            762             62          27939
         <ul>
           <li>SvelteKit site: 8,439 total lines of code</li>
         </ul>
-        <pre><code>-------------------------------------------------------------------------------
+        <pre><code class="language-markup">-------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 JSON                             4              0              0           6463

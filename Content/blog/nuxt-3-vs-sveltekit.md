@@ -57,7 +57,7 @@ Despite those hurdles, I've sincerely enjoyed the developer experience of buildi
 
 Things like this from Nuxt 2:
 
-```html
+```js
 &lt;script&gt;
 export default {
   data() {
@@ -76,7 +76,7 @@ export default {
 
 Turn into this with Nuxt 3:
 
-```html
+```js
 &lt;script setup&gt;
   const count = ref(0)
   const increment = () =&gt; count.value++
@@ -172,7 +172,7 @@ Additionally, mdsvex is **not** an officially sanctioned, first-party "component
 
 Here's how you use components in markdown with mdsvex:
 
-```html
+```js
 &lt;ResizableImage src="/path/to-image.png" altText="Some alt text" /&gt;
 ```
 
@@ -210,7 +210,7 @@ Here's a simplified implementation of the Topbar component in Vue 3:
 
 *Topbar.vue*
 
-```html
+```js
 &lt;script setup&gt;
   import IconShowSidebar from '~icons/zondicons/show-sidebar'
   
@@ -237,7 +237,7 @@ Here's a simplified implementation of the Topbar component in Vue 3:
 And here it is in Svelte:
 
 *Topbar.svelte*
-```html
+```js
 &lt;script&gt;
   import { SidebarIcon } from 'svelte-feather-icons'
   export let open
@@ -264,7 +264,7 @@ The Topbar component and the Sidebar component are rendered at the same level in
 
 For reference, here's a simplified version of the parent component that renders both the Sidebar and the Topbar:
 
-```html
+```js
 &lt;script&gt;
   import Sidebar from '$lib/components/Sidebar.svelte'
   import Topbar from '$lib/components/Topbar.svelte'
@@ -305,7 +305,7 @@ The BlogPreview component is the responsive card that shows each blog post's pri
 
 Here's a simplified implementation of it in Vue 3:
 
-```html
+```js
 &lt;script setup&gt;
   const props = defineProps({
     slug: String,
@@ -359,7 +359,7 @@ Here's a simplified implementation of it in Vue 3:
 
 And here's how it looks in Svelte:
 
-```html
+```js
 &lt;script&gt;
   import { goto } from '$app/navigation'
   export let slug, title, description, date, image, imageAlt, tags
@@ -419,7 +419,7 @@ Here's how you use a block component, like a resizable image, with Vue and MDC:
 
 And here's how you do the same thing with Svelte and mdsvex:
 
-```html
+```js
 &lt;ResizableImage src="/path/to-image.png" altText="Some alt text" /&gt;
 ```
 
@@ -486,7 +486,7 @@ Before we wrap up, I wanted to share a quick note on total lines of code for eac
 Total lines of code (counted with [cloc](https://github.com/AlDanial/cloc)):
 * Nuxt 3 site: 27,939 total lines of code	
 
-```
+```markup
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -506,7 +506,7 @@ SUM:                            55            762             62          27939
 
 * SvelteKit site: 8,439 total lines of code
 
-```
+```markup
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------

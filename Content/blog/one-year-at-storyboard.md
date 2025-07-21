@@ -5,7 +5,7 @@ subtitle: Reflections on my first year and a look at what's to come.
 date: 2022-04-29
 tags: career, reflections
 published: true
-image: /images/storyboard/sbv2-cover.png
+image: https://ryantoken-com-v4-ignite.vercel.app/images/storyboard/sbv2-cover.png
 alt: Storyboard's logo
 ---
 

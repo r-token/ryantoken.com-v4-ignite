@@ -5,7 +5,7 @@ subtitle: Why I decided to rebuild ryantoken.com with Swift.
 date: 2020-03-22
 tags: web, swift, rewrite
 published: true
-image: /images/rebuilding-my-website/cover.png
+image: https://ryantoken-com-v4-ignite.vercel.app/images/rebuilding-my-website/cover.png
 alt: Publish's icon
 ---
 

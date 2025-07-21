@@ -5,7 +5,7 @@ subtitle: Discussing the new app and my experience building it.
 date: 2021-10-26
 tags: ios, swift, swiftui
 published: true
-image: /images/outrank/outrank-icon.png
+image: https://ryantoken-com-v4-ignite.vercel.app/images/outrank/outrank-icon.png
 alt: Outrank's app icon
 ---
 

@@ -5,7 +5,7 @@ subtitle: Explaining WebRTC to myself and others.
 date: 2021-03-07
 tags: web, webrtc
 published: true
-image: /images/learning-webrtc/cover.png
+image: https://ryantoken-com-v4-ignite.vercel.app/images/learning-webrtc/cover.png
 alt: The WebRTC logo
 ---
 

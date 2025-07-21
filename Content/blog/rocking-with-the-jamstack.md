@@ -5,7 +5,7 @@ subtitle: Diving into the Jamstack, and loving every minute of it.
 date: 2021-02-21
 tags: web, jamstack, serverless
 published: true
-image: /images/rocking-with-the-jamstack/cover.png
+image: https://ryantoken-com-v4-ignite.vercel.app/images/rocking-with-the-jamstack/cover.png
 alt: The Jamstack logo
 ---
 

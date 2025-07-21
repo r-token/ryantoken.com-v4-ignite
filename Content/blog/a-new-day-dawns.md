@@ -5,7 +5,7 @@ subtitle: Going all-in on Swift, startups, and the touring industry.
 date: 2025-06-09
 tags: swift, swiftui, career
 published: true
-image: /images/daysheets/daysheets-logo.png
+image: https://ryantoken-com-v4-ignite.vercel.app/images/daysheets/daysheets-logo.png
 alt: Daysheets Logo
 ---
 

@@ -10,7 +10,7 @@ import Ignite
 struct Apps: StaticPage {
     var title = "Ryan Token - Apps"
     var description = "The apps Ryan makes, including Daysheets, CatchUp, Outrank, Hot Local Food, and Chat by Storyboard."
-    var image: URL? = URL(static: "/images/catching-up/catchup-icon.png")
+    var image: URL? = URL(static: Constants.staticCatchUpImagePath)
 
     var body: some HTML {
         HeaderText("Apps", size: .h2)

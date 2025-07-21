@@ -12,7 +12,7 @@ struct Home: StaticPage {
 
     var title = "Ryan Token"
     var description = "Ryan's personal website and blog."
-    var image: URL? = URL(static: Constants.profileImage)
+    var image: URL? = URL(static: Constants.staticProfileImagePath)
 
     var body: some HTML {
         HeaderText("Hi, I'm Ryan", size: .h2)

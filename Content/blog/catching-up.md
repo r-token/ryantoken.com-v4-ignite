@@ -2,7 +2,6 @@
 author: Ryan Token
 title: Catching Up
 subtitle: Modernizing CatchUp with SwiftUI and cleaner code.
-description: Modernizing CatchUp with SwiftUI and cleaner code.
 date: 2020-05-08
 tags: ios, swift, swiftui, rewrite
 published: true

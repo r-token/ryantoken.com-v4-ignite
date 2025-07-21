@@ -2,7 +2,6 @@
 author: Ryan Token
 title: One Year at Storyboard
 subtitle: Reflections on my first year and a look at what's to come.
-description: Reflections on my first year and a look at what's to come.
 date: 2022-04-29
 tags: career, reflections
 published: true

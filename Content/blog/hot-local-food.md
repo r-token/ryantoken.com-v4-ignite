@@ -2,7 +2,7 @@
 author: Ryan Token
 title: Hot Local Food for iOS
 subtitle: It's like Tinder, but for food, and it already likes you back.
-date: 2023-01-26
+date: 2023-01-26 12:00
 tags: ios, swift, swiftui
 published: true
 image: https://www.ryantoken.com/images/hot-local-food/hlf-icon-square.png

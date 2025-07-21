@@ -2,7 +2,7 @@
 author: Ryan Token
 title: Nuxt 3 vs SvelteKit
 subtitle: Choosing between Nuxt 3 and SvelteKit for ryantoken.com v3.
-date: 2022-10-24
+date: 2022-10-24 12:00
 tags: web, jamstack, rewrite
 published: true
 image: https://www.ryantoken.com/images/nuxt-3-vs-sveltekit/cover.png

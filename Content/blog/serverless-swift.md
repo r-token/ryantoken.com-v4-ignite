@@ -2,7 +2,7 @@
 author: Ryan Token
 title: Serverless Swift
 subtitle: Controlling Philips Hue bulbs by running Swift on AWS Lambda.
-date: 2025-02-24
+date: 2025-02-24 12:00
 tags: serverless, swift, aws
 published: true
 image: https://www.ryantoken.com/images/serverless-swift/serverless-swift.png

@@ -2,7 +2,7 @@
 author: Ryan Token
 title: A New Day(sheets) Dawns
 subtitle: Going all-in on Swift, startups, and the touring industry.
-date: 2025-06-09
+date: 2025-06-09 12:00
 tags: swift, swiftui, career
 published: true
 image: https://www.ryantoken.com/images/daysheets/daysheets-logo.png

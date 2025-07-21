@@ -15,6 +15,7 @@ enum Tag: String {
 
     case jamstack = "jamstack"
     case web = "web"
+    case webrtc = "webrtc"
     case serverless = "serverless"
     case aws = "aws"
     case cloud = "cloud"

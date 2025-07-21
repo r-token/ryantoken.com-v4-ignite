@@ -21,6 +21,8 @@ struct TagFormatter {
             return "Jamstack"
         case .web:
             return "Web"
+        case .webrtc:
+            return "WebRTC"
         case .serverless:
             return "Serverless"
         case .aws:

@@ -2,6 +2,7 @@
 author: Ryan Token
 title: Introducing Outrank
 subtitle: Discussing the new app and my experience building it.
+description: Discussing the new app and my experience building it.
 date: 2021-10-26
 tags: ios, swift, swiftui
 published: true

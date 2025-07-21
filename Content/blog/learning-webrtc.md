@@ -2,6 +2,7 @@
 author: Ryan Token
 title: Learning WebRTC
 subtitle: Explaining WebRTC to myself and others.
+description: Explaining WebRTC to myself and others.
 date: 2021-03-07
 tags: web, webrtc
 published: true

@@ -2,6 +2,7 @@
 author: Ryan Token
 title: Rebuilding My Website
 subtitle: Why I decided to rebuild ryantoken.com with Swift.
+description: Why I decided to rebuild ryantoken.com with Swift.
 date: 2020-03-22
 tags: web, swift, rewrite
 published: true

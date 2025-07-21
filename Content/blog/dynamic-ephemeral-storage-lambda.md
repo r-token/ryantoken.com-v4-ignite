@@ -2,6 +2,7 @@
 author: Ryan Token
 title: Dynamic Lambda Storage
 subtitle: Serverless compute with dynamic ephemeral storage.
+description: Serverless compute with dynamic ephemeral storage.
 date: 2022-06-10
 tags: web, cloud, serverless
 published: true

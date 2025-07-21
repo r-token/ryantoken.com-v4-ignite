@@ -5,7 +5,7 @@ subtitle: Starting a new, remote, cloud-heavy journey.
 date: 2021-04-25
 tags: career, aws, serverless
 published: true
-image: https://ryantoken-com-v4-ignite.vercel.app/images/storyboard/cover.png
+image: https://www.ryantoken.com/images/storyboard/cover.png
 alt: Storyboard's original logo
 ---
 

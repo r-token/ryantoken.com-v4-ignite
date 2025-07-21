@@ -5,7 +5,7 @@ subtitle: Serverless compute with dynamic ephemeral storage.
 date: 2022-06-10
 tags: web, cloud, serverless
 published: true
-image: https://ryantoken-com-v4-ignite.vercel.app/images/dynamic-ephemeral-storage/cover.png
+image: https://www.ryantoken.com/images/dynamic-ephemeral-storage/cover.png
 alt: A custom diagram showcasing dynamic ephemeral storage with lambda
 ---
 

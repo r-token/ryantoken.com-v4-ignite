@@ -5,7 +5,7 @@ subtitle: Revisiting my first iOS app with new features and a fresh UI.
 date: 2024-04-03
 tags: swiftui, swiftdata, ios
 published: true
-image: https://ryantoken-com-v4-ignite.vercel.app/images/catchup-v3/catchup-v3-logo.png
+image: https://www.ryantoken.com/images/catchup-v3/catchup-v3-logo.png
 alt: CatchUp v3
 ---
 

@@ -5,7 +5,7 @@ subtitle: Modernizing CatchUp with SwiftUI and cleaner code.
 date: 2020-05-08
 tags: ios, swift, swiftui, rewrite
 published: true
-image: https://ryantoken-com-v4-ignite.vercel.app/images/catching-up/catchup-icon.png
+image: https://www.ryantoken.com/images/catching-up/catchup-icon.png
 alt: CatchUp's app icon
 ---
 

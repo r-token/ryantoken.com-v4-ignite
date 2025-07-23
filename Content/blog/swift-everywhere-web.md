@@ -29,7 +29,7 @@ The inspiration to rebuild my website with Swift came from two primary sources:
 
 ### Paul launches Ignite
 
-I wrote an early version of this website in Swift using [Publish](https://github.com/JohnSundell/Publish) from John Sundell. While I loved the concept, I never quite found my footing with it. So when I saw that Paul had released Ignite, I was thrilled.
+I wrote an early version of my website in Swift using [Publish](https://github.com/JohnSundell/Publish) by John Sundell. While I loved the concept, I never quite found my footing with it. So when I saw that Paul had released Ignite, I was thrilled.
 
 Ignite is essentially a modern take on Publish (down to the exact same 'About' description on GitHub), but with a SwiftUI-like syntax powered by Swift's [result builders](https://www.hackingwithswift.com/swift/5.4/result-builders). It also implements [Bootstrap](https://getbootstrap.com) to handle issues with browser and device compatibility, complex UI elements, and accessibility. I watched the [how and why video](https://www.youtube.com/watch?v=JJGLoo3A2uk) behind Ignite, read J.P. Toro's [Lighting Ignite on Fire](https://jptoro.dev/lighting-ignite-on-fire/) post, and was hooked. I built the CLI tool, ran `ignite new ExampleSite`, and got going.
 
@@ -39,7 +39,7 @@ However, I hit a bit of a false start. I looked at my [current/previous site](ht
 
 It wasn't until I listened to the aforementioned Lex Fridman podcast featuring DHH a few months later that inspiration struck again, this time for good.
 
-In particular, one specific concept stuck with me above all others from that six-hour interview: the idea that "writing code could feel as good as writing a poem" ([2:12:27](https://youtu.be/vagyIcmIGOQ?si=kL8L7XOrsPNrfg8W&t=7947)). In the era of prompt engineering and handing over large swaths of work to an AI assistant, this rang so true to me. Let me be clear: I use AI for my work every day. I find it completely invaluable. But I find that handing over *too much* of my work to AI is so much less satisfying than "chiseling beautiful code poems out of the editor" ([2:39:17](https://youtu.be/vagyIcmIGOQ?si=cDQDaZ8tj4igfgmO&t=9557)). That's what I want, especially for personal projects, and that's what I feel like I can achieve with Swift.
+In particular, one specific concept stuck with me above all others from that six-hour interview: the idea that "writing code could feel as good as writing a poem" ([2:12:27](https://youtu.be/vagyIcmIGOQ?si=kL8L7XOrsPNrfg8W&t=7947)). In the era of prompt engineering and handing over large swaths of work to an AI assistant, this rang so true to me. Let me be clear: I use AI for my work every day. I find it completely invaluable. But I've also found that handing over *too much* of my work to AI is so much less satisfying than "chiseling beautiful code poems out of the editor" ([2:39:17](https://youtu.be/vagyIcmIGOQ?si=cDQDaZ8tj4igfgmO&t=9557)). That's what I want, especially for personal projects, and that's what I feel like I can achieve with Swift.
 
 I took another look at the code for my Svelte site and did not see poetry. I saw long, ugly, inline Tailwind classes, large `script` and `head` blocks for even the most straightforward pages, and a project structure that works fine but that I simply find cumbersome. Granted, I chose to use Tailwind, and I'm not the world's greatest web developer—I'm sure there are much more poetic Svelte sites out there—but I was not going to be the one to write the next Svelte sonnet.
 
@@ -49,7 +49,7 @@ I compared that to some of the sample Ignite code in Swift, and I saw the opport
 
 With Ignite ready for production and DHH's code poetry ringing in my ears, I was ready to roll. Suddenly I could write "web" code that looked just like the SwiftUI I know and love.
 
-Let's start with an example. This is the file that generates my 'Blog' page:
+Let's start with an example. This is the Swift file that generates my 'Blog' page:
 
 ```swift
 struct Blog: StaticPage {
@@ -78,18 +78,25 @@ struct Blog: StaticPage {
 
 That's it. That's the *entire* Swift file. Poetry, I tell you. Nearly every file across the website is so much clearer and more concise than what I had to do to achieve the same results in Svelte.
 
-I don't think there's much use in me showing you *how* to set up an Ignite site: Paul's own [Ignite Samples](https://github.com/twostraws/IgniteSamples) website has most of the reference material you'll need. There are, however, a couple of aspects not covered in his samples that I wanted for my site. It took some minor digging on my part to figure them out, so I'll share those here:
+I don't think there's much value in me showing you *how* to set up an Ignite site: Paul's own [Ignite Samples](https://ignitesamples.hackingwithswift.com) website has most of the reference material you'll need. There are, however, a couple of aspects not covered in his samples that I wanted for my site. It took some minor digging on my part to figure them out, so I'll share those here:
 
-1. Syntax highlighting in markdown blog posts
+1. Syntax highlighting in markdown
 2. Configuring the RSS feed
 
-### Syntax highlighting in markdown blog posts
+### Syntax highlighting in markdown
 
 While Ignite offers the [Code and CodeBlock](https://ignitesamples.hackingwithswift.com/code-examples/) structs for syntax highlighting within your Swift files, you can't use those in markdown. I use markdown files in the [Content](https://ignitesamples.hackingwithswift.com/content-examples/) folder to render my blog posts, many of which contain code samples, so I needed to figure this out.
 
 The answer is two-fold and quite simple:
-1. You need to add a `syntaxHighlighterConfiguration` to your main `Site` struct: `var syntaxHighlighterConfiguration: SyntaxHighlighterConfiguration = .init(languages: [.swift])`
-2. You can then set a `syntaxHighlighterTheme` in your `Theme` file like so: `var syntaxHighlighterTheme: HighlighterTheme { .githubDark }`
+1. You need to add a `syntaxHighlighterConfiguration` to your main `Site` struct:
+    ```swift
+    var syntaxHighlighterConfiguration: SyntaxHighlighterConfiguration = .init(languages: [.swift])
+    ```
+
+2. You can then set a `syntaxHighlighterTheme` in your `Theme` file like so:
+    ```swift
+    var syntaxHighlighterTheme: HighlighterTheme { .githubDark }
+    ```
 
 And that's it! Now when you make a code block like this in markdown, it will be nicely formatted with your choice of syntax highlighter theme:
 
@@ -127,14 +134,14 @@ That will generate an RSS feed that includes the full content of all my posts. O
 
 ## Speed and Simplicity
 
-Due to the inherent simplicity of Ignite and the HTML it generates, the Ignite site loads noticeably faster than my previous SvelteKit site. SvelteKit is no slouch when it comes to bundle size and speed—that's why I chose it [over Nuxt 3](/blog/nuxt-3-vs-sveltekit) in the first place. But Ignite beats out even SvelteKit in page load speed. Try loading them yourself:
+Due to the simplicity of Ignite and the HTML it generates, the Ignite site loads noticeably faster than my previous SvelteKit site. SvelteKit is no slouch when it comes to bundle size and speed—that's why I chose [SvelteKit over Nuxt 3](/blog/nuxt-3-vs-sveltekit) in the first place. But Ignite beats out even SvelteKit in page load speed. Try loading them yourself:
 * SvelteKit site: [https://ryantoken-v3-svelte.vercel.app/](https://ryantoken-v3-svelte.vercel.app/)
 * Ignite site (this site): [https://www.ryantoken.com](https://www.ryantoken.com)
 
 Ignite's simplicity is shown in some of the code samples above, but it's also clearly demonstrated in the total lines of code required to build each site. Here's the breakdown, counted by [cloc](https://github.com/AlDanial/cloc):
 
 **SvelteKit**: **2,974 total lines of code**
-* Excludes `node_modules`, hidden files and folders, and `package-lock.json`
+* Excludes SvelteKit's `build` directory, `node_modules`, hidden files and folders, and `package-lock.json`
 
 ```
 -------------------------------------------------------------------------------
@@ -169,7 +176,7 @@ SUM:                            52           1115            187           2479
 -------------------------------------------------------------------------------
 ```
 
-Nearly five hundred fewer lines of code! For a simple site like this, that reduction is considerable.
+Nearly 500 fewer lines of code! A 17% reduction. For a simple site like this, that is significant.
 
 This rewrite confirmed something I suspected but hadn't fully experienced: Swift really can make web development feel as elegant as writing SwiftUI. The code just flows in a way that my Svelte setup never did. And those five hundred fewer lines of code? That's not just a smaller bundle—it's code that represents clearer intent, better organization, and better maintainability.
 
@@ -181,7 +188,7 @@ I am genuinely stoked about Ignite. It feels like it was made for developers lik
 2. Styling them with a SwiftUI-like syntax
 3. The simplest blog + markdown setup I have ever used
 4. A simple and powerful [theming engine](https://ignitesamples.hackingwithswift.com/theme-examples/)
-5. Automatically generating my [valid](https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fwww.ryantoken.com%2Ffeed.rss) RSS feed with one line of config
+5. Automatically generating my [valid](https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fwww.ryantoken.com%2Ffeed.rss) RSS feed with little to no config
 6. The ability to [inject](https://ignitesamples.hackingwithswift.com/include-examples/) arbitrary HTML and JavaScript when necessary
 7. Built-in Bootstrap integration for responsive design
 8. Excellent performance out of the box
@@ -192,9 +199,9 @@ I am genuinely stoked about Ignite. It feels like it was made for developers lik
 
 <br />
 
-Rewriting my website with Ignite was an absolute joy. SvelteKit remains a wonderful framework, but it's much more powerful than what I need for a personal static site like this. Ignite is tailor-made for developers like me who love Swift and SwiftUI, and want to bring that same elegance and simplicity to the web. I couldn't be happier with the results.
+Rewriting my website with Ignite was an absolute joy. And I did it in less than a week! SvelteKit remains a wonderful framework, but it's much more powerful than what I need for a personal static site like this. Ignite is tailor-made for developers like me who love Swift and SwiftUI, and want to bring that same elegance and simplicity to the web. I couldn't be happier with the results.
 
-If you're a Swift developer who's been curious about web development, or if you're looking for a simpler way to build static sites, I can't recommend Ignite highly enough. It adds another notch to the cap of "Swift everywhere."
+If you're a Swift developer who's been curious about web development, or if you're looking for a simpler way to build static sites, I can't recommend Ignite highly enough. It's another feather in the cap of "Swift everywhere."
 
 Thanks for reading, and feel free to [get in touch](mailto:ryantoken13@gmail.com) if you have feedback on this blog post or the site in general. I'd love to hear from you!
 

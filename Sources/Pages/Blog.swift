@@ -14,12 +14,16 @@ struct Blog: StaticPage {
     var description = "All of Ryan's blog posts."
     var image: URL? = URL(static: Constants.staticProfileImagePath)
 
+    var sortedArticles: [Article] {
+        articles.all.sorted(by: \.date).reversed()
+    }
+
     var body: some HTML {
         HeaderText("Blog", size: .h2)
         SubheaderText("All blog posts. Subscribe to my [RSS feed](/feed.rss).")
             .padding(.bottom)
 
-        ForEach(articles.all.sorted(by: \.date).reversed()) { article in
+        ForEach(sortedArticles) { article in
             ArticlePreview(for: article)
                 .articlePreviewStyle(DynamicArticlePreviewStyle())
         }

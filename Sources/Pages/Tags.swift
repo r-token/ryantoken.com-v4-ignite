@@ -8,6 +8,10 @@
 import Ignite
 
 struct Tags: TagPage {
+    var sortedArticlesForTag: [Article] {
+        tag.articles.sorted(by: \.date).reversed()
+    }
+
     var body: some HTML {
         Text {
             "Blog posts tagged "
@@ -18,7 +22,7 @@ struct Tags: TagPage {
         .padding(.bottom)
         .lineSpacing(1)
 
-        ForEach(tag.articles.sorted(by: \.date).reversed()) { article in
+        ForEach(sortedArticlesForTag) { article in
             ArticlePreview(for: article)
                 .articlePreviewStyle(DynamicArticlePreviewStyle())
         }

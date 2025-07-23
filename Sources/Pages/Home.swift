@@ -14,6 +14,10 @@ struct Home: StaticPage {
     var description = "Ryan's personal website and blog."
     var image: URL? = URL(static: Constants.staticProfileImagePath)
 
+    var mostRecent4Articles: [Article] {
+        articles.all.sorted(by: \.date).suffix(4).reversed()
+    }
+
     var body: some HTML {
         HeaderText("Hi, I'm Ryan", size: .h2)
             .padding(.bottom, 4)
@@ -56,7 +60,7 @@ struct Home: StaticPage {
         HeaderText("Latest blog posts", size: .h3)
             .padding(.top, 8)
 
-        ForEach(articles.all.sorted(by: \.date).suffix(4).reversed()) { article in
+        ForEach(mostRecent4Articles) { article in
             ArticlePreview(for: article)
                 .articlePreviewStyle(DynamicArticlePreviewStyle())
         }

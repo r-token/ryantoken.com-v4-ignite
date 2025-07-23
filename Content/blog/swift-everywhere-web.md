@@ -17,7 +17,7 @@ As I wrote in [A New Day(sheets) Dawns](/blog/a-new-day-dawns), I am fully on bo
 
 One of my favorite projects, and thus favorite posts, is about running [Swift on AWS Lambda](/blog/serverless-swift) to flash my Hue lightbulbs various colors whenever my favorite teams score or win. If I were to rename that post today, I'd consider it the first in this series and call it *Swift Everywhere: Serverless Edition*.
 
-This post, however, is all about **Swift on the web**.
+This post, however, is all about **Swift for the web**.
 
 ## Blank for some reason
 

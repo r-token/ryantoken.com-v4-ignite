@@ -9,7 +9,7 @@ import Ignite
 
 struct About: StaticPage {
     var title = "Ryan Token - About"
-    var description = "About Ryan"
+    var description = "Ryan builds apps for Apple platforms, runs The Golden Hurricast, and writes about Swift, SwiftUI, cloud services, and more."
     var image: URL? = URL(static: Constants.staticProfileImagePath)
 
     var body: some HTML {

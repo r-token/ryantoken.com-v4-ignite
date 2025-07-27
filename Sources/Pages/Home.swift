@@ -11,7 +11,7 @@ struct Home: StaticPage {
     @Environment(\.articles) var articles
 
     var title = "Ryan Token"
-    var description = "Ryan's personal website and blog."
+    var description = "Ryan Token's personal website. Ryan builds apps for Apple platforms, runs The Golden Hurricast, and writes about Swift, SwiftUI, cloud services, and more."
     var image: URL? = URL(static: Constants.staticProfileImagePath)
 
     var mostRecent4Articles: [Article] {

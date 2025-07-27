@@ -9,7 +9,7 @@ import Ignite
 
 struct Apps: StaticPage {
     var title = "Ryan Token - Apps"
-    var description = "The apps Ryan makes, including Daysheets, CatchUp, Outrank, Hot Local Food, and Chat by Storyboard."
+    var description = "The apps Ryan makes for Apple platforms, including Daysheets, CatchUp, Outrank, Hot Local Food, and Chat by Storyboard. All of them are written in Swift and SwiftUI."
     var image: URL? = URL(static: Constants.staticCatchUpImagePath)
 
     var body: some HTML {

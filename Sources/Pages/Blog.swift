@@ -11,7 +11,7 @@ struct Blog: StaticPage {
     @Environment(\.articles) var articles
 
     var title = "Ryan Token - Blog"
-    var description = "All of Ryan's blog posts."
+    var description = "All of Ryan's blog posts. He writes about Swift, SwiftUI, cloud services, and more."
     var image: URL? = URL(static: Constants.staticProfileImagePath)
 
     var sortedArticles: [Article] {

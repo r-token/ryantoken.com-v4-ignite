@@ -9,7 +9,7 @@ import Ignite
 
 struct Projects: StaticPage {
     var title = "Ryan Token - Projects"
-    var description = "The non-app projects Ryan has worked on, including Serverless Swift, The Golden Hurricast, Eagle Crest STL, and Dashing Through the 'Ville"
+    var description = "The non-app projects Ryan has worked on, including Serverless Swift, The Golden Hurricast, Eagle Crest STL, and Dashing Through the 'Ville."
     var image: URL? = URL(static: Constants.staticServerlessSwiftImagePath)
 
     var body: some HTML {

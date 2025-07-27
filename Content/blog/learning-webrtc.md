@@ -204,7 +204,7 @@ Note that we will not need to connect to any STUN or TURN servers in this exampl
 
 1. Create the local peer connection.
 
-```javascript
+```js
 const localConnection = new RTCPeerConnection()
 ```
 

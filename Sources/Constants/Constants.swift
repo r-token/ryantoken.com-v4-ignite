@@ -33,7 +33,7 @@ struct Constants {
     static let daysheetsWebUrl = "https://www.daysheets.com"
 
     // MARK: METADATA IMAGE PATHS
-    static let staticProfileImagePath: StaticString = "https://www.ryantoken.com/images/me/profile-2025-cropped.jpeg"
+    static let staticProfileImagePath: StaticString = "https://www.ryantoken.com/images/me/profile-2025.jpeg"
     static let staticCatchUpImagePath: StaticString = "https://www.ryantoken.com/images/catching-up/catchup-icon.png"
     static let staticIgniteImagePath: StaticString = "https://www.ryantoken.com/images/ignite.png"
     static let staticServerlessSwiftImagePath: StaticString = "https://www.ryantoken.com/images/serverless-swift/serverless-swift.png"

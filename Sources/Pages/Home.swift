@@ -25,11 +25,11 @@ struct Home: StaticPage {
         Text {
             "I'm a "
             Link("Swift", target: "https://www.swift.org/")
-            " developer who loves building for Apple platforms and beyond. By "
+            " developer. By "
             Link("day", target: "https://ryan-token-cv-prod.s3.us-east-2.amazonaws.com/Ryan+Token+CV.pdf")
-            ", I'm a senior software engineer at "
+            ", I build "
             Link("Daysheets", target: Constants.daysheetsWebUrl)
-            ". By night, I make apps ("
+            " - the best way to run your tours. In my free time, I make apps ("
 
             Link(target: Constants.catchUpAppUrl) {
                 InlineAppIcon(path: "/images/catching-up/catchup-icon.png", description: "CatchUp app icon")
@@ -52,10 +52,7 @@ struct Home: StaticPage {
             "."
         }
         
-        Text(markdown: """
-            When I'm not coding, you'll find me playing basketball, skiing, or hiking with my wife and dog.
-            """
-        )
+        Text("When I'm not coding, you'll find me playing basketball, skiing, or hiking with my wife and dog.")
 
         HeaderText("Latest blog posts", size: .h3)
             .padding(.top, 8)

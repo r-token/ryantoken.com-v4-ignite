@@ -278,14 +278,6 @@ div.alert p:last-child {
 }
 
 
-@font-face {
-    font-family: 'Avenir Next';
-    src: url('/fonts/Avenir%20Next.ttc');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
     --bs-primary: rgb(99 102 241 / 100%);
     --bs-primary-rgb: 99, 102, 241;
@@ -346,8 +338,8 @@ div.alert p:last-child {
     --bs-link-hover-color-rgb: 79, 70, 229;
     --bs-border-color: rgb(222 226 230 / 100%);
     --bs-border-color-rgb: 222, 226, 230;
-    --bs-font-monospace: Menlo;
-    --bs-body-font-family: Avenir Next;
+    --bs-font-monospace: Menlo, SFMono-Regular, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --bs-body-font-family: Avenir Next, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif;
     --bs-code-font-size: 16px;
     --code-block-font-size: 16px;
     --bs-body-font-size: 18px;
@@ -902,8 +894,8 @@ code, pre {
     --bs-link-hover-color-rgb: 79, 70, 229;
     --bs-border-color: rgb(222 226 230 / 100%);
     --bs-border-color-rgb: 222, 226, 230;
-    --bs-font-monospace: Menlo;
-    --bs-body-font-family: Avenir Next;
+    --bs-font-monospace: Menlo, SFMono-Regular, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --bs-body-font-family: Avenir Next, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif;
     --bs-code-font-size: 16px;
     --code-block-font-size: 16px;
     --bs-body-font-size: 18px;
@@ -983,8 +975,8 @@ code, pre {
     --bs-link-hover-color-rgb: 56, 189, 248;
     --bs-border-color: rgb(73 80 87 / 100%);
     --bs-border-color-rgb: 73, 80, 87;
-    --bs-font-monospace: Menlo;
-    --bs-body-font-family: Avenir Next;
+    --bs-font-monospace: Menlo, SFMono-Regular, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --bs-body-font-family: Avenir Next, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif;
     --bs-code-font-size: 16px;
     --code-block-font-size: 16px;
     --bs-body-font-size: 18px;

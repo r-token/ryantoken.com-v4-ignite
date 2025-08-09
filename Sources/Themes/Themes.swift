@@ -13,8 +13,12 @@ protocol BaseTheme: Theme {}
 extension BaseTheme {
     var siteWidth: ResponsiveValues { .init(medium: .px(750)) }
 
-    var font: Font { .avenirNext }
-    var monospaceFont: Font { .menlo }
+    // Prefer Avenir Next for the core font
+    var font: Font { .init(name: "Avenir Next, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif", weight: .regular) }
+
+    // Prefer Menlo for monospaced font (code blocks)
+    var monospaceFont: Font { .init(name: "Menlo, SFMono-Regular, Monaco, Consolas, Liberation Mono, Courier New, monospace", weight: .regular) }
+
     var codeBlockFontSize: LengthUnit { .px(16) }
     var inlineCodeFontSize: LengthUnit { .px(16) }
 
@@ -57,16 +61,4 @@ struct DarkTheme: BaseTheme {
     var hoveredLink: Color { Color(hex: "#38bdf8") } // picton blue
 
     var syntaxHighlighterTheme: HighlighterTheme { .githubDark }
-}
-
-private extension Font {
-    static let avenirNext: Font = .init(
-        name: "Avenir Next",
-        sources: FontSource(url: URL(static: "/fonts/Avenir Next.ttc"))
-    )
-
-    static let menlo: Font = .init(
-        name: "Menlo",
-        sources: FontSource(url: URL(static: "/fonts/Menlo.ttf"))
-    )
 }

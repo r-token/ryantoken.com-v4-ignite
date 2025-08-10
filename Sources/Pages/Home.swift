@@ -69,5 +69,7 @@ struct Home: StaticPage {
             .padding(.top, 64)
 
         Include("hurricast-embed.html")
+
+        Include("mastodon-verification.html")
     }
 }

@@ -11,7 +11,7 @@ protocol BaseTheme: Theme {}
 
 // Default implementation for shared values
 extension BaseTheme {
-    var siteWidth: ResponsiveValues { .init(medium: .px(750)) }
+    var siteWidth: ResponsiveValues { .init(small: .px(770)) }
 
     // Prefer Avenir Next for the core font
     var font: Font { .init(name: "Avenir Next, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif", weight: .regular) }

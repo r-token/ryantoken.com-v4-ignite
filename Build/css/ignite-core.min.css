@@ -351,10 +351,11 @@ div.alert p:last-child {
     --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
     --bs-headings-line-height: 2.0em;
-    --theme-container-md: 750px;
-    --theme-container-lg: 750px;
-    --theme-container-xl: 750px;
-    --theme-container-xxl: 750px;
+    --theme-container-sm: 770px;
+    --theme-container-md: 770px;
+    --theme-container-lg: 770px;
+    --theme-container-xl: 770px;
+    --theme-container-xxl: 770px;
     --syntax-highlight-theme: "solarized-light";
 }
 
@@ -418,15 +419,9 @@ div.alert p:last-child {
 }
 }
 
-@media (min-width: 540px) {
+@media (min-width: 770px) {
     .container {
-    max-width: 540px;
-}
-}
-
-@media (min-width: 750px) {
-    .container {
-    max-width: 750px;
+    max-width: 770px;
 }
 }
 
@@ -907,10 +902,11 @@ code, pre {
     --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
     --bs-headings-line-height: 2.0em;
-    --theme-container-md: 750px;
-    --theme-container-lg: 750px;
-    --theme-container-xl: 750px;
-    --theme-container-xxl: 750px;
+    --theme-container-sm: 770px;
+    --theme-container-md: 770px;
+    --theme-container-lg: 770px;
+    --theme-container-xl: 770px;
+    --theme-container-xxl: 770px;
     --syntax-highlight-theme: "solarized-light";
 }
 
@@ -988,10 +984,11 @@ code, pre {
     --bs-h6-font-size: 16px;
     --bs-body-line-height: 1.5em;
     --bs-headings-line-height: 2.0em;
-    --theme-container-md: 750px;
-    --theme-container-lg: 750px;
-    --theme-container-xl: 750px;
-    --theme-container-xxl: 750px;
+    --theme-container-sm: 770px;
+    --theme-container-md: 770px;
+    --theme-container-lg: 770px;
+    --theme-container-xl: 770px;
+    --theme-container-xxl: 770px;
     --syntax-highlight-theme: "github-dark";
 }
 

@@ -99,17 +99,23 @@ struct Apps: StaticPage {
 
         Grid(alignment: .leading) {
             ImageWithLink(
-                imagePath: "/images/catchup-v3/next-catchups.jpeg",
+                imagePath: "/images/catchup-v3/next-catchups.png",
                 imageDescription: "A screenshot of CatchUp's home screen",
                 url: Constants.catchUpAppUrl
             )
             .frame(maxWidth: Constants.defaultImageMaxWidth)
             ImageWithLink(
-                imagePath: "/images/catchup-v3/detail-screen.jpeg",
+                imagePath: "/images/catchup-v3/detail-screen.png",
                 imageDescription: "A screenshot of CatchUp's detail screen",
                 url: Constants.catchUpAppUrl
             )
             .frame(maxWidth: Constants.defaultImageMaxWidth)
+			ImageWithLink(
+				imagePath: "/images/catchup-v3/contact-search.png",
+				imageDescription: "A screenshot of CatchUp's contact search screen",
+				url: Constants.catchUpAppUrl
+			)
+			.frame(maxWidth: Constants.defaultImageMaxWidth)
         }
 
         Text(markdown: "Read my blog post about modernizing CatchUp with SwiftUI [here](/blog/catching-up) or my latest post about releasing version 3.0 with SwiftData and several new features [here](/blog/catchup-v3).")
@@ -184,11 +190,29 @@ struct Apps: StaticPage {
 
         Text(markdown: "With a photo-heavy, Tinder-style swipe interface, an extensive library of restaurants powered by [Yelp](https://fusion.yelp.com/), and slick features built on top, Hot Local Food will help you find exactly what you need.")
 
-        ImageWithLink(
-            imagePath: "/images/hot-local-food/hlf-primary-light.png",
-            imageDescription: "Hot Local Food feature splash image",
-            url: Constants.hotLocalFoodAppUrl
-        )
+		Grid {
+			ImageWithLink(
+				imagePath: "/images/hot-local-food/hlf-home.png",
+				imageDescription: "Hot Local Food's home screen",
+				url: Constants.hotLocalFoodAppUrl
+			)
+			ImageWithLink(
+				imagePath: "/images/hot-local-food/hlf-detail.png",
+				imageDescription: "Hot Local Food's restaurant detail screen",
+				url: Constants.hotLocalFoodAppUrl
+			)
+			ImageWithLink(
+				imagePath: "/images/hot-local-food/hlf-location.png",
+				imageDescription: "Hot Local Food's location screen",
+				url: Constants.hotLocalFoodAppUrl
+			)
+			ImageWithLink(
+				imagePath: "/images/hot-local-food/hlf-lists.png",
+				imageDescription: "Hot Local Food's lists screen",
+				url: Constants.hotLocalFoodAppUrl
+			)
+		}
+		.margin(.bottom)
 
         Text("Features:")
         List {

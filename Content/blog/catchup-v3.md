@@ -23,13 +23,13 @@ CatchUp v3 is a significant improvement across every corner of the app. The core
 
 First, there's a new auto-updating grid of your next CatchUps. I've found this helpful as I plan my week and get a feel for who I should remember to get in touch with. It looks like this:
 
-![A screenshot of the Next CatchUps grid](/images/catchup-v3/next-catchups.jpeg)
+![A screenshot of the Next CatchUps grid](/images/catchup-v3/next-catchups.png)
 
 I've also revamped the contact detail screen's design and removed the “Notification Preference” pop-up sheet entirely. Setting your notification preference for a contact now lives fully within the contact detail screen. There's no "Save" step anymore either. The app auto-saves your notification preference every time you change it.
 
 That new contact detail screen looks like this:
 
-![A screenshot of the contact detail screen](/images/catchup-v3/detail-screen.jpeg)
+![A screenshot of the contact detail screen](/images/catchup-v3/detail-screen.png)
 
 All controls for this contact now live inside this single screen. Additionally, there's a nice new "Next CatchUp" row, which shows the next time you'll get a notification to CatchUp with this person.
 

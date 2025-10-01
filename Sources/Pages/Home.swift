@@ -29,7 +29,7 @@ struct Home: StaticPage {
             Link("day", target: "https://ryan-token-cv-prod.s3.us-east-2.amazonaws.com/Ryan+Token+CV.pdf")
             ", I build "
             Link("Daysheets", target: Constants.daysheetsWebUrl)
-            " - the new standard for tour management. In my free time, I make apps ("
+            " - the new standard for tour management. In my free time, I make apps "
 
             Link(target: Constants.catchUpAppUrl) {
                 InlineAppIcon(path: "/images/catching-up/catchup-icon.png", description: "CatchUp app icon")
@@ -47,7 +47,7 @@ struct Home: StaticPage {
                 InlineAppIcon(path: "/images/hot-local-food/hlf-icon-square.png", description: "Hot Local Food app icon")
             }
 
-            ") and co-host "
+            " and co-host "
             Link("The Golden Hurricast", target: Constants.hurricastWebUrl)
             "."
         }

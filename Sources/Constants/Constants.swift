@@ -30,6 +30,7 @@ struct Constants {
     // MARK: PROJECT URLS
     static let hurricastPodUrl = "https://podcasts.apple.com/us/podcast/the-golden-hurricast/id1435008302"
     static let hurricastWebUrl = "https://www.thegoldenhurricast.com"
+	static let semperFinishWebUrl = "https://semperfinishllc.com"
     static let daysheetsWebUrl = "https://www.daysheets.com"
 
     // MARK: METADATA IMAGE PATHS

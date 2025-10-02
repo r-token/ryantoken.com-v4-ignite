@@ -55,14 +55,36 @@ struct Projects: StaticPage {
         Text(markdown: "[The Golden Hurricast](https://www.thegoldenhurricast.com/) is the leading independent podcast and blog covering Golden Hurricane athletics at The University of Tulsa.")
 
         ImageWithLink(
-            imagePath: "/images/hurricast/hurricast-homepage-2025.png",
+            imagePath: "/images/hurricast/hurricast-homepage.png",
             imageDescription: "A screenshot of thegoldenhurricast.com's homepage",
             url: "https://www.thegoldenhurricast.com"
         )
 
-        Text(markdown: "I built and maintain the website, as well as co-host the podcast and contribute to blog posts. All of the content produced by The Golden Hurricast is completely free.")
+        Text(markdown: "I built and maintain the website with [Gatsby](https://www.gatsbyjs.com), as well as co-host the podcast and write articles for our [Patreon](https://www.patreon.com/thegoldenhurricast).")
 
         DividerWithMargin()
+		
+		HeaderText("Semper Finish", size: .h3)
+
+		ImageWithLink(
+			imagePath: "/images/semper-finish/semper-finish-logo.png",
+			imageDescription: "The Semper Finish logo",
+			imageType: .generic,
+			url: Constants.semperFinishWebUrl
+		)
+		.frame(maxWidth: Constants.appIconMaxWidth)
+
+		Text(markdown: "[Semper Finish](https://semperfinishllc.com) provides professional painting and handyman services across St. Louis, MO.")
+
+		ImageWithLink(
+			imagePath: "/images/semper-finish/semper-finish-screenshot.png",
+			imageDescription: "A screenshot of semperfinishllc.com's homepage",
+			url: "https://semperfinishllc.com"
+		)
+
+		Text(markdown: "I wrote the website with [SvelteKit](https://svelte.dev), [Tailwind](https://tailwindcss.com), and [AWS](https://aws.amazon.com/serverless/), and it's all deployed via [SST](https://sst.dev).")
+
+		DividerWithMargin()
 
         HeaderText("Archived: Eagle Crest STL", size: .h3)
 

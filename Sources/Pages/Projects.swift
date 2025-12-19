@@ -64,27 +64,27 @@ struct Projects: StaticPage {
 
         DividerWithMargin()
 		
-		HeaderText("Semper Finish", size: .h3)
+				HeaderText("Semper Finish", size: .h3)
 
-		ImageWithLink(
-			imagePath: "/images/semper-finish/semper-finish-logo.png",
-			imageDescription: "The Semper Finish logo",
-			imageType: .generic,
-			url: Constants.semperFinishWebUrl
-		)
-		.frame(maxWidth: Constants.appIconMaxWidth)
+				ImageWithLink(
+					imagePath: "/images/semper-finish/semper-finish-logo.png",
+					imageDescription: "The Semper Finish logo",
+					imageType: .generic,
+					url: Constants.semperFinishWebUrl
+				)
+				.frame(maxWidth: Constants.appIconMaxWidth)
 
-		Text(markdown: "[Semper Finish](https://semperfinishllc.com) provides professional painting and handyman services across St. Louis, MO.")
+				Text(markdown: "[Semper Finish](https://semperfinishllc.com) provides professional painting and handyman services across St. Louis, MO.")
 
-		ImageWithLink(
-			imagePath: "/images/semper-finish/semper-finish-screenshot-dark.png",
-			imageDescription: "A screenshot of semperfinishllc.com's homepage",
-			url: "https://semperfinishllc.com"
-		)
+				ImageWithLink(
+					imagePath: "/images/semper-finish/semper-finish-screenshot-dark.png",
+					imageDescription: "A screenshot of semperfinishllc.com's homepage",
+					url: "https://semperfinishllc.com"
+				)
 
-		Text(markdown: "I wrote the website with [SvelteKit](https://svelte.dev), [Tailwind](https://tailwindcss.com), and [AWS](https://aws.amazon.com/serverless/), and it's all deployed via [SST](https://sst.dev).")
+				Text(markdown: "I wrote the website with [SvelteKit](https://svelte.dev), [Tailwind](https://tailwindcss.com), and [AWS](https://aws.amazon.com/serverless/), and it's all deployed via [SST](https://sst.dev).")
 
-		DividerWithMargin()
+				DividerWithMargin()
 
         HeaderText("Archived: Eagle Crest STL", size: .h3)
 

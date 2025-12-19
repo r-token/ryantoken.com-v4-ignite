@@ -77,7 +77,7 @@ struct Projects: StaticPage {
 		Text(markdown: "[Semper Finish](https://semperfinishllc.com) provides professional painting and handyman services across St. Louis, MO.")
 
 		ImageWithLink(
-			imagePath: "/images/semper-finish/semper-finish-screenshot.png",
+			imagePath: "/images/semper-finish/semper-finish-screenshot-dark.png",
 			imageDescription: "A screenshot of semperfinishllc.com's homepage",
 			url: "https://semperfinishllc.com"
 		)

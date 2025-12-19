@@ -24,7 +24,7 @@ struct Meta: StaticPage {
 
         Text(markdown: "It's hosted on [Vercel](https://vercel.com).")
 
-        Text(markdown: "My code editors of choice are [Xcode](https://developer.apple.com/xcode/) and [Nova](https://nova.app/).")
+        Text(markdown: "My code editors of choice are [Xcode](https://developer.apple.com/xcode/) (yes, really) and [Nova](https://nova.app/).")
 
         Text(markdown: "The source code and README for this site are on [GitHub](https://github.com/r-token/ryantoken.com-v4-ignite).")
 

@@ -52,7 +52,7 @@ struct Projects: StaticPage {
         )
         .frame(maxWidth: Constants.appIconMaxWidth)
 
-        Text(markdown: "[The Golden Hurricast](https://www.thegoldenhurricast.com/) is the leading independent podcast and blog covering Golden Hurricane athletics at The University of Tulsa.")
+        Text(markdown: "[The Golden Hurricast](https://www.thegoldenhurricast.com/) is the leading independent podcast and blog covering Golden Hurricane athletics at The University of Tulsa. I started it in 2018, and still co-host the podcast and write articles for our [Patreon](https://patreon.com/thegoldenhurricast).")
 
         ImageWithLink(
             imagePath: "/images/hurricast/hurricast-homepage.png",
@@ -60,7 +60,7 @@ struct Projects: StaticPage {
             url: "https://www.thegoldenhurricast.com"
         )
 
-        Text(markdown: "I built and maintain the website with [Gatsby](https://www.gatsbyjs.com), as well as co-host the podcast and write articles for our [Patreon](https://www.patreon.com/thegoldenhurricast).")
+        Text(markdown: "I built the website with [Gatsby](https://www.gatsbyjs.com) way back in 2019, and at some point I'll rewrite it in [Svelte](https://svelte.dev) or [Swift](https://github.com/twostraws/Ignite).")
 
         DividerWithMargin()
 		

@@ -165,7 +165,7 @@ struct Apps: StaticPage {
         }
         .margin(.bottom)
 
-        Text(markdown: "You can follow Outrank on [Twitter](https://x.com/outrankapp), and you can read my blog post about building Outrank [here](/blog/introducing-outrank).")
+        Text(markdown: "You can read my blog post about building Outrank [here](/blog/introducing-outrank).")
 
         Include("download-outrank.html")
 

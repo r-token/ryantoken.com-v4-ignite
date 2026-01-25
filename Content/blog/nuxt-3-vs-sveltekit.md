@@ -25,7 +25,7 @@ The [primary debate](https://twitter.com/_ryantoken/status/1514393045319536650?s
 
 Additionally, Nuxt 3 and SvelteKit are both [meta-frameworks](https://prismic.io/blog/javascript-meta-frameworks-ecosystem#meta-framework). Nuxt is a meta-framework for [Vue](https://vuejs.org/), and SvelteKit is a meta-framework for [Svelte](https://svelte.dev/). This means that they're frameworks that provide abstractions on top of other frameworks - primarily to handle the boring/routine stuff for you. Think wiring up page routes, sharing common layouts between pages, handling smooth page transitions, etc. They also generally come with best practices built in like build optimizations, link prefetching, and more. I did have *some* experience with meta-frameworks like [Gatsby](https://www.gatsbyjs.com/), but not much. And while most of this post will compare the meta-frameworks of Nuxt 3 and SvelteKit, we'll also get into some of the differences between the core Vue and Svelte frameworks.
 
-Let me preface the rest of this post by emphasizing that I am not a front-end expert. My full-time job is primarily in [serverless](https://serverless.com) back-end development with [node.js](https://nodejs.org/en/). On top of that, most of the front-end framework experience I do have is in React. I've played around with Vue before but was completely new to Nuxt, Svelte, and SvelteKit. Because of this, I'm certain I will get some front-end terminology or facts wrong. Please [email me](mailto:ryantoken13@gmail.com) with corrections or clarifications if you have them.
+Let me preface the rest of this post by emphasizing that I am not a front-end expert. My full-time job is primarily in [serverless](https://serverless.com) back-end development with [node.js](https://nodejs.org/en/). On top of that, most of the front-end framework experience I do have is in React. I've played around with Vue before but was completely new to Nuxt, Svelte, and SvelteKit. Because of this, I'm certain I will get some front-end terminology or facts wrong. Please [email me](mailto:ryan@ryantoken.com) with corrections or clarifications if you have them.
 
 Ok, on to the main event.
 
@@ -554,7 +554,7 @@ The current plan is to maintain both the Nuxt 3 site and the SvelteKit site over
 
 **SvelteKit site**: [https://ryantoken.com](/) (you're on it)
 
-This was a wonderful exercise to go through, and I've never been happier with my personal website. Thanks for reading, and feel free to [get in touch](mailto:ryantoken13@gmail.com) if you have feedback on this blog post or the site in general. I'd love to hear from you!
+This was a wonderful exercise to go through, and I've never been happier with my personal website. Thanks for reading, and feel free to [get in touch](mailto:ryan@ryantoken.com) if you have feedback on this blog post or the site in general. I'd love to hear from you!
 
 And if you particularly enjoyed this post, you can [buy me a coffee](https://www.buymeacoffee.com/ryantoken)!
 

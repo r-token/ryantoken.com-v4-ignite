@@ -18,7 +18,7 @@ struct Constants {
     static let blueskyUrl = "https://bsky.app/profile/ryantoken.com"
     static let mastodonUrl = "https://indieweb.social/@ryantoken"
     static let linkedInUrl = "https://linkedin.com/in/ryantoken"
-    static let mailToUrl = "mailto:ryantoken13@gmail.com"
+    static let mailToUrl = "mailto:ryan@ryantoken.com"
 
     // MARK: APP URLS
     static let catchUpAppUrl = "https://apps.apple.com/us/app/catchup-keep-in-touch/id1358023550"

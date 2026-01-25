@@ -213,7 +213,7 @@ Rewriting my website with Ignite was an absolute joy, and I did it in less than 
 
 If you're a Swift developer who's been curious about web development, or if you're looking for a simpler way to build static sites, I can't recommend Ignite highly enough. It's another feather in the cap of "Swift everywhere."
 
-Thanks for reading, and feel free to [get in touch](mailto:ryantoken13@gmail.com) if you have feedback on this blog post or the site in general. I'd love to hear from you!
+Thanks for reading, and feel free to [get in touch](mailto:ryan@ryantoken.com) if you have feedback on this blog post or the site in general. I'd love to hear from you!
 
 And if you particularly enjoyed this post, you can [buy me a coffee](https://www.buymeacoffee.com/ryantoken)!
 

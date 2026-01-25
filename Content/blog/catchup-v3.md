@@ -54,7 +54,7 @@ I hope that you use the app and find it valuable. If you do, please consider sup
 
 ## Download
 
-Thank you for reading, and thank you for your interest in CatchUp - Keep in Touch. Feel free to reach out via [email](mailto:ryantoken13@gmail.com) with any questions or comments.
+Thank you for reading, and thank you for your interest in CatchUp - Keep in Touch. Feel free to reach out via [email](mailto:ryan@ryantoken.com) with any questions or comments.
 
 CatchUp v3 is available on iOS, iPadOS, and macOS. It requires iOS 17. You can download it on the App Store today:
 

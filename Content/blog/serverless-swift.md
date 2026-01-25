@@ -423,7 +423,7 @@ If you made it this far, thank you for reading! I know it was a long one.
 
 I had such a blast creating this project and writing this post. It combines two of my favorite things: serverless back-end systems and the Swift programming language. 
 
-I love talking about this stuff. If you want to chat, feel free to reach out over [email](mailto:ryantoken13@gmail.com), [Bluesky](https://bsky.app/profile/ryantoken.com), [Mastodon](https://indieweb.social/@ryantoken), [X](https://x.com/_ryantoken), or [LinkedIn](https://linkedin.com/in/ryantoken).
+I love talking about this stuff. If you want to chat, feel free to reach out over [email](mailto:ryan@ryantoken.com), [Bluesky](https://bsky.app/profile/ryantoken.com), [Mastodon](https://indieweb.social/@ryantoken), [X](https://x.com/_ryantoken), or [LinkedIn](https://linkedin.com/in/ryantoken).
 
 And if you particularly enjoyed this post, you can [buy me a coffee](https://www.buymeacoffee.com/ryantoken)!
 

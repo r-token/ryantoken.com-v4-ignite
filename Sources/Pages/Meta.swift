@@ -22,11 +22,9 @@ struct Meta: StaticPage {
         IgniteAttribution()
             .margin(.bottom, -12)
 
-        Text(markdown: "It's hosted on [Vercel](https://vercel.com).")
+        Text(markdown: "It's hosted on [Vercel](https://vercel.com), and the source code is on [GitHub](https://github.com/r-token/ryantoken.com-v4-ignite).")
 
-        Text(markdown: "My code editors of choice are [Xcode](https://developer.apple.com/xcode/) (yes, really) and [Nova](https://nova.app/).")
-
-        Text(markdown: "The source code for this site is on [GitHub](https://github.com/r-token/ryantoken.com-v4-ignite).")
+        Text(markdown: "My favorite code editors are [Xcode](https://developer.apple.com/xcode/) (yes, really) and [Nova](https://nova.app/).")
 
         Text(markdown: "Previous versions of the site were built with [Svelte](https://svelte.dev/), [Tailwind](https://tailwindcss.com), [Publish](https://github.com/johnsundell/publish), [Netlify](https://www.netlify.com), and others.")
     }

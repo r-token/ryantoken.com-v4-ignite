@@ -10,7 +10,7 @@ import Ignite
 struct IgniteAttribution: HTML {
     var body: some HTML {
         Text {
-            "This site was created in "
+            "This site was written in "
             Link("Swift", target: "https://www.swift.org")
             " with "
             Link(
